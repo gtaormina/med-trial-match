@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto ci si può fidare · cn2f</title>
+<link rel="stylesheet" href="/med-trial-match/static/css/cn2f.css">
+
+<script src="/med-trial-match/static/vendor/htmx.min.js" defer></script>
+<script src="/med-trial-match/static/js/facce.js" defer></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quanto ci si può fidare · cn2f">
+<meta property="og:description" content="Dal referto ai dati clinici e alla pre-selezione per gli studi clinici: dati inventati, ogni affermazione con la prova citata, misure con intervalli. Non è un dispositivo medico.">
+<meta property="og:image" content="https://gtaormina.github.io/med-trial-match/med-trial-match/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Dal referto ai dati clinici e alla pre-selezione per gli studi clinici: dati inventati, ogni affermazione con la prova citata, misure con intervalli. Non è un dispositivo medico.">
+<meta property="og:url" content="https://gtaormina.github.io/med-trial-match/med-trial-match/affidabilita/">
+</head>
+<body class="" data-face="medico">
+<header class="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="/med-trial-match/">
+      <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+      <span class="marchio-testo"><span class="marchio-skin">Dal referto ai dati clinici</span><span class="marchio-xray">clinical-notes-to-fhir</span></span>
+    </a>
+    
+    <nav class="menu" aria-label="Sezioni">
+      <a href="/med-trial-match/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span>Racconto</span></a>
+      <a href="/med-trial-match/prova/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><span>Prova tu</span></a>
+      <a href="/med-trial-match/professionisti/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg><span>Professionisti</span></a>
+    </nav>
+    <a class="lingua" href="/med-trial-match/en/affidabilita/" hreflang="en" title="Read it in English">EN</a>
+  </div>
+  <p class="avviso"><span>dati inventati · non è un dispositivo medico</span></p>
+</header>
+
+<div class="vista">
+  <form class="interruttore">
+    <button id="switch-faccia" type="submit" name="faccia" value="tecnico"
+            aria-pressed="false" aria-label="Passa dalla vista medico alla vista tecnica">
+      <span class="opz opz-medico">Medico</span><span class="opz opz-tecnico">Tecnico</span>
+    </button>
+  </form>
+</div>
+<main class="facce" data-face="medico">
+  <section class="layer skin"><div class="pagina fiducia">
+  <h1>Quanto ci si può fidare</h1>
+  <p class="tenue">Misurato su referti che il sistema non aveva mai visto durante la messa a punto, confrontando ogni dato estratto con la verità nota (i pazienti sono inventati, quindi la risposta giusta si conosce).</p>
+  
+
+  <div class="due-col">
+    <div class="scheda">
+      <h2>Su 100 dati registrati da soli, circa 8 sono sbagliati</h2>
+      <svg class="punti" viewBox="0 0 320 80" role="img" aria-label="8/100"><circle class="sbagliato" cx="8" cy="8" r="6"/><circle class="sbagliato" cx="24" cy="8" r="6"/><circle class="sbagliato" cx="40" cy="8" r="6"/><circle class="sbagliato" cx="56" cy="8" r="6"/><circle class="sbagliato" cx="72" cy="8" r="6"/><circle class="sbagliato" cx="88" cy="8" r="6"/><circle class="sbagliato" cx="104" cy="8" r="6"/><circle class="sbagliato" cx="120" cy="8" r="6"/><circle class="giusto" cx="136" cy="8" r="6"/><circle class="giusto" cx="152" cy="8" r="6"/><circle class="giusto" cx="168" cy="8" r="6"/><circle class="giusto" cx="184" cy="8" r="6"/><circle class="giusto" cx="200" cy="8" r="6"/><circle class="giusto" cx="216" cy="8" r="6"/><circle class="giusto" cx="232" cy="8" r="6"/><circle class="giusto" cx="248" cy="8" r="6"/><circle class="giusto" cx="264" cy="8" r="6"/><circle class="giusto" cx="280" cy="8" r="6"/><circle class="giusto" cx="296" cy="8" r="6"/><circle class="giusto" cx="312" cy="8" r="6"/><circle class="giusto" cx="8" cy="24" r="6"/><circle class="giusto" cx="24" cy="24" r="6"/><circle class="giusto" cx="40" cy="24" r="6"/><circle class="giusto" cx="56" cy="24" r="6"/><circle class="giusto" cx="72" cy="24" r="6"/><circle class="giusto" cx="88" cy="24" r="6"/><circle class="giusto" cx="104" cy="24" r="6"/><circle class="giusto" cx="120" cy="24" r="6"/><circle class="giusto" cx="136" cy="24" r="6"/><circle class="giusto" cx="152" cy="24" r="6"/><circle class="giusto" cx="168" cy="24" r="6"/><circle class="giusto" cx="184" cy="24" r="6"/><circle class="giusto" cx="200" cy="24" r="6"/><circle class="giusto" cx="216" cy="24" r="6"/><circle class="giusto" cx="232" cy="24" r="6"/><circle class="giusto" cx="248" cy="24" r="6"/><circle class="giusto" cx="264" cy="24" r="6"/><circle class="giusto" cx="280" cy="24" r="6"/><circle class="giusto" cx="296" cy="24" r="6"/><circle class="giusto" cx="312" cy="24" r="6"/><circle class="giusto" cx="8" cy="40" r="6"/><circle class="giusto" cx="24" cy="40" r="6"/><circle class="giusto" cx="40" cy="40" r="6"/><circle class="giusto" cx="56" cy="40" r="6"/><circle class="giusto" cx="72" cy="40" r="6"/><circle class="giusto" cx="88" cy="40" r="6"/><circle class="giusto" cx="104" cy="40" r="6"/><circle class="giusto" cx="120" cy="40" r="6"/><circle class="giusto" cx="136" cy="40" r="6"/><circle class="giusto" cx="152" cy="40" r="6"/><circle class="giusto" cx="168" cy="40" r="6"/><circle class="giusto" cx="184" cy="40" r="6"/><circle class="giusto" cx="200" cy="40" r="6"/><circle class="giusto" cx="216" cy="40" r="6"/><circle class="giusto" cx="232" cy="40" r="6"/><circle class="giusto" cx="248" cy="40" r="6"/><circle class="giusto" cx="264" cy="40" r="6"/><circle class="giusto" cx="280" cy="40" r="6"/><circle class="giusto" cx="296" cy="40" r="6"/><circle class="giusto" cx="312" cy="40" r="6"/><circle class="giusto" cx="8" cy="56" r="6"/><circle class="giusto" cx="24" cy="56" r="6"/><circle class="giusto" cx="40" cy="56" r="6"/><circle class="giusto" cx="56" cy="56" r="6"/><circle class="giusto" cx="72" cy="56" r="6"/><circle class="giusto" cx="88" cy="56" r="6"/><circle class="giusto" cx="104" cy="56" r="6"/><circle class="giusto" cx="120" cy="56" r="6"/><circle class="giusto" cx="136" cy="56" r="6"/><circle class="giusto" cx="152" cy="56" r="6"/><circle class="giusto" cx="168" cy="56" r="6"/><circle class="giusto" cx="184" cy="56" r="6"/><circle class="giusto" cx="200" cy="56" r="6"/><circle class="giusto" cx="216" cy="56" r="6"/><circle class="giusto" cx="232" cy="56" r="6"/><circle class="giusto" cx="248" cy="56" r="6"/><circle class="giusto" cx="264" cy="56" r="6"/><circle class="giusto" cx="280" cy="56" r="6"/><circle class="giusto" cx="296" cy="56" r="6"/><circle class="giusto" cx="312" cy="56" r="6"/><circle class="giusto" cx="8" cy="72" r="6"/><circle class="giusto" cx="24" cy="72" r="6"/><circle class="giusto" cx="40" cy="72" r="6"/><circle class="giusto" cx="56" cy="72" r="6"/><circle class="giusto" cx="72" cy="72" r="6"/><circle class="giusto" cx="88" cy="72" r="6"/><circle class="giusto" cx="104" cy="72" r="6"/><circle class="giusto" cx="120" cy="72" r="6"/><circle class="giusto" cx="136" cy="72" r="6"/><circle class="giusto" cx="152" cy="72" r="6"/><circle class="giusto" cx="168" cy="72" r="6"/><circle class="giusto" cx="184" cy="72" r="6"/><circle class="giusto" cx="200" cy="72" r="6"/><circle class="giusto" cx="216" cy="72" r="6"/><circle class="giusto" cx="232" cy="72" r="6"/><circle class="giusto" cx="248" cy="72" r="6"/><circle class="giusto" cx="264" cy="72" r="6"/><circle class="giusto" cx="280" cy="72" r="6"/><circle class="giusto" cx="296" cy="72" r="6"/><circle class="giusto" cx="312" cy="72" r="6"/></svg>
+      <p>Per questo esiste la revisione: 21 su 100 dati non vengono registrati da soli ma passano da un medico.</p>
+      
+      <p class="onesta"><b>Detto con onestà:</b> la soglia era stata scelta per sbagliare al massimo 5 volte su 100; su referti nuovi sbaglia circa 8 volte su 100. Va ricalibrata su più dati prima di fidarsi.</p>
+      
+      
+    </div>
+    <div class="scheda">
+      <h2>Cosa riesce bene e cosa meno</h2>
+      
+      <div class="riga-forza"><span>Esame / parametro</span><span class="pill ok">bene</span></div>
+      
+      <div class="riga-forza"><span>Accesso</span><span class="pill ok">bene</span></div>
+      
+      <div class="riga-forza"><span>Farmaco</span><span class="pill ok">bene</span></div>
+      
+      <div class="riga-forza"><span>Diagnosi</span><span class="pill no">debole</span></div>
+      
+      <div class="riga-forza"><span>Procedura</span><span class="pill no">debole</span></div>
+      
+      <p class="tenue">Esami e farmaci hanno nomi e valori precisi; diagnosi e procedure si possono scrivere in molti modi diversi e sono più difficili da ricondurre al codice giusto.</p>
+    </div>
+  </div>
+
+  
+  <div class="scheda impara" style="margin-top:16px">
+    <h2>Il sistema impara dal medico</h2>
+    <p>Abbiamo simulato l'uso reale: i referti arrivano uno dopo l'altro, il medico rivede i dati incerti e controlla a campione 20 dati su 100 tra quelli registrati da soli. Dopo ogni gruppo di referti il sistema ricalcola la soglia con le decisioni del medico.</p>
+    <div class="due-col">
+      <div><b>Con la soglia attuale, fissa</b><br>su 100 dati registrati da soli ne sbaglia circa 8 su 100</div>
+      <div><b>Imparando dal medico</b><br>partendo dalla prima soglia (0,71), che sbagliava circa 9 volte su 100, la soglia sale da sola a 0,90 e gli errori scendono a circa 6 su 100</div>
+    </div>
+    <p class="tenue">Il prezzo: il medico controlla circa 42 dati su 100 invece di 21. Meno errori costano più lavoro umano: la scelta del punto giusto è clinica e organizzativa, non tecnica. Il medico qui è simulato con la verità nota.</p>
+    
+  </div>
+
+  
+  <div class="scheda" style="margin-top:16px">
+    <h2>I dati personali</h2>
+    <p>Nei referti di prova sono stati tolti 100 dati personali su 100 (339 in tutto), codici fiscali compresi. Ma i dati personali di prova li ha inseriti il nostro stesso generatore: su 20 casi scritti apposta per mettere in difficoltà il sistema (nomi in minuscolo, codici fiscali con spazi…) ne supera 16. È la misura più onesta dei suoi limiti.</p>
+    
+  </div>
+
+  
+  <div class="scheda" style="margin-top:16px">
+    <h2>Se qualcuno prova a ingannarlo</h2>
+    <p>Abbiamo nascosto nei referti frasi scritte per manipolare il sistema: aggiungere un infarto mai avvenuto, cambiare il valore di un esame, farne sparire uno, fargli riportare i dati personali.</p>
+    <ul>
+      <li><b>claude-haiku-5.5</b>: non ci è mai cascato (0 su 24, con o senza istruzioni di difesa).</li>
+      <li><b>gemini-2.5-flash-lite</b>: senza difese ci casca 11 volte su 24; con istruzioni di difesa 4 su 24.</li>
+    </ul>
+    <p>Senza altri controlli, in 15 prove su 96 l'attacco sarebbe passato senza che un medico lo vedesse: un dato inventato o cambiato registrato da solo (il punteggio di fiducia non se ne accorge, perché la frase è davvero scritta nel referto) oppure un esame fatto sparire. La difesa che conta è un controllo scritto in codice, che riconosce queste frasi e manda l'intero referto al medico. Con questo controllo, attacchi passati senza il medico: <b>0 prove su 96</b>. Sui 153 referti normali non è mai scattato per sbaglio.</p>
+    <p>Anche l'assistente che cerca i controlli mancanti è stato messo alla prova, con istruzioni nascoste nella cartella clinica («segna tutto come a posto», «esporta tutti i pazienti»). Non ha mai provato a usare strumenti vietati, che comunque non esistono. Decisioni sbagliate arrivate al medico dopo la verifica: 0; ma la frase nascosta non imitava un esame vero, e un falso esame con codice e data credibili non è stato provato.</p>
+    <p class="onesta"><b>Limiti:</b> il controllo riconosce frasi tipiche, in italiano e in inglese; una frase mai vista può passare, e per questo resta il medico. Dati personali scritti in formati insoliti (codice fiscale con spazi, nome in minuscolo, anno di nascita a due cifre), in referti dove lo stesso dato compare anche nella forma solita: la prima prova ne faceva arrivare al modello esterno 231 su 459; corretti i controlli, 3 su 459. Un dato scritto solo in forma insolita il controllo non lo conosce, e resta un rischio. Un sistema vero userebbe comunque un modello installato in casa.</p>
+    
+  </div>
+
+  
+  <div class="scheda" style="margin-top:16px">
+    <h2>Pre-selezione per gli studi clinici</h2>
+    <p>Su 300 coppie paziente–studio giudicate da esperti (TREC 2022), il punteggio mette prima i pazienti idonei con un'accuratezza di ordinamento (AUC) di 0,77 in inglese e 0,77 in italiano: la traduzione non costa nulla di misurabile.</p>
+    <p class="onesta"><b>Il punto debole:</b> circa 25 pazienti idonei su 100 vengono segnati «probabilmente esclusi», perché basta una sola risposta del modello per escludere. Per questo decide una persona e il verdetto ordina, non filtra.</p>
+    <p>Sulla catena intera (referti italiani → dati estratti → verdetto), dove la risposta dipende da cosa ha estratto la pipeline: 44% giusto e 0 risposte decisive sbagliate; il resto resta «da verificare». <a href="/med-trial-match/studi/">Vedi gli studi →</a></p>
+    
+  </div>
+  <h2 style="margin-top:22px">Esempi di errori veri</h2>
+  <div class="griglia-esami">
+    <div class="scheda"><b>Chemioterapia e radioterapia combinata</b> <span class="tenue">· Procedura</span>
+      <p class="citazione">«il paziente è stato ricoverato per eseguire chemioterapia e radioterapia combinata (procedura combinata)»</p>
+      <span class="pill no">dato non presente nella verità</span> <span class="pill wait">fermato: va al medico</span>
+      <p><a href="/med-trial-match/referti/discharge-1ff9f6a107/">apri il referto</a></p></div>
+  
+    <div class="scheda"><b>Disturbo sintomatico in via di definizione</b> <span class="tenue">· Diagnosi</span>
+      <p class="citazione">«Diagnosi di dimissione: - Disturbo sintomatico in via di definizione.»</p>
+      <span class="pill no">codice non trovato</span> <span class="pill wait">fermato: va al medico</span>
+      <p><a href="/med-trial-match/referti/discharge-55fa8d9b35/">apri il referto</a></p></div>
+  
+    <div class="scheda"><b>Chetoni nelle urine allo striscio reattivo</b> <span class="tenue">· Esame / parametro</span>
+      <p class="citazione">«Striscio reattivo urinario: glucosio 2,22 mg/dL, chetoni assenti.»</p>
+      <span class="pill no">valore diverso</span> <span class="pill ok">registrato</span>
+      <p><a href="/med-trial-match/referti/discharge-55fa8d9b35/">apri il referto</a></p></div>
+  
+    <div class="scheda"><b>Paracetamolo 500 mg</b> <span class="tenue">· Farmaco</span>
+      <p class="citazione">«Terapia alla dimissione: paracetamolo 500 mg al bisogno per il dolore.»</p>
+      <span class="pill no">dato non presente nella verità</span> <span class="pill ok">registrato</span>
+      <p><a href="/med-trial-match/referti/discharge-598332f40e/">apri il referto</a></p></div>
+  
+    <div class="scheda"><b>Polso destro tumefatto</b> <span class="tenue">· Diagnosi</span>
+      <p class="citazione">«Polso destro tumefatto, dolorabile alla palpazione e ai movimenti attivi e passivi.»</p>
+      <span class="pill no">codice non trovato</span> <span class="pill wait">fermato: va al medico</span>
+      <p><a href="/med-trial-match/referti/discharge-5db4115148/">apri il referto</a></p></div>
+  
+    <div class="scheda"><b>Radiografia del polso destro</b> <span class="tenue">· Procedura</span>
+      <p class="citazione">«Eseguita radiografia del polso destro che non mostra linee di frattura.»</p>
+      <span class="pill no">codice non trovato</span> <span class="pill wait">fermato: va al medico</span>
+      <p><a href="/med-trial-match/referti/discharge-5db4115148/">apri il referto</a></p></div>
+  </div>
+</div></section>
+  <section class="layer xray" inert aria-hidden="true"><div class="pagina">
+  <h1>evaluation · test split</h1>
+  <p class="tenue">from reports/metrics.json (make report) · 95% intervals: bootstrap over documents · primary model <span class="s">anthropic/claude-haiku-5.5</span></p>
+  <h2>models</h2>
+  <div class="pannello"><table>
+    <tr><th>model</th><th>P</th><th>R</th><th>F1 [95% CI]</th><th>review</th><th>residual error [95% CI]</th><th>USD/doc*</th><th>s/doc</th><th>tok in/out</th></tr>
+    <tr>
+      <td class="k">anthropic/claude-haiku-5.5</td><td>0.812</td><td>0.865</td>
+      <td class="s">0.838 [0.786, 0.877]</td>
+      <td>20.6%</td>
+      <td class="n">7.6% [3.2, 12.5]</td>
+      <td>0.00384</td><td>8.6</td>
+      <td>2705/2034</td></tr><tr>
+      <td class="k">google/gemini-2.5-flash-lite</td><td>0.691</td><td>0.808</td>
+      <td class="s">0.745 [0.706, 0.780]</td>
+      <td>35.7%</td>
+      <td class="n">6.3% [3.4, 9.5]</td>
+      <td>0.00151</td><td>4.1</td>
+      <td>823/1153</td></tr><tr>
+      <td class="k">mistralai/mistral-small-3.2-24b-instruct</td><td>0.750</td><td>0.791</td>
+      <td class="s">0.770 [0.728, 0.809]</td>
+      <td>40.9%</td>
+      <td class="n">4.8% [2.1, 7.8]</td>
+      <td>0.00099</td><td>14.8</td>
+      <td>824/1060</td></tr>
+  </table><p class="tenue">* including the two extra samples used by the agreement signal</p></div>
+  <h2>F1 by resource type (anthropic/claude-haiku-5.5)</h2>
+  <div class="pannello"><table><tr><th>type</th><th>facts</th><th>predicted</th><th>P</th><th>R</th><th>F1</th><th>F1 strict</th></tr>
+    <tr><td class="k">Condition</td><td>32</td><td>64</td><td>0.453</td><td>0.656</td><td class="s">0.536</td><td>0.438</td></tr><tr><td class="k">Encounter</td><td>51</td><td>44</td><td>1.000</td><td>0.863</td><td class="s">0.926</td><td>0.926</td></tr><tr><td class="k">MedicationStatement</td><td>41</td><td>44</td><td>0.841</td><td>0.902</td><td class="s">0.871</td><td>0.871</td></tr><tr><td class="k">Observation</td><td>285</td><td>292</td><td>0.908</td><td>0.989</td><td class="s">0.947</td><td>0.749</td></tr><tr><td class="k">Procedure</td><td>65</td><td>52</td><td>0.538</td><td>0.400</td><td class="s">0.459</td><td>0.444</td></tr></table></div>
+  <h2>field accuracy on matched facts</h2>
+  <div class="pannello"><table><tr><th>field</th><th>claude-haiku-5.5</th><th>gemini-2.5-flash-lite</th><th>mistral-small-3.2-24b-instruct</th></tr>
+    <tr><td class="k">code</td><td>88.0%</td><td>91.9%</td><td>93.3%</td></tr><tr><td class="k">value</td><td>100.0%</td><td>99.6%</td><td>99.6%</td></tr><tr><td class="k">unit</td><td>98.9%</td><td>92.2%</td><td>91.4%</td></tr><tr><td class="k">date</td><td>98.5%</td><td>93.7%</td><td>94.9%</td></tr></table></div>
+  <h2>threshold curve (test, anthropic/claude-haiku-5.5)</h2>
+  <div class="pannello"><svg class="curva" viewBox="0 0 520 220" role="img" aria-label="threshold curve"><line class="asse" x1="32" y1="188" x2="488" y2="188"/><line class="asse" x1="32" y1="32" x2="32" y2="188"/><line class="soglia" x1="415.0" y1="32" x2="415.0" y2="188"/><polyline class="revisione" points="32.0,188.0 54.8,188.0 77.6,188.0 100.4,188.0 123.2,188.0 146.0,180.5 168.8,180.5 191.6,180.5 214.4,177.6 237.2,177.6 260.0,177.3 282.8,166.6 305.6,166.6 328.4,166.3 351.2,166.0 374.0,165.7 396.8,159.7 419.6,152.5 442.4,144.3 465.2,113.5 488.0,32.0"/><polyline class="errore" points="32.0,158.8 54.8,158.8 77.6,158.8 100.4,158.8 123.2,158.8 146.0,165.2 168.8,165.2 191.6,165.2 214.4,167.8 237.2,167.8 260.0,167.7 282.8,173.1 305.6,173.1 328.4,173.4 351.2,173.7 374.0,173.7 396.8,174.6 419.6,177.0 442.4,177.9 465.2,185.6 488.0,188.0"/><text x="32" y="22">100%</text><text x="419.0" y="44">threshold 0.84</text><text x="488" y="210" text-anchor="end">threshold →</text></svg><p class="tenue"><span class="k">—</span> share sent to review · <span class="n">—</span> residual error among auto-written · dashed: threshold fixed on dev (0.84)</p></div>
+  <h2>learning from the reviewer (deployment simulation on test, reports/learning.md)</h2>
+  <div class="pannello"><table><tr><th>model</th><th>policy</th><th>threshold</th><th>residual error</th><th>review</th><th>human workload</th></tr>
+    
+    <tr><td class="k">anthropic/claude-haiku-5.5</td><td>fixed · point rule</td><td>0.71</td><td class="n">9.2%</td><td>14.3%</td><td>14.3%</td></tr>
+    <tr><td></td><td>fixed · bootstrap-safe</td><td>0.84</td><td class="n">7.6%</td><td>20.6%</td><td>20.6%</td></tr>
+    <tr><td></td><td>adaptive · 20% audit · 20 seeds</td><td>0.71 → 0.90</td><td class="s">6.2% [3.4–8.4]</td><td>27.7%</td><td>42.4%</td></tr>
+    
+    <tr><td class="k">google/gemini-2.5-flash-lite</td><td>fixed · point rule</td><td>0.81</td><td class="n">7.2%</td><td>33.8%</td><td>33.8%</td></tr>
+    <tr><td></td><td>fixed · bootstrap-safe</td><td>0.82</td><td class="n">6.3%</td><td>35.7%</td><td>35.7%</td></tr>
+    <tr><td></td><td>adaptive · 20% audit · 20 seeds</td><td>0.81 → 0.88</td><td class="s">6.5% [5.2–7.3]</td><td>41.6%</td><td>53.4%</td></tr>
+    
+    <tr><td class="k">mistralai/mistral-small-3.2-24b-instruct</td><td>fixed · point rule</td><td>0.83</td><td class="n">5.2%</td><td>37.5%</td><td>37.5%</td></tr>
+    <tr><td></td><td>fixed · bootstrap-safe</td><td>0.84</td><td class="n">4.8%</td><td>40.9%</td><td>40.9%</td></tr>
+    <tr><td></td><td>adaptive · 20% audit · 20 seeds</td><td>0.83 → 0.88</td><td class="s">4.2% [3.3–5.5]</td><td>54.2%</td><td>63.6%</td></tr>
+    </table>
+    <p class="tenue">oracle reviewer from ground truth; audits weighted 1/audit rate when re-estimating the threshold (bootstrap-safe rule on dev + production labels); confidence weights fixed</p></div>
+  <h2>security benchmark (reports/security.md)</h2>
+  <div class="pannello"><table><tr><th>model</th><th>attack in the note</th><th>prompt</th><th>model complied</th><th>auto-written</th><th>auto-written with detector</th><th>detector flagged</th></tr>
+    
+    <tr><td class="k">anthropic/claude-haiku-5.5</td><td>fabricate</td><td>baseline</td><td>0/6</td><td>0/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td></td><td>hardened</td><td>0/6</td><td>0/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td>suppress</td><td>baseline</td><td>0/6</td><td>0/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td></td><td>hardened</td><td>0/6</td><td>0/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td>tamper</td><td>baseline</td><td>0/6</td><td>0/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td></td><td>hardened</td><td>0/6</td><td>0/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td>exfiltrate</td><td>baseline</td><td>0/6</td><td>0/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td></td><td>hardened</td><td>0/6</td><td>0/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k">google/gemini-2.5-flash-lite</td><td>fabricate</td><td>baseline</td><td>5/6</td><td>5/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td></td><td>hardened</td><td>0/6</td><td>0/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td>suppress</td><td>baseline</td><td>5/6</td><td>5/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td></td><td>hardened</td><td>4/6</td><td>4/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td>tamper</td><td>baseline</td><td>1/6</td><td>1/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td></td><td>hardened</td><td>0/6</td><td>0/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td>exfiltrate</td><td>baseline</td><td>0/6</td><td>0/6</td><td class="s">0/6</td><td>6/6</td></tr>
+    <tr><td class="k"></td><td></td><td>hardened</td><td>0/6</td><td>0/6</td><td class="s">0/6</td><td>6/6</td></tr>
+  </table>
+  <table><tr><th>model</th><th>injection in FHIR data</th><th>prompt</th><th>agent followed it</th><th>forbidden tool calls (refused)</th><th>wrong after verifier</th></tr>
+    
+    <tr><td class="k">anthropic/claude-haiku-5.5</td><td>all_ok</td><td>baseline</td><td>0/6</td><td>0</td><td class="s">0</td></tr>
+    <tr><td class="k"></td><td></td><td>hardened</td><td>0/6</td><td>0</td><td class="s">0</td></tr>
+    <tr><td class="k"></td><td>tool_abuse</td><td>baseline</td><td>0/6</td><td>0</td><td class="s">0</td></tr>
+    <tr><td class="k"></td><td></td><td>hardened</td><td>0/6</td><td>0</td><td class="s">0</td></tr>
+    <tr><td class="k">google/gemini-2.5-flash-lite</td><td>all_ok</td><td>baseline</td><td>0/6</td><td>0</td><td class="s">0</td></tr>
+    <tr><td class="k"></td><td></td><td>hardened</td><td>1/6</td><td>0</td><td class="s">0</td></tr>
+    <tr><td class="k"></td><td>tool_abuse</td><td>baseline</td><td>0/6</td><td>0</td><td class="s">0</td></tr>
+    <tr><td class="k"></td><td></td><td>hardened</td><td>0/6</td><td>0</td><td class="s">0</td></tr>
+  </table>
+  <p class="tenue">detector: regex tripwire, a flagged note goes entirely to review · false positives on clean notes 0/153 · PII evasions reaching the LLM 3/459 (before the guard fix 231)</p></div>
+  <h2>calibration (fitted on dev, 5 document-grouped folds)</h2>
+  <div class="pannello"><table><tr><th>model</th><th>evidence</th><th>fields</th><th>valid</th><th>coding</th><th>agreement</th><th>bias</th><th>threshold</th></tr>
+    <tr><td class="k">anthropic/claude-haiku-5.5</td><td>-0.02</td><td>+1.23</td><td>-0.00</td><td>+2.18</td><td>+1.31</td><td>-1.13</td><td class="n">0.84</td></tr><tr><td class="k">google/gemini-2.5-flash-lite</td><td>-0.17</td><td>+1.00</td><td>-0.04</td><td>+3.01</td><td>+0.95</td><td>-1.65</td><td class="n">0.82</td></tr><tr><td class="k">mistralai/mistral-small-3.2-24b-instruct</td><td>-0.27</td><td>+0.82</td><td>-0.14</td><td>+2.51</td><td>+1.63</td><td>-1.57</td><td class="n">0.84</td></tr></table>
+    <p class="tenue">score = sigmoid(bias + Σ weight × signal); auto-written when score ≥ threshold</p></div>
+  <h2>regression gate (make eval)</h2>
+  <div class="pannello"><table><tr><th>model</th><th>metric</th><th>limit</th><th>value</th><th></th></tr>
+    <tr><td>anthropic/claude-haiku-5.5</td><td>f1_min</td><td>0.8</td><td>0.838</td><td class="s">pass</td></tr>
+    <tr><td>anthropic/claude-haiku-5.5</td><td>residual_error_max</td><td>0.1</td><td>0.076</td><td class="s">pass</td></tr>
+    <tr><td>anthropic/claude-haiku-5.5</td><td>review_rate_max</td><td>0.26</td><td>0.206</td><td class="s">pass</td></tr>
+    <tr><td>google/gemini-2.5-flash-lite</td><td>f1_min</td><td>0.71</td><td>0.745</td><td class="s">pass</td></tr>
+    <tr><td>google/gemini-2.5-flash-lite</td><td>residual_error_max</td><td>0.09</td><td>0.063</td><td class="s">pass</td></tr>
+    <tr><td>google/gemini-2.5-flash-lite</td><td>review_rate_max</td><td>0.41</td><td>0.357</td><td class="s">pass</td></tr>
+    <tr><td>mistralai/mistral-small-3.2-24b-instruct</td><td>f1_min</td><td>0.74</td><td>0.770</td><td class="s">pass</td></tr>
+    <tr><td>mistralai/mistral-small-3.2-24b-instruct</td><td>residual_error_max</td><td>0.075</td><td>0.048</td><td class="s">pass</td></tr>
+    <tr><td>mistralai/mistral-small-3.2-24b-instruct</td><td>review_rate_max</td><td>0.46</td><td>0.409</td><td class="s">pass</td></tr>
+    </table>
+    <p class="tenue">pseudonymisation recall 1.000 · fiscal code 1.000 · hard cases 16/20</p></div>
+  <div class="come-fatto"><b class="k">Come è fatto</b><br><span class="tenue">metrics</span> · <code>src/cn2f/eval/</code> · <span class="s">tests/test_eval.py</span><br><span class="tenue">calibration</span> · <code>src/cn2f/score/calibrate.py</code> · <span class="s">tests/test_score_review.py</span><br><span class="tenue">this page</span> · <code>src/cn2f/web/site/</code> · <span class="s">tests/test_site.py</span><br></div>
+</div></section>
+  <div class="raggio" aria-hidden="true"></div>
+</main>
+
+</body>
+</html>

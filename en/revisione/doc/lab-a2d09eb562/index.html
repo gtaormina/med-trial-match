@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revisione lab-a2d09eb562 · cn2f</title>
+<link rel="stylesheet" href="/med-trial-match/static/css/cn2f.css">
+
+<script src="/med-trial-match/static/vendor/htmx.min.js" defer></script>
+<script src="/med-trial-match/static/js/facce.js" defer></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Revisione lab-a2d09eb562 · cn2f">
+<meta property="og:description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:image" content="https://gtaormina.github.io/med-trial-match/med-trial-match/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:url" content="https://gtaormina.github.io/med-trial-match/med-trial-match/en/revisione/doc/lab-a2d09eb562/">
+</head>
+<body class="" data-face="medico">
+<header class="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="/med-trial-match/en/">
+      <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+      <span class="marchio-testo"><span class="marchio-skin">From clinical notes to data</span><span class="marchio-xray">clinical-notes-to-fhir</span></span>
+    </a>
+    
+    <nav class="menu" aria-label="Sections">
+      <a href="/med-trial-match/en/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span>Story</span></a>
+      <a href="/med-trial-match/en/prova/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><span>Try it</span></a>
+      <a href="/med-trial-match/en/professionisti/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg><span>Professionals</span></a>
+    </nav>
+    <a class="lingua" href="/med-trial-match/revisione/doc/lab-a2d09eb562/" hreflang="it" title="Leggi in italiano">IT</a>
+  </div>
+  <p class="avviso"><span>invented data · not a medical device</span></p>
+</header>
+
+<div class="vista">
+  <form class="interruttore">
+    <button id="switch-faccia" type="submit" name="faccia" value="tecnico"
+            aria-pressed="false" aria-label="Switch between the clinician view and the technical view">
+      <span class="opz opz-medico">Clinician</span><span class="opz opz-tecnico">Technical</span>
+    </button>
+  </form>
+</div>
+<main class="facce" data-face="medico">
+  <section class="layer skin"><div class="pagina">
+  <p><a href="/med-trial-match/en/revisione/">← Review</a> · <a href="/med-trial-match/en/referti/lab-a2d09eb562/">see the whole note</a></p>
+  <h1>Review of the note</h1>
+  <div class="due-col">
+    <div class="foglio">Referto di laboratorio analisi
+
+Paziente: [PERSON_1]
+Nata il: [DATE_OF_BIRTH_1]
+Codice Fiscale: [IT_FISCAL_CODE_1]
+Residente in: [ADDRESS_1]
+Telefono: [PHONE_NUMBER_1]
+Medico curante: Dott.ssa [PERSON_2]
+
+Data prelievo: 20/01/2025
+
+Esami ematochimici:
+- Emoglobina glicata (HbA1c): 6.08 %
+- Glicemia: 91.71 mg/dL
+- Azotemia: 7.82 mg/dL
+- Creatinina: 0.83 mg/dL
+- Calcio: 9.53 mg/dL
+- Sodio: 140.92 mmol/L
+- Potassio: 4.47 mmol/L
+- Cloro: 102.43 mmol/L
+- Anidride carbonica totale (CO2): 21.03 mmol/L
+- Colesterolo totale: 318.58 mg/dL
+- Trigliceridi: 130.51 mg/dL
+- Colesterolo LDL (dosaggio diretto): 236.84 mg/dL
+- Colesterolo HDL: 55.63 mg/dL
+
+<mark class="rev" id="ev-255" data-item="255" tabindex="0">Il prelievo è stato effettuato in occasione di una visita ambulatoriale generale presso il nostro ambulatorio.</mark>
+
+Anamnesi patologica remota: pregressa polmonite atipica risolta da circa 10 anni; storia di gastrite da Helicobacter pylori eradicata e risolta da anni.
+
+Note: <mark class="rev" id="ev-241" data-item="241" tabindex="0">i valori di colesterolo totale e LDL risultano elevati</mark>; si consiglia valutazione specialistica.
+</div>
+    <div>
+      <h2>To review (3)</h2>
+      <div class="dato rev" id="card-255" data-item="255" tabindex="0">
+  <div><b>Prelievo ematico</b> <span class="tenue">· Procedure</span></div>
+  
+  <small>no code · 2025-01-20 · reliability 38%</small>
+  
+  
+  <p class="nota-statica">Decisions need the local demo: <code>make demo</code>.</p>
+  
+</div><div class="dato rev" id="card-240" data-item="240" tabindex="0">
+  <div><b>Outpatient visit</b> <span class="tenue">· Encounter</span></div>
+  
+  <small>no code · 2025-01-20 · reliability 54%</small>
+  
+  
+  <p class="nota-statica">Decisions need the local demo: <code>make demo</code>.</p>
+  
+</div><div class="dato rev" id="card-241" data-item="241" tabindex="0">
+  <div><b>Valori elevati di colesterolo</b> <span class="tenue">· Diagnosis</span></div>
+  
+  <small>no code · 2025-01-20 · reliability 54%</small>
+  
+  
+  <p class="nota-statica">Decisions need the local demo: <code>make demo</code>.</p>
+  
+</div>
+      <h2>Already decided or written</h2>
+      <div class="dato"><b>Emoglobina glicata (HbA1c)</b> <span class="tenue">· 6.08 % </span> <span class="pill ok">written</span></div><div class="dato"><b>Glicemia</b> <span class="tenue">· 91.71 mg/dL </span> <span class="pill ok">written</span></div><div class="dato"><b>Azotemia</b> <span class="tenue">· 7.82 mg/dL </span> <span class="pill ok">written</span></div><div class="dato"><b>Creatinina</b> <span class="tenue">· 0.83 mg/dL </span> <span class="pill ok">written</span></div><div class="dato"><b>Calcio</b> <span class="tenue">· 9.53 mg/dL </span> <span class="pill ok">written</span></div><div class="dato"><b>Sodio</b> <span class="tenue">· 140.92 mmol/L </span> <span class="pill ok">written</span></div><div class="dato"><b>Potassio</b> <span class="tenue">· 4.47 mmol/L </span> <span class="pill ok">written</span></div><div class="dato"><b>Cloro</b> <span class="tenue">· 102.43 mmol/L </span> <span class="pill ok">written</span></div><div class="dato"><b>Anidride carbonica totale (CO2)</b> <span class="tenue">· 21.03 mmol/L </span> <span class="pill ok">written</span></div><div class="dato"><b>Colesterolo totale</b> <span class="tenue">· 318.58 mg/dL </span> <span class="pill ok">written</span></div><div class="dato"><b>Trigliceridi</b> <span class="tenue">· 130.51 mg/dL </span> <span class="pill ok">written</span></div><div class="dato"><b>Colesterolo LDL (dosaggio diretto)</b> <span class="tenue">· 236.84 mg/dL </span> <span class="pill ok">written</span></div><div class="dato"><b>Colesterolo HDL</b> <span class="tenue">· 55.63 mg/dL </span> <span class="pill ok">written</span></div>
+    </div>
+  </div>
+</div></section>
+  <section class="layer xray" inert aria-hidden="true"><div class="pagina">
+  <h1>GET /revisione/doc/lab-a2d09eb562</h1>
+  <div class="pannello" style="margin-bottom:10px">
+    <span class="k">Procedure</span> <span class="tenue">#255 · pending</span><br>
+    code <span class="s">∅</span>  · score <span class="n">0.38</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.00 · valid 1.00 · coding 0.00 · agreement 0.50</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Encounter</span> <span class="tenue">#240 · pending</span><br>
+    code <span class="s">∅</span>  · score <span class="n">0.54</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.00 · valid 1.00 · coding 0.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Condition</span> <span class="tenue">#241 · pending</span><br>
+    code <span class="s">∅</span>  · score <span class="n">0.54</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.00 · valid 1.00 · coding 0.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#242 · auto</span><br>
+    code <span class="s">4548-4</span> Hemoglobin A1c/Hemoglobin.total in Blood · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#243 · auto</span><br>
+    code <span class="s">2345-7</span> Glucose [Mass/volume] in Serum or Plasma · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#244 · auto</span><br>
+    code <span class="s">3094-0</span> Urea nitrogen [Mass/volume] in Serum or Plasma · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#245 · auto</span><br>
+    code <span class="s">2160-0</span> Creatinine [Mass/volume] in Serum or Plasma · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#246 · auto</span><br>
+    code <span class="s">17861-6</span> Calcium [Mass/volume] in Serum or Plasma · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#247 · auto</span><br>
+    code <span class="s">2951-2</span> Sodium [Moles/volume] in Serum or Plasma · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#248 · auto</span><br>
+    code <span class="s">2823-3</span> Potassium [Moles/volume] in Serum or Plasma · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#249 · auto</span><br>
+    code <span class="s">2075-0</span> Chloride [Moles/volume] in Serum or Plasma · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#250 · auto</span><br>
+    code <span class="s">2028-9</span> Carbon dioxide, total [Moles/volume] in Serum or Plasma · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#251 · auto</span><br>
+    code <span class="s">2093-3</span> Cholesterol [Mass/volume] in Serum or Plasma · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#252 · auto</span><br>
+    code <span class="s">2571-8</span> Triglyceride [Mass/volume] in Serum or Plasma · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#253 · auto</span><br>
+    code <span class="s">18262-6</span> Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">Observation</span> <span class="tenue">#254 · auto</span><br>
+    code <span class="s">2085-9</span> Cholesterol in HDL [Mass/volume] in Serum or Plasma · score <span class="n">0.95</span><br>
+    <span class="tenue">evidence 1.00 · fields 0.50 · valid 1.00 · coding 1.00 · agreement 1.00</span>
+  </div>
+</div></section>
+  <div class="raggio" aria-hidden="true"></div>
+</main>
+
+</body>
+</html>

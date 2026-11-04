@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outpatient visit · cn2f</title>
+<link rel="stylesheet" href="/med-trial-match/static/css/cn2f.css">
+
+<script src="/med-trial-match/static/vendor/htmx.min.js" defer></script>
+<script src="/med-trial-match/static/js/facce.js" defer></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Outpatient visit · cn2f">
+<meta property="og:description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:image" content="https://gtaormina.github.io/med-trial-match/med-trial-match/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:url" content="https://gtaormina.github.io/med-trial-match/med-trial-match/en/referti/outpatient-658af02395/">
+</head>
+<body class="" data-face="medico">
+<header class="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="/med-trial-match/en/">
+      <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+      <span class="marchio-testo"><span class="marchio-skin">From clinical notes to data</span><span class="marchio-xray">clinical-notes-to-fhir</span></span>
+    </a>
+    
+    <nav class="menu" aria-label="Sections">
+      <a href="/med-trial-match/en/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span>Story</span></a>
+      <a href="/med-trial-match/en/prova/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><span>Try it</span></a>
+      <a href="/med-trial-match/en/professionisti/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg><span>Professionals</span></a>
+    </nav>
+    <a class="lingua" href="/med-trial-match/referti/outpatient-658af02395/" hreflang="it" title="Leggi in italiano">IT</a>
+  </div>
+  <p class="avviso"><span>invented data · not a medical device</span></p>
+</header>
+
+<div class="vista">
+  <form class="interruttore">
+    <button id="switch-faccia" type="submit" name="faccia" value="tecnico"
+            aria-pressed="false" aria-label="Switch between the clinician view and the technical view">
+      <span class="opz opz-medico">Clinician</span><span class="opz opz-tecnico">Technical</span>
+    </button>
+  </form>
+</div>
+<main class="facce" data-face="medico">
+  <section class="layer skin"><div class="pagina">
+  <p><a href="/med-trial-match/en/referti/">← Notes</a></p>
+  <h1>Outpatient visit · 2025-05-04</h1>
+  <p class="tenue">Patient <span class="mono">pt-c9358a257742</span>. The text is already pseudonymised: the personal data were replaced before any call to the AI. Hover over a datum to see the sentence it comes from.</p>
+  <div class="due-col">
+    <div class="foglio">Referto di visita ambulatoriale
+
+Data: 04/05/2025
+Paziente: [PERSON_1], sesso F, età 56 anni
+Nato il: [DATE_OF_BIRTH_1]
+Codice Fiscale: [IT_FISCAL_CODE_1]
+Indirizzo: [ADDRESS_1]
+Telefono: [PHONE_NUMBER_1]
+Medico curante: Dott.ssa [PERSON_2]
+
+Anamnesi familiare: padre affetto da cardiopatia ischemica, madre con osteoporosi.
+Anamnesi patologica remota: <mark class="auto" id="ev-r3cc766101ab36404" data-item="r3cc766101ab36404" tabindex="0">ipertensione arteriosa, diabete mellito tipo 2, asma bronchiale</mark>.
+
+Terapia farmacologica in atto:
+- <mark class="auto" id="ev-rb622aee2c9217cab" data-item="rb622aee2c9217cab" tabindex="0">Lisinopril 10 mg 1 compressa/die</mark>
+- <mark class="auto" id="ev-r1e83d406bdc91e4c" data-item="r1e83d406bdc91e4c" tabindex="0">Amlodipina 2.5 mg 1 compressa/die</mark>
+- <mark class="auto" id="ev-rfec5e4c8a77efe6a" data-item="rfec5e4c8a77efe6a" tabindex="0">Humulin 70/30 (insulina isofano 70% + regolare 30%) s.c. secondo schema</mark>
+- <mark class="auto" id="ev-r5b1d4fd845e97e8d" data-item="r5b1d4fd845e97e8d" tabindex="0">Ventolin (salbutamolo) 0.09 mg/erogazione 2 puff al bisogno</mark>
+- <mark class="auto" id="ev-r8265ff070a9fff3c" data-item="r8265ff070a9fff3c" tabindex="0">Flovent (fluticasone propionato) 0.11 mg/erogazione 2 puff 2 volte/die</mark>
+- <mark class="auto" id="ev-r320a6f4b6cd313ba" data-item="r320a6f4b6cd313ba" tabindex="0">Ibuprofene 400 mg compresse al bisogno per dolori osteoarticolari</mark>
+
+Esame obiettivo: <mark class="auto" id="ev-rff4da874c9a46237" data-item="rff4da874c9a46237" tabindex="0">presenza di gengivite diffusa con lieve sanguinamento al sondaggio</mark>. Resto nella norma.
+
+Esami di laboratorio (04/05/2025):
+- <mark class="rev" id="ev-r9700f8c072db3e78" data-item="r9700f8c072db3e78" tabindex="0">Glicemia: 69.45 mg/dL</mark>
+- <mark class="auto" id="ev-r3f385a1556fd9b5c" data-item="r3f385a1556fd9b5c" tabindex="0">Azotemia: 17.88 mg/dL</mark>
+- <mark class="auto" id="ev-r50608e8937084efb" data-item="r50608e8937084efb" tabindex="0">Creatininemia: 1.41 mg/dL</mark>
+- <mark class="auto" id="ev-r87802210c7d9d0a4" data-item="r87802210c7d9d0a4" tabindex="0">Calcemia: 9.17 mg/dL</mark>
+- <mark class="auto" id="ev-r39a7306f5ef16360" data-item="r39a7306f5ef16360" tabindex="0">Sodiemia: 138.61 mmol/L</mark>
+- <mark class="auto" id="ev-rb0f09ed6457f6e1d" data-item="rb0f09ed6457f6e1d" tabindex="0">Potassiemia: 4.59 mmol/L</mark>
+
+Conclusioni: paziente in controllo periodico; si evidenzia gengivite meritevole di valutazione specialistica.
+
+Prescrizioni: richiesta di visita odontoiatrica per trattamento della gengivite.</div>
+    <div>
+      
+      <div class="dato" data-item="rbe09c716fef89d36" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Outpatient visit</b> <span class="tenue">· Encounter</span></div>
+        
+        <small>2025-05-04 · reliability 95% · sentence not found in the text</small>
+      </div>
+      
+      <div class="dato" data-item="rff4da874c9a46237" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Gengivite diffusa</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>2025-05-04 · reliability 85%</small>
+      </div>
+      
+      <div class="dato" data-item="r3cc766101ab36404" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Ipertensione arteriosa</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>reliability 97%</small>
+      </div>
+      
+      <div class="dato" data-item="rb733820a2542c393" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Diabete mellito tipo 2</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>reliability 97%</small>
+      </div>
+      
+      <div class="dato" data-item="r4dcd776d2b26c4c0" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Asma bronchiale</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>reliability 97%</small>
+      </div>
+      
+      <div class="dato rev" data-item="r9700f8c072db3e78" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Glicemia</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">69.45 mg/dL</div>
+        <small>2025-05-04 · reliability 84%</small>
+      </div>
+      
+      <div class="dato" data-item="r3f385a1556fd9b5c" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Azotemia</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">17.88 mg/dL</div>
+        <small>2025-05-04 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r50608e8937084efb" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Creatininemia</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">1.41 mg/dL</div>
+        <small>2025-05-04 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r87802210c7d9d0a4" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Calcemia</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">9.17 mg/dL</div>
+        <small>2025-05-04 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r39a7306f5ef16360" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Sodiemia</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">138.61 mmol/L</div>
+        <small>2025-05-04 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="rb0f09ed6457f6e1d" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Potassiemia</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">4.59 mmol/L</div>
+        <small>2025-05-04 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="rb622aee2c9217cab" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Lisinopril 10 mg</b> <span class="tenue">· Medication</span></div>
+        
+        <small>reliability 97%</small>
+      </div>
+      
+      <div class="dato" data-item="r1e83d406bdc91e4c" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Amlodipina 2.5 mg</b> <span class="tenue">· Medication</span></div>
+        
+        <small>reliability 97%</small>
+      </div>
+      
+      <div class="dato" data-item="rfec5e4c8a77efe6a" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Humulin 70/30 (insulina isofano 70% + regolare 30%)</b> <span class="tenue">· Medication</span></div>
+        
+        <small>reliability 97%</small>
+      </div>
+      
+      <div class="dato" data-item="r5b1d4fd845e97e8d" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Ventolin (salbutamolo) 0.09 mg/erogazione</b> <span class="tenue">· Medication</span></div>
+        
+        <small>reliability 86%</small>
+      </div>
+      
+      <div class="dato" data-item="r8265ff070a9fff3c" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Flovent (fluticasone propionato) 0.11 mg/erogazione</b> <span class="tenue">· Medication</span></div>
+        
+        <small>reliability 96%</small>
+      </div>
+      
+      <div class="dato" data-item="r320a6f4b6cd313ba" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Ibuprofene 400 mg</b> <span class="tenue">· Medication</span></div>
+        
+        <small>reliability 96%</small>
+      </div>
+      
+    </div>
+  </div>
+</div></section>
+  <section class="layer xray" inert aria-hidden="true"><div class="pagina">
+  <h1>GET /referti/outpatient-658af02395</h1>
+  <div class="fasi"><span class="fase">pseudonymised text</span>→<span class="fase">anthropic/claude-haiku-5.5</span>→<span class="fase">FHIR R4 $validate</span>→<span class="fase">score ≥ threshold ?</span></div>
+  <div class="due-col" style="margin-top:14px">
+    <div class="pannello"><pre>Referto di visita ambulatoriale
+
+Data: 04/05/2025
+Paziente: [PERSON_1], sesso F, età 56 anni
+Nato il: [DATE_OF_BIRTH_1]
+Codice Fiscale: [IT_FISCAL_CODE_1]
+Indirizzo: [ADDRESS_1]
+Telefono: [PHONE_NUMBER_1]
+Medico curante: Dott.ssa [PERSON_2]
+
+Anamnesi familiare: padre affetto da cardiopatia ischemica, madre con osteoporosi.
+Anamnesi patologica remota: <mark class="auto" id="ev-r3cc766101ab36404" data-item="r3cc766101ab36404" tabindex="0">ipertensione arteriosa, diabete mellito tipo 2, asma bronchiale</mark>.
+
+Terapia farmacologica in atto:
+- <mark class="auto" id="ev-rb622aee2c9217cab" data-item="rb622aee2c9217cab" tabindex="0">Lisinopril 10 mg 1 compressa/die</mark>
+- <mark class="auto" id="ev-r1e83d406bdc91e4c" data-item="r1e83d406bdc91e4c" tabindex="0">Amlodipina 2.5 mg 1 compressa/die</mark>
+- <mark class="auto" id="ev-rfec5e4c8a77efe6a" data-item="rfec5e4c8a77efe6a" tabindex="0">Humulin 70/30 (insulina isofano 70% + regolare 30%) s.c. secondo schema</mark>
+- <mark class="auto" id="ev-r5b1d4fd845e97e8d" data-item="r5b1d4fd845e97e8d" tabindex="0">Ventolin (salbutamolo) 0.09 mg/erogazione 2 puff al bisogno</mark>
+- <mark class="auto" id="ev-r8265ff070a9fff3c" data-item="r8265ff070a9fff3c" tabindex="0">Flovent (fluticasone propionato) 0.11 mg/erogazione 2 puff 2 volte/die</mark>
+- <mark class="auto" id="ev-r320a6f4b6cd313ba" data-item="r320a6f4b6cd313ba" tabindex="0">Ibuprofene 400 mg compresse al bisogno per dolori osteoarticolari</mark>
+
+Esame obiettivo: <mark class="auto" id="ev-rff4da874c9a46237" data-item="rff4da874c9a46237" tabindex="0">presenza di gengivite diffusa con lieve sanguinamento al sondaggio</mark>. Resto nella norma.
+
+Esami di laboratorio (04/05/2025):
+- <mark class="rev" id="ev-r9700f8c072db3e78" data-item="r9700f8c072db3e78" tabindex="0">Glicemia: 69.45 mg/dL</mark>
+- <mark class="auto" id="ev-r3f385a1556fd9b5c" data-item="r3f385a1556fd9b5c" tabindex="0">Azotemia: 17.88 mg/dL</mark>
+- <mark class="auto" id="ev-r50608e8937084efb" data-item="r50608e8937084efb" tabindex="0">Creatininemia: 1.41 mg/dL</mark>
+- <mark class="auto" id="ev-r87802210c7d9d0a4" data-item="r87802210c7d9d0a4" tabindex="0">Calcemia: 9.17 mg/dL</mark>
+- <mark class="auto" id="ev-r39a7306f5ef16360" data-item="r39a7306f5ef16360" tabindex="0">Sodiemia: 138.61 mmol/L</mark>
+- <mark class="auto" id="ev-rb0f09ed6457f6e1d" data-item="rb0f09ed6457f6e1d" tabindex="0">Potassiemia: 4.59 mmol/L</mark>
+
+Conclusioni: paziente in controllo periodico; si evidenzia gengivite meritevole di valutazione specialistica.
+
+Prescrizioni: richiesta di visita odontoiatrica per trattamento della gengivite.</pre></div>
+    <div>
+    
+      <div class="pannello dato-x" data-item="rbe09c716fef89d36" style="margin-bottom:10px">
+        <div><span class="k">Encounter</span> <span class="tenue">rbe09c716fef89d36</span></div>
+        <div>code <span class="s">371883000</span> Outpatient procedure (procedure) <span class="tenue">(fuzzy 0.72)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>0.80</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.72</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Encounter/rbe09c716fef89d36</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;class&#34;: {
+    &#34;code&#34;: &#34;AMB&#34;,
+    &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/v3-ActCode&#34;
+  },
+  &#34;id&#34;: &#34;rbe09c716fef89d36&#34;,
+  &#34;period&#34;: {
+    &#34;end&#34;: &#34;2025-05-04&#34;,
+    &#34;start&#34;: &#34;2025-05-04&#34;
+  },
+  &#34;resourceType&#34;: &#34;Encounter&#34;,
+  &#34;status&#34;: &#34;finished&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  },
+  &#34;type&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;371883000&#34;,
+          &#34;display&#34;: &#34;Outpatient procedure (procedure)&#34;,
+          &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+        }
+      ],
+      &#34;text&#34;: &#34;Outpatient encounter&#34;
+    }
+  ]
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rff4da874c9a46237" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">rff4da874c9a46237</span></div>
+        <div>code <span class="s">66383009</span> Gingivitis (disorder) <span class="tenue">(fuzzy 0.71)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.71</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:85%"></i></div>
+        <div>score <span class="n">0.85</span> → <span class="s">PUT /fhir/Condition/rff4da874c9a46237</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;66383009&#34;,
+        &#34;display&#34;: &#34;Gingivitis (disorder)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Generalized gingivitis&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;id&#34;: &#34;rff4da874c9a46237&#34;,
+  &#34;onsetDateTime&#34;: &#34;2025-05-04&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r3cc766101ab36404" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">r3cc766101ab36404</span></div>
+        <div>code <span class="s">59621000</span> Essential hypertension (disorder) <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:97%"></i></div>
+        <div>score <span class="n">0.97</span> → <span class="s">PUT /fhir/Condition/r3cc766101ab36404</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;59621000&#34;,
+        &#34;display&#34;: &#34;Essential hypertension (disorder)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Essential hypertension&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;id&#34;: &#34;r3cc766101ab36404&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rb733820a2542c393" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">rb733820a2542c393</span></div>
+        <div>code <span class="s">44054006</span> Diabetes mellitus type 2 (disorder) <span class="tenue">(fuzzy 0.97)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.97</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:97%"></i></div>
+        <div>score <span class="n">0.97</span> → <span class="s">PUT /fhir/Condition/rb733820a2542c393</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;44054006&#34;,
+        &#34;display&#34;: &#34;Diabetes mellitus type 2 (disorder)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Type 2 diabetes mellitus&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;id&#34;: &#34;rb733820a2542c393&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r4dcd776d2b26c4c0" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">r4dcd776d2b26c4c0</span></div>
+        <div>code <span class="s">195967001</span> Asthma (disorder) <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:97%"></i></div>
+        <div>score <span class="n">0.97</span> → <span class="s">PUT /fhir/Condition/r4dcd776d2b26c4c0</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;195967001&#34;,
+        &#34;display&#34;: &#34;Asthma (disorder)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Asthma&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;id&#34;: &#34;r4dcd776d2b26c4c0&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r9700f8c072db3e78" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r9700f8c072db3e78</span></div>
+        <div>code <span class="s">2339-0</span> Glucose [Mass/volume] in Blood <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>0.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:84%"></i></div>
+        <div>score <span class="n">0.84</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;2339-0&#34;,
+        &#34;display&#34;: &#34;Glucose [Mass/volume] in Blood&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Glucose [Mass/volume] in Blood&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2025-05-04&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;id&#34;: &#34;r9700f8c072db3e78&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mg/dL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mg/dL&#34;,
+    &#34;value&#34;: 69.45
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r3f385a1556fd9b5c" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r3f385a1556fd9b5c</span></div>
+        <div>code <span class="s">3094-0</span> Urea nitrogen [Mass/volume] in Serum or Plasma <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r3f385a1556fd9b5c</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;3094-0&#34;,
+        &#34;display&#34;: &#34;Urea nitrogen [Mass/volume] in Serum or Plasma&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Urea nitrogen [Mass/volume] in Blood&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2025-05-04&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;id&#34;: &#34;r3f385a1556fd9b5c&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mg/dL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mg/dL&#34;,
+    &#34;value&#34;: 17.88
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r50608e8937084efb" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r50608e8937084efb</span></div>
+        <div>code <span class="s">2160-0</span> Creatinine [Mass/volume] in Serum or Plasma <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r50608e8937084efb</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;2160-0&#34;,
+        &#34;display&#34;: &#34;Creatinine [Mass/volume] in Serum or Plasma&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Creatinine [Mass/volume] in Blood&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2025-05-04&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;id&#34;: &#34;r50608e8937084efb&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mg/dL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mg/dL&#34;,
+    &#34;value&#34;: 1.41
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r87802210c7d9d0a4" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r87802210c7d9d0a4</span></div>
+        <div>code <span class="s">17861-6</span> Calcium [Mass/volume] in Serum or Plasma <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r87802210c7d9d0a4</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;17861-6&#34;,
+        &#34;display&#34;: &#34;Calcium [Mass/volume] in Serum or Plasma&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Calcium [Mass/volume] in Serum or Plasma&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2025-05-04&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;id&#34;: &#34;r87802210c7d9d0a4&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mg/dL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mg/dL&#34;,
+    &#34;value&#34;: 9.17
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r39a7306f5ef16360" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r39a7306f5ef16360</span></div>
+        <div>code <span class="s">2951-2</span> Sodium [Moles/volume] in Serum or Plasma <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r39a7306f5ef16360</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;2951-2&#34;,
+        &#34;display&#34;: &#34;Sodium [Moles/volume] in Serum or Plasma&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Sodium [Moles/volume] in Serum or Plasma&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2025-05-04&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;id&#34;: &#34;r39a7306f5ef16360&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mmol/L&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mmol/L&#34;,
+    &#34;value&#34;: 138.61
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rb0f09ed6457f6e1d" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">rb0f09ed6457f6e1d</span></div>
+        <div>code <span class="s">2823-3</span> Potassium [Moles/volume] in Serum or Plasma <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/rb0f09ed6457f6e1d</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;2823-3&#34;,
+        &#34;display&#34;: &#34;Potassium [Moles/volume] in Serum or Plasma&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Potassium [Moles/volume] in Serum or Plasma&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2025-05-04&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;id&#34;: &#34;rb0f09ed6457f6e1d&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mmol/L&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mmol/L&#34;,
+    &#34;value&#34;: 4.59
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rb622aee2c9217cab" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">rb622aee2c9217cab</span></div>
+        <div>code <span class="s">314076</span> lisinopril 10 MG Oral Tablet <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:97%"></i></div>
+        <div>score <span class="n">0.97</span> → <span class="s">PUT /fhir/MedicationStatement/rb622aee2c9217cab</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;1 compressa/die&#34;
+    }
+  ],
+  &#34;id&#34;: &#34;rb622aee2c9217cab&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;314076&#34;,
+        &#34;display&#34;: &#34;lisinopril 10 MG Oral Tablet&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Lisinopril 10 MG Oral Tablet&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r1e83d406bdc91e4c" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">r1e83d406bdc91e4c</span></div>
+        <div>code <span class="s">308136</span> amLODIPine 2.5 MG Oral Tablet <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:97%"></i></div>
+        <div>score <span class="n">0.97</span> → <span class="s">PUT /fhir/MedicationStatement/r1e83d406bdc91e4c</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;1 compressa/die&#34;
+    }
+  ],
+  &#34;id&#34;: &#34;r1e83d406bdc91e4c&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;308136&#34;,
+        &#34;display&#34;: &#34;amLODIPine 2.5 MG Oral Tablet&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Amlodipine 2.5 MG Oral Tablet&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rfec5e4c8a77efe6a" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">rfec5e4c8a77efe6a</span></div>
+        <div>code <span class="s">106892</span> insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin] <span class="tenue">(fuzzy 0.93)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.93</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:97%"></i></div>
+        <div>score <span class="n">0.97</span> → <span class="s">PUT /fhir/MedicationStatement/rfec5e4c8a77efe6a</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;s.c. secondo schema&#34;
+    }
+  ],
+  &#34;id&#34;: &#34;rfec5e4c8a77efe6a&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;106892&#34;,
+        &#34;display&#34;: &#34;insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Insulin Isophane Human 70% and Insulin Regular Human 30% Injectable Suspension&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r5b1d4fd845e97e8d" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">r5b1d4fd845e97e8d</span></div>
+        <div>code <span class="s">745752</span> NDA021457 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [ProAir] <span class="tenue">(fuzzy 0.52)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.52</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>0.50</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:86%"></i></div>
+        <div>score <span class="n">0.86</span> → <span class="s">PUT /fhir/MedicationStatement/r5b1d4fd845e97e8d</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;2 puff al bisogno&#34;
+    }
+  ],
+  &#34;id&#34;: &#34;r5b1d4fd845e97e8d&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;745752&#34;,
+        &#34;display&#34;: &#34;NDA021457 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [ProAir]&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Salbutamol 0.09 MG/ACTUAT Metered Dose Inhaler&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r8265ff070a9fff3c" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">r8265ff070a9fff3c</span></div>
+        <div>code <span class="s">896001</span> 120 ACTUAT fluticasone propionate 0.11 MG/ACTUAT Metered Dose Inhaler [Flovent] <span class="tenue">(fuzzy 0.85)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.85</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:96%"></i></div>
+        <div>score <span class="n">0.96</span> → <span class="s">PUT /fhir/MedicationStatement/r8265ff070a9fff3c</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;2 puff 2 volte/die&#34;
+    }
+  ],
+  &#34;id&#34;: &#34;r8265ff070a9fff3c&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;896001&#34;,
+        &#34;display&#34;: &#34;120 ACTUAT fluticasone propionate 0.11 MG/ACTUAT Metered Dose Inhaler [Flovent]&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Fluticasone propionate 0.11 MG/ACTUAT Metered Dose Inhaler&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r320a6f4b6cd313ba" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">r320a6f4b6cd313ba</span></div>
+        <div>code <span class="s">206905</span> Ibuprofen 400 MG Oral Tablet [Ibu] <span class="tenue">(fuzzy 0.86)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.86</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:96%"></i></div>
+        <div>score <span class="n">0.96</span> → <span class="s">PUT /fhir/MedicationStatement/r320a6f4b6cd313ba</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rbe09c716fef89d36&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;al bisogno&#34;
+    }
+  ],
+  &#34;id&#34;: &#34;r320a6f4b6cd313ba&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;206905&#34;,
+        &#34;display&#34;: &#34;Ibuprofen 400 MG Oral Tablet [Ibu]&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Ibuprofen 400 MG Oral Tablet&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-c9358a257742&#34;
+  }
+}</pre></details>
+      </div>
+    
+    </div>
+  </div>
+  <div class="come-fatto"><b class="k">Come è fatto</b><br><span class="tenue">extraction</span> · <code>src/cn2f/extract/</code> · <span class="s">tests/test_extract.py</span><br><span class="tenue">signals + score</span> · <code>src/cn2f/score/</code> · <span class="s">tests/test_score_review.py</span><br><span class="tenue">this page</span> · <code>src/cn2f/web/site/</code> · <span class="s">tests/test_site.py</span><br></div>
+</div></section>
+  <div class="raggio" aria-hidden="true"></div>
+</main>
+
+</body>
+</html>

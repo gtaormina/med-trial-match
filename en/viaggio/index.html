@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The journey of a note · cn2f</title>
+<link rel="stylesheet" href="/med-trial-match/static/css/cn2f.css">
+
+<script src="/med-trial-match/static/vendor/htmx.min.js" defer></script>
+<script src="/med-trial-match/static/js/facce.js" defer></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="The journey of a note · cn2f">
+<meta property="og:description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:image" content="https://gtaormina.github.io/med-trial-match/med-trial-match/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:url" content="https://gtaormina.github.io/med-trial-match/med-trial-match/en/viaggio/">
+</head>
+<body class="" data-face="medico">
+<header class="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="/med-trial-match/en/">
+      <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+      <span class="marchio-testo"><span class="marchio-skin">From clinical notes to data</span><span class="marchio-xray">clinical-notes-to-fhir</span></span>
+    </a>
+    
+    <nav class="menu" aria-label="Sections">
+      <a href="/med-trial-match/en/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span>Story</span></a>
+      <a href="/med-trial-match/en/prova/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><span>Try it</span></a>
+      <a href="/med-trial-match/en/professionisti/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg><span>Professionals</span></a>
+    </nav>
+    <a class="lingua" href="/med-trial-match/viaggio/" hreflang="it" title="Leggi in italiano">IT</a>
+  </div>
+  <p class="avviso"><span>invented data · not a medical device</span></p>
+</header>
+
+<div class="vista">
+  <form class="interruttore">
+    <button id="switch-faccia" type="submit" name="faccia" value="tecnico"
+            aria-pressed="false" aria-label="Switch between the clinician view and the technical view">
+      <span class="opz opz-medico">Clinician</span><span class="opz opz-tecnico">Technical</span>
+    </button>
+  </form>
+</div>
+<main class="facce" data-face="medico">
+  <section class="layer skin"><div class="pagina viaggio">
+  <div class="apertura">
+    <h1>The journey of a note</h1>
+    <p>Follow a discharge letter of an <b>invented patient</b> from free text to structured clinical data, in five steps. The system removes the personal data, the AI extracts the clinical data quoting the sentence it took each one from, and the uncertain ones go to a clinician.</p>
+    <p class="tenue">Every page has two faces: press <b>Technical</b> at the top to see how it is built. The notes are in Italian, as a hospital in Italy would write them.</p>
+    <p class="tenue">New: <a href="/med-trial-match/en/studi/">pre-screening patients for clinical trials</a>, with a real run to watch step by step.</p>
+  </div>
+
+  <article class="passo">
+    <div class="numero">1</div>
+    <div class="corpo">
+      <h2>The original note</h2>
+      <p>Discharge letter of 2016-07-06. In red, the personal data: they are <b>fictitious</b>, generated for the test.</p>
+      <div class="lente">
+        <div class="foglio lente-skin">Lettera di dimissione ospedaliera
+
+Paziente: <mark class="pii" title="nome">Martino Saragat</mark>, nato il <mark class="pii" title="data di nascita">17-12-1942</mark>, CF <mark class="pii" title="codice fiscale">SRGMTN42T17D969V</mark>, residente in <mark class="pii" title="indirizzo">Strada Barbarigo, 30 Piano 5, 32030 Rocca D&#39;Arsie&#39; (BL)</mark>, telefono <mark class="pii" title="telefono">0183720264</mark>.
+Medico curante: Dott. <mark class="pii" title="nome">Ottavio Sandi</mark>.
+
+Data ricovero: 06/07/2016. Data dimissione: 06/07/2016.
+
+Evento principale: il paziente è stato ricoverato per eseguire chemioterapia e radioterapia combinata (procedura combinata). Durante la degenza sono state somministrate le seguenti terapie: Cisplatino 50 mg iniezione ed Etoposide 100 mg iniezione (Etopophos). La tolleranza è stata buona.
+
+Anamnesi familiare: il padre del paziente è deceduto per infarto miocardico; la madre è affetta da diabete mellito tipo 2.
+
+Indicazioni alla dimissione: proseguire il follow-up ambulatoriale presso il reparto di oncologia.</div>
+        <div class="lente-xray" aria-hidden="true"><pre>Lettera di dimissione ospedaliera
+
+Paziente: <span class="segnaposto">[PERSON_1]</span>, nato il <span class="segnaposto">[DATE_OF_BIRTH_1]</span>, CF <span class="segnaposto">[IT_FISCAL_CODE_1]</span>, residente in <span class="segnaposto">[ADDRESS_1]</span>, telefono <span class="segnaposto">[PHONE_NUMBER_1]</span>.
+Medico curante: Dott. <span class="segnaposto">[PERSON_2]</span>.
+
+Data ricovero: 06/07/2016. Data dimissione: 06/07/2016.
+
+Evento principale: il paziente è stato ricoverato per eseguire chemioterapia e radioterapia combinata (procedura combinata). Durante la degenza sono state somministrate le seguenti terapie: Cisplatino 50 mg iniezione ed Etoposide 100 mg iniezione (Etopophos). La tolleranza è stata buona.
+
+Anamnesi familiare: il padre del paziente è deceduto per infarto miocardico; la madre è affetta da diabete mellito tipo 2.
+
+Indicazioni alla dimissione: proseguire il follow-up ambulatoriale presso il reparto di oncologia.</pre></div>
+        <span class="lente-suggerimento">hover: X-ray lens</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="passo">
+    <div class="numero">2</div>
+    <div class="corpo">
+      <h2>The personal data disappear</h2>
+      <p>Before any call to the AI, 6 personal data (name, date of birth, fiscal code, address, phone) are replaced by placeholders. The mapping stays on the server and is never sent.</p>
+      <div class="foglio">Lettera di dimissione ospedaliera
+
+Paziente: <span class="segnaposto">[PERSON_1]</span>, nato il <span class="segnaposto">[DATE_OF_BIRTH_1]</span>, CF <span class="segnaposto">[IT_FISCAL_CODE_1]</span>, residente in <span class="segnaposto">[ADDRESS_1]</span>, telefono <span class="segnaposto">[PHONE_NUMBER_1]</span>.
+Medico curante: Dott. <span class="segnaposto">[PERSON_2]</span>.
+
+Data ricovero: 06/07/2016. Data dimissione: 06/07/2016.
+
+Evento principale: il paziente è stato ricoverato per eseguire chemioterapia e radioterapia combinata (procedura combinata). Durante la degenza sono state somministrate le seguenti terapie: Cisplatino 50 mg iniezione ed Etoposide 100 mg iniezione (Etopophos). La tolleranza è stata buona.
+
+Anamnesi familiare: il padre del paziente è deceduto per infarto miocardico; la madre è affetta da diabete mellito tipo 2.
+
+Indicazioni alla dimissione: proseguire il follow-up ambulatoriale presso il reparto di oncologia.</div>
+    </div>
+  </article>
+
+  <article class="passo">
+    <div class="numero">3</div>
+    <div class="corpo">
+      <h2>The AI extracts the data</h2>
+      <p>For each datum it reports the exact sentence it took it from: hover over a datum and the sentence lights up.</p>
+      <div class="due-col">
+        <div class="foglio">Lettera di dimissione ospedaliera
+
+Paziente: [PERSON_1], nato il [DATE_OF_BIRTH_1], CF [IT_FISCAL_CODE_1], residente in [ADDRESS_1], telefono [PHONE_NUMBER_1].
+Medico curante: Dott. [PERSON_2].
+
+<mark class="rev" id="ev-r765cf1755506acfa" data-item="r765cf1755506acfa" tabindex="0">Data ricovero: 06/07/2016. Data dimissione: 06/07/2016.</mark>
+
+Evento principale: <mark class="rev" id="ev-rd57997786474d799" data-item="rd57997786474d799" tabindex="0">il paziente è stato ricoverato per eseguire chemioterapia e radioterapia combinata (procedura combinata)</mark>. Durante la degenza sono state somministrate le seguenti terapie: <mark class="auto" id="ev-r3b4bd852f0370e6a" data-item="r3b4bd852f0370e6a" tabindex="0">Cisplatino 50 mg iniezione ed Etoposide 100 mg iniezione (Etopophos)</mark>. La tolleranza è stata buona.
+
+Anamnesi familiare: il padre del paziente è deceduto per infarto miocardico; la madre è affetta da diabete mellito tipo 2.
+
+Indicazioni alla dimissione: proseguire il follow-up ambulatoriale presso il reparto di oncologia.</div>
+        <div>
+          <div class="dato rev" data-item="r765cf1755506acfa" tabindex="0">
+            <div><b>Hospital stay</b> <span class="tenue">· Encounter</span></div>
+            
+          </div>
+          <div class="dato" data-item="r3b4bd852f0370e6a" tabindex="0">
+            <div><b>Cisplatino 50 mg iniezione</b> <span class="tenue">· Medication</span></div>
+            
+          </div>
+          <div class="dato" data-item="r8ffb5ad909dac625" tabindex="0">
+            <div><b>Etoposide 100 mg iniezione (Etopophos)</b> <span class="tenue">· Medication</span></div>
+            
+          </div>
+          <div class="dato rev" data-item="rd57997786474d799" tabindex="0">
+            <div><b>Chemioterapia e radioterapia combinata</b> <span class="tenue">· Procedure</span></div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="passo">
+    <div class="numero">4</div>
+    <div class="corpo">
+      <h2>The system decides what to trust</h2>
+      <p>Each datum gets a reliability score from checkable signals: the sentence is really there, the code exists, several readings agree. Above the threshold the datum is written on its own; below, it goes to a clinician.</p>
+      <div class="due-col">
+        <div class="scheda"><h3><span class="pill ok">Written on their own</span> 2</h3>
+          <div>Cisplatino 50 mg iniezione <span class="tenue">(91%)</span></div><div>Etoposide 100 mg iniezione (Etopophos) <span class="tenue">(88%)</span></div></div>
+        <div class="scheda"><h3><span class="pill wait">To the clinician</span> 2</h3>
+          <div>Hospital stay <span class="tenue">(80%)</span></div><div>Chemioterapia e radioterapia combinata <span class="tenue">(82%)</span></div>
+          <p><a href="/med-trial-match/en/revisione/doc/discharge-1ff9f6a107/">Open the review of this note →</a></p></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="passo">
+    <div class="numero">5</div>
+    <div class="corpo">
+      <h2>The patient record and the assistant</h2>
+      <p>The written data end up in the <a href="/med-trial-match/en/pazienti/pt-cf784e8917ae/">patient's record</a>, in a standard format (HL7 FHIR) other programs can read. An assistant can query them and answer only with data already written.</p>
+      
+      <div class="chat">
+        <div class="domanda">Riassumimi questo paziente.</div>
+        <div class="risposta">Riepilogo del paziente sintetico pt-cf784e8917ae: è registrato 1 incontro ambulatoriale (2016-06-02) con una procedura odontoiatrica, associato alla diagnosi di carie dentale primaria (condizione con insorgenza 2016-06-02). Sono presenti 2 farmaci antineoplastici registrati il 2016-07-06: cisplatino 50 mg e etoposide 100 mg (Etopophos), oltre a una consulenza odontoiatrica del 2016-06-02. Gli ultimi esami di laboratorio del 2016-05-19 riportano, tra gli altri valori, glucosio 69,86 mg/dL, creatinina 3,12 mg/dL, GFR 10,19 mL/min/1.73 m² ed elettroliti nei limiti indicati nello strumento. Sono disponibili in totale 15 osservazioni. I dati non vengono interpretati e non costituiscono diagnosi o indicazioni cliniche. Ricordo che tutti i dati sono sintetici, generati automaticamente e non destinati all&#39;uso clinico.</div>
+        <p class="tenue">answer recorded from anthropic/claude-haiku-5.5 on 2026-10-27, once, in Italian: the site never calls the AI while you look at it.</p>
+      </div>
+      
+    </div>
+  </article>
+</div></section>
+  <section class="layer xray" inert aria-hidden="true"><div class="pagina">
+  <h1>pipeline · discharge-1ff9f6a107</h1>
+  <div class="fasi">
+    <span class="fase">Presidio + spaCy it</span>→<span class="fase">anthropic/claude-haiku-5.5</span>→<span class="fase">FHIR R4 $validate</span>→<span class="fase">score ≥ 0.84</span>→<span class="fase">HAPI PUT | review queue</span>→<span class="fase">MCP patient_summary</span>
+  </div>
+  <h2>1–2 · pseudonymisation</h2>
+  <div class="pannello"><table><tr><th>label</th><th>start</th><th>end</th></tr>
+    <tr><td class="k">PERSON</td><td>45</td><td>60</td></tr><tr><td class="k">DATE_OF_BIRTH</td><td>70</td><td>80</td></tr><tr><td class="k">IT_FISCAL_CODE</td><td>85</td><td>101</td></tr><tr><td class="k">ADDRESS</td><td>116</td><td>171</td></tr><tr><td class="k">PHONE_NUMBER</td><td>182</td><td>192</td></tr><tr><td class="k">PERSON</td><td>216</td><td>229</td></tr></table>
+    <p class="tenue">vault: local SQLite (mode 600), never sent · outbound guard blocks any vault value or valid fiscal code</p></div>
+  <h2>3 · extraction</h2>
+  <div class="pannello"><pre>model        <span class="s">anthropic/claude-haiku-5.5</span>
+tokens in    <span class="n">2509</span>
+tokens out   <span class="n">1052</span>
+latency s    <span class="n">5.778</span>
+cost USD     <span class="n">0.0007769</span>
+resources    <span class="n">4</span>  ($validate errors: 0)</pre></div>
+  <h2>4 · routing</h2>
+  <div class="pannello"><pre>threshold 0.84 · auto 2 · review 2
+Encounter            0.80  <span class="n">review queue</span>
+MedicationStatement  0.91  <span class="s">PUT /fhir/MedicationStatement/r3b4bd852f0370e6a</span>
+MedicationStatement  0.88  <span class="s">PUT /fhir/MedicationStatement/r8ffb5ad909dac625</span>
+Procedure            0.82  <span class="n">review queue</span>
+</pre></div>
+  
+  <h2>5 · MCP + recorded answer</h2>
+  <div class="due-col">
+    <div class="pannello"><span class="c">// JSON-RPC request (streamable HTTP, bearer token)</span><pre>{
+  &#34;id&#34;: 1,
+  &#34;jsonrpc&#34;: &#34;2.0&#34;,
+  &#34;method&#34;: &#34;tools/call&#34;,
+  &#34;params&#34;: {
+    &#34;arguments&#34;: {
+      &#34;patient_id&#34;: &#34;pt-cf784e8917ae&#34;
+    },
+    &#34;name&#34;: &#34;patient_summary&#34;
+  }
+}</pre></div>
+    <div class="pannello"><span class="c">// tool result (read-only GET on HAPI)</span><pre>{
+  &#34;conditions&#34;: [
+    {
+      &#34;code&#34;: &#34;109570002&#34;,
+      &#34;display&#34;: &#34;Primary dental caries (disorder)&#34;,
+      &#34;encounter&#34;: &#34;Encounter/r58266aec5dabc1c3&#34;,
+      &#34;id&#34;: &#34;r08f1106001ce1b5a&#34;,
+      &#34;onset&#34;: &#34;2016-06-02&#34;,
+      &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+    }
+  ],
+  &#34;counts&#34;: {
+    &#34;conditions&#34;: 1,
+    &#34;encounters&#34;: 1,
+    &#34;medications&#34;: 2,
+    &#34;observations&#34;: 15,
+    &#34;procedures&#34;: 1
+  },
+  &#34;encounters&#34;: [
+    {
+      &#34;class&#34;: &#34;AMB&#34;,
+      &#34;code&#34;: &#34;371883000&#34;,
+      &#34;display&#34;: &#34;Outpatient procedure (procedure)&#34;,
+      &#34;id&#34;: &#34;r58266aec5dabc1c3&#34;,
+      &#34;start&#34;: &#34;2016-06-02&#34;,
+      &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+    }
+  ],
+  &#34;latest_observations&#34;: [
+    {
+      &#34;code&#34;: &#34;2345-7&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Glucose [Mass/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;r0a3febc68f5caf67&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;mg/dL&#34;,
+      &#34;value&#34;: 69.86
+    },
+    {
+      &#34;code&#34;: &#34;3094-0&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Urea nitrogen [Mass/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;r6a3c1200a60b5bc0&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;mg/dL&#34;,
+      &#34;value&#34;: 10.53
+    },
+    {
+      &#34;code&#34;: &#34;2160-0&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Creatinine [Mass/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;r4ce96215dcb701ab&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;mg/dL&#34;,
+      &#34;value&#34;: 3.12
+    },
+    {
+      &#34;code&#34;: &#34;17861-6&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Calcium [Mass/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;rb8b710783c92ab23&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;mg/dL&#34;,
+      &#34;value&#34;: 9.96
+    },
+    {
+      &#34;code&#34;: &#34;2951-2&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Sodium [Moles/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;r35b842c157ba29d6&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;mmol/L&#34;,
+      &#34;value&#34;: 136.31
+    },
+    {
+      &#34;code&#34;: &#34;2823-3&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Potassium [Moles/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;r009e8ef9577b4f1b&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;mmol/L&#34;,
+      &#34;value&#34;: 4.39
+    },
+    {
+      &#34;code&#34;: &#34;2075-0&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Chloride [Moles/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;r434c272e21e60b4c&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;mmol/L&#34;,
+      &#34;value&#34;: 102.27
+    },
+    {
+      &#34;code&#34;: &#34;2028-9&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Carbon dioxide, total [Moles/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;r66890ad1594431ff&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;mmol/L&#34;,
+      &#34;value&#34;: 22.91
+    },
+    {
+      &#34;code&#34;: &#34;33914-3&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Glomerular filtration rate [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)/1.73 sq M&#34;,
+      &#34;id&#34;: &#34;r5836cc26c2192eea&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;mL/min/{1.73_m2}&#34;,
+      &#34;value&#34;: 10.19
+    },
+    {
+      &#34;code&#34;: &#34;2885-2&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Protein [Mass/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;r3c0b566fcb13e04d&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;g/dL&#34;,
+      &#34;value&#34;: 6.58
+    },
+    {
+      &#34;code&#34;: &#34;1751-7&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Albumin [Mass/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;rcb9edd78a4043045&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;g/dL&#34;,
+      &#34;value&#34;: 4.71
+    },
+    {
+      &#34;code&#34;: &#34;10834-0&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Globulin [Mass/volume] in Serum by calculation&#34;,
+      &#34;id&#34;: &#34;r7a28e33d9d0dfc52&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;g/dL&#34;,
+      &#34;value&#34;: 2.6
+    },
+    {
+      &#34;code&#34;: &#34;1975-2&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Bilirubin.total [Mass/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;r924630f864f62bf4&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;mg/dL&#34;,
+      &#34;value&#34;: 0.88
+    },
+    {
+      &#34;code&#34;: &#34;6768-6&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;r9677fc3f90c55a24&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;U/L&#34;,
+      &#34;value&#34;: 29.62
+    },
+    {
+      &#34;code&#34;: &#34;1742-6&#34;,
+      &#34;date&#34;: &#34;2016-05-19&#34;,
+      &#34;display&#34;: &#34;Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma&#34;,
+      &#34;id&#34;: &#34;r4175a2a3c4359966&#34;,
+      &#34;system&#34;: &#34;http://loinc.org&#34;,
+      &#34;unit&#34;: &#34;U/L&#34;,
+      &#34;value&#34;: 22.37
+    }
+  ],
+  &#34;medications&#34;: [
+    {
+      &#34;code&#34;: &#34;1736854&#34;,
+      &#34;date&#34;: &#34;2016-07-06&#34;,
+      &#34;display&#34;: &#34;Cisplatin 50 MG Injection&#34;,
+      &#34;dosage&#34;: &#34;50 mg&#34;,
+      &#34;id&#34;: &#34;r3b4bd852f0370e6a&#34;,
+      &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+    },
+    {
+      &#34;code&#34;: &#34;226719&#34;,
+      &#34;date&#34;: &#34;2016-07-06&#34;,
+      &#34;display&#34;: &#34;etoposide 100 MG Injection [Etopophos]&#34;,
+      &#34;dosage&#34;: &#34;100 mg&#34;,
+      &#34;id&#34;: &#34;r8ffb5ad909dac625&#34;,
+      &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+    }
+  ],
+  &#34;note&#34;: &#34;Synthetic data, automatically extracted; not for clinical use.&#34;,
+  &#34;patient_id&#34;: &#34;pt-cf784e8917ae&#34;,
+  &#34;procedures&#34;: [
+    {
+      &#34;code&#34;: &#34;34043003&#34;,
+      &#34;date&#34;: &#34;2016-06-02&#34;,
+      &#34;display&#34;: &#34;Dental consultation and report (procedure)&#34;,
+      &#34;id&#34;: &#34;r00b6a745adb6952b&#34;,
+      &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+    }
+  ]
+}</pre></div>
+  </div>
+  <div class="pannello" style="margin-top:12px"><span class="c">// system prompt · anthropic/claude-haiku-5.5 · 2431/391 tok · 0.0004386 USD · recorded 2026-10-27</span><pre>Sei un assistente che riassume dati clinici di un paziente INVENTATO per una dimostrazione. Rispondi in italiano, in 4-6 righe, usando solo i dati forniti dallo strumento; non aggiungere diagnosi, consigli o interpretazioni. Concludi ricordando che i dati sono sintetici.</pre></div>
+  
+  <div class="come-fatto"><b class="k">Come è fatto</b><br><span class="tenue">pseudonymisation</span> · <code>src/cn2f/pseudo/</code> · <span class="s">tests/test_pseudo.py</span><br><span class="tenue">extraction + FHIR</span> · <code>src/cn2f/extract/, src/cn2f/fhir/</code> · <span class="s">tests/test_extract.py</span><br><span class="tenue">score + routing</span> · <code>src/cn2f/score/, src/cn2f/review/</code> · <span class="s">tests/test_score_review.py</span><br><span class="tenue">MCP</span> · <code>src/cn2f/mcp_server/</code> · <span class="s">tests/test_mcp.py</span><br><span class="tenue">demo + assistant</span> · <code>src/cn2f/demo/</code> · <span class="s">tests/test_demo.py</span><br></div>
+</div></section>
+  <div class="raggio" aria-hidden="true"></div>
+</main>
+
+</body>
+</html>

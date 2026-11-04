@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outpatient visit · cn2f</title>
+<link rel="stylesheet" href="/med-trial-match/static/css/cn2f.css">
+
+<script src="/med-trial-match/static/vendor/htmx.min.js" defer></script>
+<script src="/med-trial-match/static/js/facce.js" defer></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Outpatient visit · cn2f">
+<meta property="og:description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:image" content="https://gtaormina.github.io/med-trial-match/med-trial-match/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:url" content="https://gtaormina.github.io/med-trial-match/med-trial-match/en/referti/outpatient-d363c899e4/">
+</head>
+<body class="" data-face="medico">
+<header class="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="/med-trial-match/en/">
+      <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+      <span class="marchio-testo"><span class="marchio-skin">From clinical notes to data</span><span class="marchio-xray">clinical-notes-to-fhir</span></span>
+    </a>
+    
+    <nav class="menu" aria-label="Sections">
+      <a href="/med-trial-match/en/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span>Story</span></a>
+      <a href="/med-trial-match/en/prova/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><span>Try it</span></a>
+      <a href="/med-trial-match/en/professionisti/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg><span>Professionals</span></a>
+    </nav>
+    <a class="lingua" href="/med-trial-match/referti/outpatient-d363c899e4/" hreflang="it" title="Leggi in italiano">IT</a>
+  </div>
+  <p class="avviso"><span>invented data · not a medical device</span></p>
+</header>
+
+<div class="vista">
+  <form class="interruttore">
+    <button id="switch-faccia" type="submit" name="faccia" value="tecnico"
+            aria-pressed="false" aria-label="Switch between the clinician view and the technical view">
+      <span class="opz opz-medico">Clinician</span><span class="opz opz-tecnico">Technical</span>
+    </button>
+  </form>
+</div>
+<main class="facce" data-face="medico">
+  <section class="layer skin"><div class="pagina">
+  <p><a href="/med-trial-match/en/referti/">← Notes</a></p>
+  <h1>Outpatient visit · 1992-02-06</h1>
+  <p class="tenue">Patient <span class="mono">pt-871cdb510675</span>. The text is already pseudonymised: the personal data were replaced before any call to the AI. Hover over a datum to see the sentence it comes from.</p>
+  <div class="due-col">
+    <div class="foglio"><mark class="rev" id="ev-r65562581e9a26a23" data-item="r65562581e9a26a23" tabindex="0">REFERTO DI VISITA AMBULATORIALE</mark>
+
+Data: 06/02/1992
+Paziente: [PERSON_1]
+Data di nascita: [DATE_OF_BIRTH_1]
+Codice Fiscale: [IT_FISCAL_CODE_1]
+Indirizzo: [ADDRESS_1]
+Telefono: [PHONE_NUMBER_1]
+Medico curante: Dott.ssa [PERSON_2]
+
+Motivo della visita: Check-up odontoiatrico di routine.
+
+Esame obiettivo: All&#39;esame obiettivo del cavo orale si apprezza <mark class="rev" id="ev-r210da9484f0a504b" data-item="r210da9484f0a504b" tabindex="0">presenza diffusa di placca batterica e tartaro sia sovragengivale che sottogengivale</mark>. <mark class="rev" id="ev-r09394e55e01fb039" data-item="r09394e55e01fb039" tabindex="0">Si procede pertanto a seduta di igiene orale professionale.</mark>
+
+Procedure eseguite:
+- <mark class="auto" id="ev-rff6a2d68d5e46c40" data-item="rff6a2d68d5e46c40" tabindex="0">Consulto odontoiatrico e stesura del referto.</mark>
+- <mark class="rev" id="ev-r099f48ed084ed8c0" data-item="r099f48ed084ed8c0" tabindex="0">Rimozione della placca e del tartaro sovragengivale da tutti i denti mediante strumentazione manuale e ultrasonica.</mark>
+- <mark class="rev" id="ev-rd7194d9ac1734319" data-item="rd7194d9ac1734319" tabindex="0">Rimozione della placca e del tartaro sottogengivale da tutti i denti mediante strumentazione manuale.</mark>
+- <mark class="auto" id="ev-r295a3ea6311ba709" data-item="r295a3ea6311ba709" tabindex="0">Applicazione di gel al fluoruro di sodio (0,0272 mg/mg) per via orale.</mark>
+
+Terapia consigliata: <mark class="rev" id="ev-r7bcb5736f4bbdb93" data-item="r7bcb5736f4bbdb93" tabindex="0">Continuare l&#39;applicazione domiciliare di gel fluorurato per la prevenzione della carie.</mark>
+
+Conclusioni: Seduta di igiene orale completata. Buona tolleranza alle procedure. Si programma una radiografia panoramica delle arcate dentarie per una valutazione più approfondita, da eseguirsi in una prossima seduta. Si raccomanda controllo periodico tra 6 mesi.
+
+Firma: Dott.ssa [PERSON_2]</div>
+    <div>
+      
+      <div class="dato rev" data-item="r65562581e9a26a23" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Outpatient visit</b> <span class="tenue">· Encounter</span></div>
+        
+        <small>1992-02-06 · reliability 54%</small>
+      </div>
+      
+      <div class="dato rev" data-item="r210da9484f0a504b" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Placca batterica</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>1992-02-06 · reliability 54%</small>
+      </div>
+      
+      <div class="dato rev" data-item="r02bdb4d29ccdeb36" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Tartaro</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>1992-02-06 · reliability 54%</small>
+      </div>
+      
+      <div class="dato" data-item="r295a3ea6311ba709" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Gel al fluoruro di sodio</b> <span class="tenue">· Medication</span></div>
+        
+        <small>1992-02-06 · reliability 91%</small>
+      </div>
+      
+      <div class="dato rev" data-item="r7bcb5736f4bbdb93" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Gel fluorurato</b> <span class="tenue">· Medication</span></div>
+        
+        <small>1992-02-06 · reliability 24%</small>
+      </div>
+      
+      <div class="dato" data-item="rff6a2d68d5e46c40" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Consulto odontoiatrico</b> <span class="tenue">· Procedure</span></div>
+        
+        <small>1992-02-06 · reliability 88%</small>
+      </div>
+      
+      <div class="dato rev" data-item="r09394e55e01fb039" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Seduta di igiene orale professionale</b> <span class="tenue">· Procedure</span></div>
+        
+        <small>1992-02-06 · reliability 24%</small>
+      </div>
+      
+      <div class="dato rev" data-item="r099f48ed084ed8c0" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Rimozione della placca e del tartaro sovragengivale da tutti i denti mediante strumentazione manuale e ultrasonica</b> <span class="tenue">· Procedure</span></div>
+        
+        <small>1992-02-06 · reliability 54%</small>
+      </div>
+      
+      <div class="dato rev" data-item="rd7194d9ac1734319" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Rimozione della placca e del tartaro sottogengivale da tutti i denti mediante strumentazione manuale</b> <span class="tenue">· Procedure</span></div>
+        
+        <small>1992-02-06 · reliability 54%</small>
+      </div>
+      
+      <div class="dato rev" data-item="r86f57f1962ec22c8" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Applicazione di gel al fluoruro di sodio</b> <span class="tenue">· Procedure</span></div>
+        
+        <small>1992-02-06 · reliability 24%</small>
+      </div>
+      
+    </div>
+  </div>
+</div></section>
+  <section class="layer xray" inert aria-hidden="true"><div class="pagina">
+  <h1>GET /referti/outpatient-d363c899e4</h1>
+  <div class="fasi"><span class="fase">pseudonymised text</span>→<span class="fase">anthropic/claude-haiku-5.5</span>→<span class="fase">FHIR R4 $validate</span>→<span class="fase">score ≥ threshold ?</span></div>
+  <div class="due-col" style="margin-top:14px">
+    <div class="pannello"><pre><mark class="rev" id="ev-r65562581e9a26a23" data-item="r65562581e9a26a23" tabindex="0">REFERTO DI VISITA AMBULATORIALE</mark>
+
+Data: 06/02/1992
+Paziente: [PERSON_1]
+Data di nascita: [DATE_OF_BIRTH_1]
+Codice Fiscale: [IT_FISCAL_CODE_1]
+Indirizzo: [ADDRESS_1]
+Telefono: [PHONE_NUMBER_1]
+Medico curante: Dott.ssa [PERSON_2]
+
+Motivo della visita: Check-up odontoiatrico di routine.
+
+Esame obiettivo: All&#39;esame obiettivo del cavo orale si apprezza <mark class="rev" id="ev-r210da9484f0a504b" data-item="r210da9484f0a504b" tabindex="0">presenza diffusa di placca batterica e tartaro sia sovragengivale che sottogengivale</mark>. <mark class="rev" id="ev-r09394e55e01fb039" data-item="r09394e55e01fb039" tabindex="0">Si procede pertanto a seduta di igiene orale professionale.</mark>
+
+Procedure eseguite:
+- <mark class="auto" id="ev-rff6a2d68d5e46c40" data-item="rff6a2d68d5e46c40" tabindex="0">Consulto odontoiatrico e stesura del referto.</mark>
+- <mark class="rev" id="ev-r099f48ed084ed8c0" data-item="r099f48ed084ed8c0" tabindex="0">Rimozione della placca e del tartaro sovragengivale da tutti i denti mediante strumentazione manuale e ultrasonica.</mark>
+- <mark class="rev" id="ev-rd7194d9ac1734319" data-item="rd7194d9ac1734319" tabindex="0">Rimozione della placca e del tartaro sottogengivale da tutti i denti mediante strumentazione manuale.</mark>
+- <mark class="auto" id="ev-r295a3ea6311ba709" data-item="r295a3ea6311ba709" tabindex="0">Applicazione di gel al fluoruro di sodio (0,0272 mg/mg) per via orale.</mark>
+
+Terapia consigliata: <mark class="rev" id="ev-r7bcb5736f4bbdb93" data-item="r7bcb5736f4bbdb93" tabindex="0">Continuare l&#39;applicazione domiciliare di gel fluorurato per la prevenzione della carie.</mark>
+
+Conclusioni: Seduta di igiene orale completata. Buona tolleranza alle procedure. Si programma una radiografia panoramica delle arcate dentarie per una valutazione più approfondita, da eseguirsi in una prossima seduta. Si raccomanda controllo periodico tra 6 mesi.
+
+Firma: Dott.ssa [PERSON_2]</pre></div>
+    <div>
+    
+      <div class="pannello dato-x" data-item="r65562581e9a26a23" style="margin-bottom:10px">
+        <div><span class="k">Encounter</span> <span class="tenue">r65562581e9a26a23</span></div>
+        <div>code <span class="s">∅</span> Ambulatory encounter <span class="tenue">(none)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:54%"></i></div>
+        <div>score <span class="n">0.54</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;class&#34;: {
+    &#34;code&#34;: &#34;AMB&#34;,
+    &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/v3-ActCode&#34;
+  },
+  &#34;id&#34;: &#34;r65562581e9a26a23&#34;,
+  &#34;period&#34;: {
+    &#34;end&#34;: &#34;1992-02-06&#34;,
+    &#34;start&#34;: &#34;1992-02-06&#34;
+  },
+  &#34;resourceType&#34;: &#34;Encounter&#34;,
+  &#34;status&#34;: &#34;finished&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-871cdb510675&#34;
+  },
+  &#34;type&#34;: [
+    {
+      &#34;text&#34;: &#34;Ambulatory encounter&#34;
+    }
+  ]
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r210da9484f0a504b" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">r210da9484f0a504b</span></div>
+        <div>code <span class="s">∅</span> Dental plaque <span class="tenue">(none)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:54%"></i></div>
+        <div>score <span class="n">0.54</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;text&#34;: &#34;Dental plaque&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r65562581e9a26a23&#34;
+  },
+  &#34;id&#34;: &#34;r210da9484f0a504b&#34;,
+  &#34;onsetDateTime&#34;: &#34;1992-02-06&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-871cdb510675&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r02bdb4d29ccdeb36" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">r02bdb4d29ccdeb36</span></div>
+        <div>code <span class="s">∅</span> Dental calculus <span class="tenue">(none)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:54%"></i></div>
+        <div>score <span class="n">0.54</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;text&#34;: &#34;Dental calculus&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r65562581e9a26a23&#34;
+  },
+  &#34;id&#34;: &#34;r02bdb4d29ccdeb36&#34;,
+  &#34;onsetDateTime&#34;: &#34;1992-02-06&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-871cdb510675&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r295a3ea6311ba709" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">r295a3ea6311ba709</span></div>
+        <div>code <span class="s">1535362</span> sodium fluoride 0.0272 MG/MG Oral Gel <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:91%"></i></div>
+        <div>score <span class="n">0.91</span> → <span class="s">PUT /fhir/MedicationStatement/r295a3ea6311ba709</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r65562581e9a26a23&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;0,0272 mg/mg&#34;
+    }
+  ],
+  &#34;effectiveDateTime&#34;: &#34;1992-02-06&#34;,
+  &#34;id&#34;: &#34;r295a3ea6311ba709&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;1535362&#34;,
+        &#34;display&#34;: &#34;sodium fluoride 0.0272 MG/MG Oral Gel&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Sodium Fluoride 0.0272 MG/MG Oral Gel&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-871cdb510675&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r7bcb5736f4bbdb93" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">r7bcb5736f4bbdb93</span></div>
+        <div>code <span class="s">∅</span> Fluoride gel for home use <span class="tenue">(none)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>0.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:24%"></i></div>
+        <div>score <span class="n">0.24</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r65562581e9a26a23&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;1992-02-06&#34;,
+  &#34;id&#34;: &#34;r7bcb5736f4bbdb93&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;text&#34;: &#34;Fluoride gel for home use&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-871cdb510675&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rff6a2d68d5e46c40" style="margin-bottom:10px">
+        <div><span class="k">Procedure</span> <span class="tenue">rff6a2d68d5e46c40</span></div>
+        <div>code <span class="s">34043003</span> Dental consultation and report (procedure) <span class="tenue">(fuzzy 0.84)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.84</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:88%"></i></div>
+        <div>score <span class="n">0.88</span> → <span class="s">PUT /fhir/Procedure/rff6a2d68d5e46c40</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;34043003&#34;,
+        &#34;display&#34;: &#34;Dental consultation and report (procedure)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Dental consultation&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r65562581e9a26a23&#34;
+  },
+  &#34;id&#34;: &#34;rff6a2d68d5e46c40&#34;,
+  &#34;performedDateTime&#34;: &#34;1992-02-06&#34;,
+  &#34;resourceType&#34;: &#34;Procedure&#34;,
+  &#34;status&#34;: &#34;completed&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-871cdb510675&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r09394e55e01fb039" style="margin-bottom:10px">
+        <div><span class="k">Procedure</span> <span class="tenue">r09394e55e01fb039</span></div>
+        <div>code <span class="s">∅</span> Professional oral hygiene <span class="tenue">(none)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>0.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:24%"></i></div>
+        <div>score <span class="n">0.24</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;text&#34;: &#34;Professional oral hygiene&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r65562581e9a26a23&#34;
+  },
+  &#34;id&#34;: &#34;r09394e55e01fb039&#34;,
+  &#34;performedDateTime&#34;: &#34;1992-02-06&#34;,
+  &#34;resourceType&#34;: &#34;Procedure&#34;,
+  &#34;status&#34;: &#34;completed&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-871cdb510675&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r099f48ed084ed8c0" style="margin-bottom:10px">
+        <div><span class="k">Procedure</span> <span class="tenue">r099f48ed084ed8c0</span></div>
+        <div>code <span class="s">∅</span> Supragingival dental scaling <span class="tenue">(none)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:54%"></i></div>
+        <div>score <span class="n">0.54</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;text&#34;: &#34;Supragingival dental scaling&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r65562581e9a26a23&#34;
+  },
+  &#34;id&#34;: &#34;r099f48ed084ed8c0&#34;,
+  &#34;performedDateTime&#34;: &#34;1992-02-06&#34;,
+  &#34;resourceType&#34;: &#34;Procedure&#34;,
+  &#34;status&#34;: &#34;completed&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-871cdb510675&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rd7194d9ac1734319" style="margin-bottom:10px">
+        <div><span class="k">Procedure</span> <span class="tenue">rd7194d9ac1734319</span></div>
+        <div>code <span class="s">∅</span> Subgingival dental scaling <span class="tenue">(none)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:54%"></i></div>
+        <div>score <span class="n">0.54</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;text&#34;: &#34;Subgingival dental scaling&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r65562581e9a26a23&#34;
+  },
+  &#34;id&#34;: &#34;rd7194d9ac1734319&#34;,
+  &#34;performedDateTime&#34;: &#34;1992-02-06&#34;,
+  &#34;resourceType&#34;: &#34;Procedure&#34;,
+  &#34;status&#34;: &#34;completed&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-871cdb510675&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r86f57f1962ec22c8" style="margin-bottom:10px">
+        <div><span class="k">Procedure</span> <span class="tenue">r86f57f1962ec22c8</span></div>
+        <div>code <span class="s">∅</span> Topical application of sodium fluoride <span class="tenue">(none)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>0.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:24%"></i></div>
+        <div>score <span class="n">0.24</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;text&#34;: &#34;Topical application of sodium fluoride&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r65562581e9a26a23&#34;
+  },
+  &#34;id&#34;: &#34;r86f57f1962ec22c8&#34;,
+  &#34;performedDateTime&#34;: &#34;1992-02-06&#34;,
+  &#34;resourceType&#34;: &#34;Procedure&#34;,
+  &#34;status&#34;: &#34;completed&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-871cdb510675&#34;
+  }
+}</pre></details>
+      </div>
+    
+    </div>
+  </div>
+  <div class="come-fatto"><b class="k">Come è fatto</b><br><span class="tenue">extraction</span> · <code>src/cn2f/extract/</code> · <span class="s">tests/test_extract.py</span><br><span class="tenue">signals + score</span> · <code>src/cn2f/score/</code> · <span class="s">tests/test_score_review.py</span><br><span class="tenue">this page</span> · <code>src/cn2f/web/site/</code> · <span class="s">tests/test_site.py</span><br></div>
+</div></section>
+  <div class="raggio" aria-hidden="true"></div>
+</main>
+
+</body>
+</html>

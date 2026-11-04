@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Immagina Giulia, 48 anni. · cn2f</title>
+<link rel="stylesheet" href="/med-trial-match/static/css/cn2f.css">
+<link rel="stylesheet" href="/med-trial-match/static/css/racconto.css">
+<script src="/med-trial-match/static/vendor/htmx.min.js" defer></script>
+<script src="/med-trial-match/static/js/facce.js" defer></script>
+<script src="/med-trial-match/static/js/racconto.js" defer></script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Immagina Giulia, 48 anni. · cn2f">
+<meta property="og:description" content="Dal referto ai dati clinici e alla pre-selezione per gli studi clinici: dati inventati, ogni affermazione con la prova citata, misure con intervalli. Non è un dispositivo medico.">
+<meta property="og:image" content="https://gtaormina.github.io/med-trial-match/med-trial-match/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Dal referto ai dati clinici e alla pre-selezione per gli studi clinici: dati inventati, ogni affermazione con la prova citata, misure con intervalli. Non è un dispositivo medico.">
+<meta property="og:url" content="https://gtaormina.github.io/med-trial-match/med-trial-match/">
+<script>(function(){try{var r=document.referrer;if(r&&new URL(r).host===location.host)return;if(!/^it\b/i.test(navigator.language||'')){location.replace('en/');}}catch(e){}})();</script>
+</head>
+<body class="pagina-racconto" data-face="medico">
+<header class="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="/med-trial-match/">
+      <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+      <span class="marchio-testo"><span class="marchio-skin">Dal referto ai dati clinici</span><span class="marchio-xray">clinical-notes-to-fhir</span></span>
+    </a>
+    
+    <nav class="menu" aria-label="Sezioni">
+      <a href="/med-trial-match/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span>Racconto</span></a>
+      <a href="/med-trial-match/prova/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><span>Prova tu</span></a>
+      <a href="/med-trial-match/professionisti/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg><span>Professionisti</span></a>
+    </nav>
+    <a class="lingua" href="/med-trial-match/en/" hreflang="en" title="Read it in English">EN</a>
+  </div>
+  <p class="avviso"><span>dati inventati · non è un dispositivo medico</span></p>
+</header>
+
+<main class="racconto-pagina">
+  <div class="racconto-barra">
+    <div class="avanzamento" role="group" aria-label="Avanzamento del racconto">
+      <a href="#passo-1" class="segmento" aria-label="Passo 1 di 10"><i></i></a><a href="#passo-2" class="segmento" aria-label="Passo 2 di 10"><i></i></a><a href="#passo-3" class="segmento" aria-label="Passo 3 di 10"><i></i></a><a href="#passo-4" class="segmento" aria-label="Passo 4 di 10"><i></i></a><a href="#passo-5" class="segmento" aria-label="Passo 5 di 10"><i></i></a><a href="#passo-6" class="segmento" aria-label="Passo 6 di 10"><i></i></a><a href="#passo-7" class="segmento" aria-label="Passo 7 di 10"><i></i></a><a href="#passo-8" class="segmento" aria-label="Passo 8 di 10"><i></i></a><a href="#passo-9" class="segmento" aria-label="Passo 9 di 10"><i></i></a><a href="#passo-10" class="segmento" aria-label="Passo 10 di 10"><i></i></a>
+    </div>
+    <div class="barra-sotto">
+      <p class="contatore" id="contatore" aria-live="polite"></p>
+      <button type="button" class="switch-raggi" aria-pressed="false">Raggi X</button>
+    </div>
+  </div>
+
+  <ol class="racconto" data-passi="10" aria-label="Il racconto"
+      data-label-step="Passo {n} di {of}" data-label-next="Avanti" data-label-end="Fine">
+  
+    <li class="passo" id="passo-1" data-passo="1">
+      <div class="passo-testo">
+        <div class="passo-testa"><span class="icona-passo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6M12 7v4M10 9h4"/></svg></span><p class="occhiello">Passo 1 di 10</p></div>
+        <h2>Immagina Giulia, 48 anni.</h2>
+        <p class="corpo">A febbraio 2023 passa 10 giorni in ospedale. Quando esce, il medico scrive la lettera di dimissione: testo libero, come lo scrive un medico.</p>
+        <p class="nota">Giulia non esiste: lei e la sua lettera sono inventate.</p>
+        <div class="raggi" aria-label="Raggi X">
+          <p style="--j:0"><b>Corpus sintetico</b> <span>pazienti Synthea, referti in italiano scritti da un LLM; 51 referti di test, mai usati per la messa a punto</span> <code>src/cn2f/synth/</code></p>
+        </div>
+      </div>
+      <div class="documento d1">
+      
+        <div class="lettera"><p class="tit">Lettera di dimissione</p>
+          <span class="rl" style="--i:0">Lettera di dimissione ospedaliera</span><span class="rl" style="--i:1"></span><span class="rl" style="--i:2">Paziente: Giulia Bossi</span><span class="rl" style="--i:3">Data di nascita: 20.01.1975</span><span class="rl" style="--i:4">Codice Fiscale: XXXXXX00X00X000X</span><span class="rl" style="--i:5">Indirizzo: Contrada Filippa, 27, 15020 Ponzano Monferrato (AL)</span><span class="rl" style="--i:6">Telefono: 0000000000</span><span class="rl" style="--i:7">Medico curante: Dott.ssa Rosaria Scarpa</span><span class="rl" style="--i:8"></span><span class="rl" style="--i:9">Ricovero in Terapia Intensiva dal 25/02/2023 al 07/03/2023.</span><span class="rl" style="--i:10"></span><span class="rl" style="--i:11">La paziente è stata trasferita in Terapia Intensiva il 25/02/2023. All&#39;ingresso sono stati effettuati esami ematochimici che hanno evidenziato: leucociti 10,64 x10^3/uL, eritrociti 5,3 x10^6/uL, emoglobina 12,87 g/dL, ematocrito 43,11%, MCV 89,88 fL, MCH 30,53 pg, MCHC 34,79 g/dL, RDW 13,83%. In pari data è stata rimossa la tubazione endotracheale, eseguito elettrocardiogramma (nella norma) e radiografia del torace (negativa per focolai polmonari). È stata effettuata una trasfusione di globuli rossi concentrati. In data 03/03/2023, viste le basse piastrine, è stata eseguita una trasfusione piastrinica. La paziente ha presentato buon recupero clinico ed è stata dimessa in reparto in data 07/03/2023.</span><span class="rl" style="--i:12"></span><span class="rl" style="--i:13">Si consiglia follow-up ematologico. È programmata una risonanza magnetica nucleare dell&#39;encefalo da eseguire in regime ambulatoriale.</span><span class="rl" style="--i:14"></span><span class="rl" style="--i:15">Distinti saluti,</span><span class="rl" style="--i:16">Dott.ssa Rosaria Scarpa</span></div>
+      
+      </div>
+    </li>
+  
+    <li class="passo" id="passo-2" data-passo="2">
+      <div class="passo-testo">
+        <div class="passo-testa"><span class="icona-passo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><p class="occhiello">Passo 2 di 10</p></div>
+        <h2>Prima di tutto, i suoi dati personali vengono coperti.</h2>
+        <p class="corpo">Nome, data di nascita, codice fiscale, indirizzo e telefono restano sul server dell&#39;ospedale. All&#39;intelligenza artificiale arriva solo il testo clinico.</p>
+        
+        <div class="raggi" aria-label="Raggi X">
+          <p style="--j:0"><b>Pseudonimizzazione</b> <span>Presidio + spaCy it_core_news_lg, riconoscitori italiani; segnaposto coerenti nel documento, mappa solo in locale; richiamo 1,000 sui dati personali inseriti</span> <code>src/cn2f/pseudo/engine.py</code></p>
+        </div>
+      </div>
+      <div class="documento d2">
+      
+        <div class="lettera"><p class="tit">Lettera di dimissione</p>
+          <span class="rl">Lettera di dimissione ospedaliera</span><span class="rl"></span><span class="rl">Paziente: <span class="coperto" style="--k:0">Giulia Bossi</span><span class="etichetta" style="--k:0">nome</span></span><span class="rl">Data di nascita: <span class="coperto" style="--k:1">20.01.1975</span><span class="etichetta" style="--k:1">data di nascita</span></span><span class="rl">Codice Fiscale: <span class="coperto" style="--k:2">XXXXXX00X00X000X</span><span class="etichetta" style="--k:2">codice fiscale</span></span><span class="rl">Indirizzo: <span class="coperto" style="--k:3">Contrada Filippa, 27, 15020 Ponzano Monferrato (AL)</span><span class="etichetta" style="--k:3">indirizzo</span></span><span class="rl">Telefono: <span class="coperto" style="--k:4">0000000000</span><span class="etichetta" style="--k:4">telefono</span></span><span class="rl">Medico curante: Dott.ssa <span class="coperto" style="--k:5">Rosaria Scarpa</span><span class="etichetta" style="--k:5">nome</span></span><span class="rl"></span><span class="rl">Ricovero in Terapia Intensiva dal 25/02/2023 al 07/03/2023.</span><span class="rl"></span><span class="rl">La paziente è stata trasferita in Terapia Intensiva il 25/02/2023. All&#39;ingresso sono stati effettuati esami ematochimici che hanno evidenziato: leucociti 10,64 x10^3/uL, eritrociti 5,3 x10^6/uL, emoglobina 12,87 g/dL, ematocrito 43,11%, MCV 89,88 fL, MCH 30,53 pg, MCHC 34,79 g/dL, RDW 13,83%. In pari data è stata rimossa la tubazione endotracheale, eseguito elettrocardiogramma (nella norma) e radiografia del torace (negativa per focolai polmonari). È stata effettuata una trasfusione di globuli rossi concentrati. In data 03/03/2023, viste le basse piastrine, è stata eseguita una trasfusione piastrinica. La paziente ha presentato buon recupero clinico ed è stata dimessa in reparto in data 07/03/2023.</span><span class="rl"></span><span class="rl">Si consiglia follow-up ematologico. È programmata una risonanza magnetica nucleare dell&#39;encefalo da eseguire in regime ambulatoriale.</span><span class="rl"></span><span class="rl">Distinti saluti,</span><span class="rl">Dott.ssa <span class="coperto" style="--k:6">Rosaria Scarpa</span><span class="etichetta" style="--k:6">nome</span></span></div>
+        <p class="lucchetto"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>I dati veri non lasciano il server.</p>
+      
+      </div>
+    </li>
+  
+    <li class="passo" id="passo-3" data-passo="3">
+      <div class="passo-testo">
+        <div class="passo-testa"><span class="icona-passo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg></span><p class="occhiello">Passo 3 di 10</p></div>
+        <h2>Un&#39;intelligenza artificiale legge la lettera.</h2>
+        <p class="corpo">Ne tira fuori i dati clinici, e per ognuno indica la frase esatta da cui l&#39;ha preso.</p>
+        <p class="nota">Tocca un dato per vedere la sua frase. Le risposte del modello sono registrate: qui le rivedi.</p>
+        <div class="raggi" aria-label="Raggi X">
+          <p style="--j:0"><b>Estrazione strutturata</b> <span>claude-haiku-5.5, risposta vincolata a JSON Schema con citazione testuale obbligatoria; F1 0,838 [0,786, 0,877] su referti mai visti; 0,0038 USD a referto (3 letture)</span> <code>src/cn2f/extract/schema.py</code></p><p style="--j:1"><b>Porta verso i modelli</b> <span>guardia sui dati personali in uscita, rilevatore di iniezioni, tetto di spesa, cache su disco, audit a catena di hash</span> <code>src/cn2f/trust/gateway.py</code></p>
+        </div>
+      </div>
+      <div class="documento d3">
+      
+        <div class="lettera letta"><p class="tit">Lettera di dimissione</p><span class="scansione" aria-hidden="true"></span>
+          <span class="rl">Lettera di dimissione ospedaliera</span><span class="rl"></span><span class="rl">Paziente: <span class="coperto fisso" aria-label="dato personale coperto">[PERSON_1]</span></span><span class="rl">Data di nascita: <span class="coperto fisso" aria-label="dato personale coperto">[DATE_OF_BIRTH_1]</span></span><span class="rl">Codice Fiscale: <span class="coperto fisso" aria-label="dato personale coperto">[IT_FISCAL_CODE_1]</span></span><span class="rl">Indirizzo: <span class="coperto fisso" aria-label="dato personale coperto">[ADDRESS_1]</span></span><span class="rl">Telefono: <span class="coperto fisso" aria-label="dato personale coperto">[PHONE_NUMBER_1]</span></span><span class="rl">Medico curante: Dott.ssa <span class="coperto fisso" aria-label="dato personale coperto">[PERSON_2]</span></span><span class="rl"></span><span class="rl"><mark class="lettura" data-item="re14dee61603bbc7b" tabindex="0" style="--j:0">Ricovero in Terapia Intensiva dal 25/02/2023 al 07/03/2023.</mark></span><span class="rl"></span><span class="rl">La paziente è stata trasferita in Terapia Intensiva il 25/02/2023. All&#39;ingresso sono stati effettuati esami ematochimici che hanno evidenziato: <mark class="lettura" data-item="r0e2f12098ffc5c32" tabindex="0" style="--j:2">leucociti 10,64 x10^3/uL</mark>, <mark class="lettura" data-item="r413b7cc8a2d795db" tabindex="0" style="--j:3">eritrociti 5,3 x10^6/uL</mark>, <mark class="lettura" data-item="rfae03fbfea3b62d2" tabindex="0" style="--j:4">emoglobina 12,87 g/dL</mark>, <mark class="lettura" data-item="rcd4e06d7fb7c1f2b" tabindex="0" style="--j:5">ematocrito 43,11%</mark>, <mark class="lettura" data-item="r71cf134c3701b07c" tabindex="0" style="--j:6">MCV 89,88 fL</mark>, <mark class="lettura" data-item="r839aaeaa09c18ee5" tabindex="0" style="--j:7">MCH 30,53 pg</mark>, <mark class="lettura" data-item="r4411699a2188c717" tabindex="0" style="--j:8">MCHC 34,79 g/dL</mark>, <mark class="lettura" data-item="r378557eab64ee01c" tabindex="0" style="--j:9">RDW 13,83%</mark>. <mark class="lettura" data-item="r6f981d66aca24af7" tabindex="0" style="--j:10">In pari data è stata rimossa la tubazione endotracheale</mark>, <mark class="lettura" data-item="rf6d9d6d56953fdb2" tabindex="0" style="--j:11">eseguito elettrocardiogramma (nella norma)</mark> e <mark class="lettura" data-item="r3adbcf0940fe85b2" tabindex="0" style="--j:12">radiografia del torace (negativa per focolai polmonari)</mark>. <mark class="lettura" data-item="r6833b46e44c074b4" tabindex="0" style="--j:13">È stata effettuata una trasfusione di globuli rossi concentrati.</mark> <mark class="lettura" data-item="r35077845997b0274" tabindex="0" style="--j:1">In data 03/03/2023, viste le basse piastrine, è stata eseguita una trasfusione piastrinica.</mark> La paziente ha presentato buon recupero clinico ed è stata dimessa in reparto in data 07/03/2023.</span><span class="rl"></span><span class="rl">Si consiglia follow-up ematologico. È programmata una risonanza magnetica nucleare dell&#39;encefalo da eseguire in regime ambulatoriale.</span><span class="rl"></span><span class="rl">Distinti saluti,</span><span class="rl">Dott.ssa <span class="coperto fisso" aria-label="dato personale coperto">[PERSON_2]</span></span></div>
+        <div class="dati">
+          
+          <button type="button" class="dato dubbio" data-item="re14dee61603bbc7b" style="--j:0">
+            <span class="tipo">Accesso</span>
+            
+            <span class="nome">Ricovero</span>
+            
+          </button>
+          
+          <button type="button" class="dato dubbio" data-item="r35077845997b0274" style="--j:1">
+            <span class="tipo">Diagnosi</span>
+            
+            <span class="nome">Basse piastrine</span>
+            
+          </button>
+          
+          <button type="button" class="dato" data-item="r0e2f12098ffc5c32" style="--j:2">
+            <span class="tipo">Esame / parametro</span>
+            
+            <span class="nome">Leucociti 10,64 10*3/uL</span>
+            
+          </button>
+          
+          <button type="button" class="dato" data-item="r413b7cc8a2d795db" style="--j:3">
+            <span class="tipo">Esame / parametro</span>
+            
+            <span class="nome">Eritrociti 5,3 10*6/uL</span>
+            
+          </button>
+          
+          <button type="button" class="dato" data-item="rfae03fbfea3b62d2" style="--j:4">
+            <span class="tipo">Esame / parametro</span>
+            
+            <span class="nome">Emoglobina 12,87 g/dL</span>
+            
+          </button>
+          
+          <button type="button" class="dato" data-item="rcd4e06d7fb7c1f2b" style="--j:5">
+            <span class="tipo">Esame / parametro</span>
+            
+            <span class="nome">Ematocrito 43,11 %</span>
+            
+          </button>
+          
+          <button type="button" class="dato" data-item="r71cf134c3701b07c" style="--j:6">
+            <span class="tipo">Esame / parametro</span>
+            
+            <span class="nome">MCV 89,88 fL</span>
+            
+          </button>
+          
+          <button type="button" class="dato" data-item="r839aaeaa09c18ee5" style="--j:7">
+            <span class="tipo">Esame / parametro</span>
+            
+            <span class="nome">MCH 30,53 pg</span>
+            
+          </button>
+          
+          <button type="button" class="dato" data-item="r4411699a2188c717" style="--j:8">
+            <span class="tipo">Esame / parametro</span>
+            
+            <span class="nome">MCHC 34,79 g/dL</span>
+            
+          </button>
+          
+          <button type="button" class="dato" data-item="r378557eab64ee01c" style="--j:9">
+            <span class="tipo">Esame / parametro</span>
+            
+            <span class="nome">RDW 13,83 %</span>
+            
+          </button>
+          
+          <button type="button" class="dato dubbio" data-item="r6f981d66aca24af7" style="--j:10">
+            <span class="tipo">Procedura</span>
+            
+            <span class="nome">Rimozione della tubazione endotracheale</span>
+            
+          </button>
+          
+          <button type="button" class="dato dubbio" data-item="rf6d9d6d56953fdb2" style="--j:11">
+            <span class="tipo">Procedura</span>
+            
+            <span class="nome">Elettrocardiogramma</span>
+            
+          </button>
+          
+          <button type="button" class="dato" data-item="r3adbcf0940fe85b2" style="--j:12">
+            <span class="tipo">Procedura</span>
+            
+            <span class="nome">Radiografia del torace</span>
+            
+          </button>
+          
+          <button type="button" class="dato" data-item="r6833b46e44c074b4" style="--j:13">
+            <span class="tipo">Procedura</span>
+            
+            <span class="nome">Trasfusione di globuli rossi concentrati</span>
+            
+          </button>
+          
+          <button type="button" class="dato" data-item="r1a778b9b15bac69b" style="--j:14">
+            <span class="tipo">Procedura</span>
+            
+            <span class="nome">Trasfusione piastrinica</span>
+            
+          </button>
+          
+        </div>
+      
+      </div>
+    </li>
+  
+    <li class="passo" id="passo-4" data-passo="4">
+      <div class="passo-testo">
+        <div class="passo-testa"><span class="icona-passo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><p class="occhiello">Passo 4 di 10</p></div>
+        <h2>Poi il programma controlla ogni dato.</h2>
+        <p class="corpo">La frase c&#39;è davvero? Il termine esiste? Se sì, il dato entra nella cartella. Se c&#39;è un dubbio, lo guarda un medico.</p>
+        <p class="nota">Su tutta la lettera: 11 dati registrati da soli, 4 mandati a un medico. Risposte del modello registrate.</p>
+        <div class="raggi" aria-label="Raggi X">
+          <p style="--j:0"><b>Punteggio di affidabilità</b> <span>regressione logistica su 5 segnali verificabili, soglia 0,84 scelta col bootstrap; errore residuo sui dati registrati da soli 7,6% [3,2, 12,5]</span> <code>src/cn2f/score/model.py</code></p><p style="--j:1"><b>Coda di revisione</b> <span>sotto soglia il dato aspetta il medico</span> <code>src/cn2f/review/routing.py</code></p>
+        </div>
+      </div>
+      <div class="documento d4">
+      
+        <div class="lettera letta"><p class="tit">Lettera di dimissione</p><span class="scansione" aria-hidden="true"></span>
+          <span class="rl">Lettera di dimissione ospedaliera</span><span class="rl"></span><span class="rl">Paziente: <span class="coperto fisso" aria-label="dato personale coperto">[PERSON_1]</span></span><span class="rl">Data di nascita: <span class="coperto fisso" aria-label="dato personale coperto">[DATE_OF_BIRTH_1]</span></span><span class="rl">Codice Fiscale: <span class="coperto fisso" aria-label="dato personale coperto">[IT_FISCAL_CODE_1]</span></span><span class="rl">Indirizzo: <span class="coperto fisso" aria-label="dato personale coperto">[ADDRESS_1]</span></span><span class="rl">Telefono: <span class="coperto fisso" aria-label="dato personale coperto">[PHONE_NUMBER_1]</span></span><span class="rl">Medico curante: Dott.ssa <span class="coperto fisso" aria-label="dato personale coperto">[PERSON_2]</span></span><span class="rl"></span><span class="rl"><mark class="lettura" data-item="re14dee61603bbc7b" tabindex="0" style="--j:0">Ricovero in Terapia Intensiva dal 25/02/2023 al 07/03/2023.</mark></span><span class="rl"></span><span class="rl">La paziente è stata trasferita in Terapia Intensiva il 25/02/2023. All&#39;ingresso sono stati effettuati esami ematochimici che hanno evidenziato: <mark class="lettura" data-item="r0e2f12098ffc5c32" tabindex="0" style="--j:2">leucociti 10,64 x10^3/uL</mark>, <mark class="lettura" data-item="r413b7cc8a2d795db" tabindex="0" style="--j:3">eritrociti 5,3 x10^6/uL</mark>, <mark class="lettura" data-item="rfae03fbfea3b62d2" tabindex="0" style="--j:4">emoglobina 12,87 g/dL</mark>, <mark class="lettura" data-item="rcd4e06d7fb7c1f2b" tabindex="0" style="--j:5">ematocrito 43,11%</mark>, <mark class="lettura" data-item="r71cf134c3701b07c" tabindex="0" style="--j:6">MCV 89,88 fL</mark>, <mark class="lettura" data-item="r839aaeaa09c18ee5" tabindex="0" style="--j:7">MCH 30,53 pg</mark>, <mark class="lettura" data-item="r4411699a2188c717" tabindex="0" style="--j:8">MCHC 34,79 g/dL</mark>, <mark class="lettura" data-item="r378557eab64ee01c" tabindex="0" style="--j:9">RDW 13,83%</mark>. <mark class="lettura" data-item="r6f981d66aca24af7" tabindex="0" style="--j:10">In pari data è stata rimossa la tubazione endotracheale</mark>, <mark class="lettura" data-item="rf6d9d6d56953fdb2" tabindex="0" style="--j:11">eseguito elettrocardiogramma (nella norma)</mark> e <mark class="lettura" data-item="r3adbcf0940fe85b2" tabindex="0" style="--j:12">radiografia del torace (negativa per focolai polmonari)</mark>. <mark class="lettura" data-item="r6833b46e44c074b4" tabindex="0" style="--j:13">È stata effettuata una trasfusione di globuli rossi concentrati.</mark> <mark class="lettura" data-item="r35077845997b0274" tabindex="0" style="--j:1">In data 03/03/2023, viste le basse piastrine, è stata eseguita una trasfusione piastrinica.</mark> La paziente ha presentato buon recupero clinico ed è stata dimessa in reparto in data 07/03/2023.</span><span class="rl"></span><span class="rl">Si consiglia follow-up ematologico. È programmata una risonanza magnetica nucleare dell&#39;encefalo da eseguire in regime ambulatoriale.</span><span class="rl"></span><span class="rl">Distinti saluti,</span><span class="rl">Dott.ssa <span class="coperto fisso" aria-label="dato personale coperto">[PERSON_2]</span></span></div>
+        <div class="dati">
+          
+          <button type="button" class="dato dubbio" data-item="re14dee61603bbc7b" style="--j:0">
+            <span class="tipo">Accesso</span>
+            <span class="bollo medico">Al medico</span>
+            <span class="nome">Ricovero</span>
+            <span class="affid">affidabilità 80%</span>
+          </button>
+          
+          <button type="button" class="dato dubbio" data-item="r35077845997b0274" style="--j:1">
+            <span class="tipo">Diagnosi</span>
+            <span class="bollo medico">Al medico</span>
+            <span class="nome">Basse piastrine</span>
+            <span class="affid">affidabilità 80%</span>
+          </button>
+          
+          <button type="button" class="dato" data-item="r0e2f12098ffc5c32" style="--j:2">
+            <span class="tipo">Esame / parametro</span>
+            <span class="bollo ok">Registrato</span>
+            <span class="nome">Leucociti 10,64 10*3/uL</span>
+            <span class="affid">affidabilità 95%</span>
+          </button>
+          
+          <button type="button" class="dato" data-item="r413b7cc8a2d795db" style="--j:3">
+            <span class="tipo">Esame / parametro</span>
+            <span class="bollo ok">Registrato</span>
+            <span class="nome">Eritrociti 5,3 10*6/uL</span>
+            <span class="affid">affidabilità 95%</span>
+          </button>
+          
+          <button type="button" class="dato" data-item="rfae03fbfea3b62d2" style="--j:4">
+            <span class="tipo">Esame / parametro</span>
+            <span class="bollo ok">Registrato</span>
+            <span class="nome">Emoglobina 12,87 g/dL</span>
+            <span class="affid">affidabilità 95%</span>
+          </button>
+          
+          <button type="button" class="dato" data-item="rcd4e06d7fb7c1f2b" style="--j:5">
+            <span class="tipo">Esame / parametro</span>
+            <span class="bollo ok">Registrato</span>
+            <span class="nome">Ematocrito 43,11 %</span>
+            <span class="affid">affidabilità 95%</span>
+          </button>
+          
+          <button type="button" class="dato" data-item="r71cf134c3701b07c" style="--j:6">
+            <span class="tipo">Esame / parametro</span>
+            <span class="bollo ok">Registrato</span>
+            <span class="nome">MCV 89,88 fL</span>
+            <span class="affid">affidabilità 91%</span>
+          </button>
+          
+          <button type="button" class="dato" data-item="r839aaeaa09c18ee5" style="--j:7">
+            <span class="tipo">Esame / parametro</span>
+            <span class="bollo ok">Registrato</span>
+            <span class="nome">MCH 30,53 pg</span>
+            <span class="affid">affidabilità 92%</span>
+          </button>
+          
+          <button type="button" class="dato" data-item="r4411699a2188c717" style="--j:8">
+            <span class="tipo">Esame / parametro</span>
+            <span class="bollo ok">Registrato</span>
+            <span class="nome">MCHC 34,79 g/dL</span>
+            <span class="affid">affidabilità 92%</span>
+          </button>
+          
+          <button type="button" class="dato" data-item="r378557eab64ee01c" style="--j:9">
+            <span class="tipo">Esame / parametro</span>
+            <span class="bollo ok">Registrato</span>
+            <span class="nome">RDW 13,83 %</span>
+            <span class="affid">affidabilità 91%</span>
+          </button>
+          
+          <button type="button" class="dato dubbio" data-item="r6f981d66aca24af7" style="--j:10">
+            <span class="tipo">Procedura</span>
+            <span class="bollo medico">Al medico</span>
+            <span class="nome">Rimozione della tubazione endotracheale</span>
+            <span class="affid">affidabilità 38%</span>
+          </button>
+          
+          <button type="button" class="dato dubbio" data-item="rf6d9d6d56953fdb2" style="--j:11">
+            <span class="tipo">Procedura</span>
+            <span class="bollo medico">Al medico</span>
+            <span class="nome">Elettrocardiogramma</span>
+            <span class="affid">affidabilità 54%</span>
+          </button>
+          
+          <button type="button" class="dato" data-item="r3adbcf0940fe85b2" style="--j:12">
+            <span class="tipo">Procedura</span>
+            <span class="bollo ok">Registrato</span>
+            <span class="nome">Radiografia del torace</span>
+            <span class="affid">affidabilità 88%</span>
+          </button>
+          
+          <button type="button" class="dato" data-item="r6833b46e44c074b4" style="--j:13">
+            <span class="tipo">Procedura</span>
+            <span class="bollo ok">Registrato</span>
+            <span class="nome">Trasfusione di globuli rossi concentrati</span>
+            <span class="affid">affidabilità 97%</span>
+          </button>
+          
+          <button type="button" class="dato" data-item="r1a778b9b15bac69b" style="--j:14">
+            <span class="tipo">Procedura</span>
+            <span class="bollo ok">Registrato</span>
+            <span class="nome">Trasfusione piastrinica</span>
+            <span class="affid">affidabilità 97%</span>
+          </button>
+          
+        </div>
+      
+      </div>
+    </li>
+  
+    <li class="passo" id="passo-5" data-passo="5">
+      <div class="passo-testo">
+        <div class="passo-testa"><span class="icona-passo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span><p class="occhiello">Passo 5 di 10</p></div>
+        <h2>Ecco la cartella digitale di Giulia.</h2>
+        <p class="corpo">Tutto quello che è stato registrato, in ordine di tempo: 3 referti, 26 dati. Quello che aspetta un medico resta in sospeso finché non lo guarda.</p>
+        
+        <div class="raggi" aria-label="Raggi X">
+          <p style="--j:0"><b>Archivio FHIR R4</b> <span>HAPI FHIR, ogni risorsa validata con $validate</span> <code>src/cn2f/fhir/client.py</code></p><p style="--j:1"><b>Trasparenza IA</b> <span>HL7 AI Transparency on FHIR: ogni dato scritto dal modello porta l&#39;etichetta AIAST e la sua fiducia; una Provenance nomina il modello come autore e il medico come verificatore; HAPI valida sui profili HL7</span> <code>src/cn2f/fhir/aitransparency.py</code></p><p style="--j:2"><b>Server MCP</b> <span>SDK Python ufficiale 2.x: la cartella esposta agli agenti</span> <code>src/cn2f/mcp_server/server.py</code></p>
+        </div>
+      </div>
+      <div class="documento d5">
+      
+        <ol class="cronologia">
+          
+          <li style="--j:0"><span class="quando">22/02/2023</span><b>Visita ambulatoriale</b><span class="tenue">2 registrati · 1 al medico</span></li>
+          
+          <li style="--j:1"><span class="quando">25/02/2023</span><b>Lettera di dimissione</b><span class="tenue">11 registrati · 4 al medico</span></li>
+          
+          <li style="--j:2"><span class="quando">20/01/2025</span><b>Referto di laboratorio</b><span class="tenue">13 registrati · 3 al medico</span></li>
+          
+        </ol>
+      
+      </div>
+    </li>
+  
+    <li class="passo" id="passo-6" data-passo="6">
+      <div class="passo-testo">
+        <div class="passo-testa"><span class="icona-passo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/><path d="M7.5 15h9"/></svg></span><p class="occhiello">Passo 6 di 10</p></div>
+        <h2>Più tardi, uno studio clinico cerca pazienti.</h2>
+        <p class="corpo">Prima che un farmaco nuovo arrivi in farmacia, va provato su persone volontarie: è uno studio clinico. Ogni studio cerca persone con caratteristiche precise, e per trovarle qualcuno legge le cartelle una per una. Questo è uno studio vero, preso dal registro pubblico ClinicalTrials.gov: «Obesità, senza diabete». Ha 8 criteri: chi può partecipare e chi no. Immagina che l&#39;ospedale di Giulia partecipi: il programma legge tutte le cartelle, anche la sua. Non cerca Giulia: cerca chi ha i requisiti.</p>
+        <p class="nota">Lo studio è vero e pubblico; nessun legame con chi lo conduce.</p>
+        <div class="raggi" aria-label="Raggi X">
+          <p style="--j:0"><b>Criteri come regole</b> <span>dal registro ClinicalTrials.gov a regole tipizzate in forma normale disgiuntiva, riviste a mano: 3 criteri su 8 con regole</span> <code>src/cn2f/trials/criteria.py</code></p>
+        </div>
+      </div>
+      <div class="documento d6">
+      
+        <div class="studio">
+          <p class="titolo-semplice">Obesità, senza diabete</p>
+          <p class="tenue"><small>Titolo nel registro: A Study to Evaluate Effect of AZD6234 in Adult Participants With Obesity or Overweight With Weight-related Comorbidity Without Type 2 Diabetes Mellitus · NCT07784725</small></p>
+          <ol class="criteri">
+            <li style="--j:0"><span class="tipo-crit">Per entrare</span>Uomini e donne (inclusi tutti i gruppi di identità di genere) di età ≥18 anni</li><li style="--j:1"><span class="tipo-crit">Per entrare</span>BMI ≥30 kg/m2 OPPURE BMI ≥27 kg/m2 con almeno una delle seguenti comorbilità correlate al peso (trattate o non trattate): ipertensione, dislipidemia, apnea ostruttiva del sonno, malattia cardiovascolare, insufficienza cardiaca, malattia renale cronica, malattia del fegato steatosica associata a disfunzione metabolica, osteoartrosi del ginocchio o incontinenza urinaria da sforzo</li><li style="--j:2"><span class="tipo-crit">Per entrare</span>Peso corporeo stabile (variazione del peso corporeo ≤5%) per almeno 3 mesi prima della randomizzazione</li><li style="--j:3"><span class="tipo-crit">Per entrare</span>Storia di almeno un tentativo autoriferito non riuscito di perdere peso nel corso della vita</li><li style="--j:4"><span class="tipo-crit">Esclude se</span>Obesità causata principalmente da altri disturbi endocrini</li><li style="--j:5"><span class="tipo-crit">Esclude se</span>Storia di diabete mellito di tipo 1 o di tipo 2, HbA1c ≥6,5% (48 mmol/mol), e/o trattamento con farmaco/i ipoglicemizzante/i nei 3 mesi precedenti lo screening</li><li style="--j:6"><span class="tipo-crit">Esclude se</span>Malattia epatobiliare significativa e/o uno qualsiasi dei seguenti risultati allo screening:
+ALT ≥ 3,0 × ULN
+AST ≥ 3,0 × ULN
+TBL &gt; 1,5 × ULN (eccetto i casi di sindrome di Gilbert nota)</li><li style="--j:7"><span class="tipo-crit">Esclude se</span>Ha ricevuto un trattamento con un agonista del recettore GLP-1 o con un farmaco contenente GLP-1, per qualsiasi indicazione, nei 3 mesi precedenti la randomizzazione.</li>
+          </ol>
+        </div>
+      
+      </div>
+    </li>
+  
+    <li class="passo" id="passo-7" data-passo="7">
+      <div class="passo-testo">
+        <div class="passo-testa"><span class="icona-passo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M3.5 6l1.5 1.5L7.5 5M3.5 12l1.5 1.5L7.5 11M3.5 18l1.5 1.5L7.5 17"/></svg></span><p class="occhiello">Passo 7 di 10</p></div>
+        <h2>Criterio per criterio.</h2>
+        <p class="corpo">Quello che una regola può decidere lo decide la regola: l&#39;età, dall&#39;anno di nascita. Il resto lo legge l&#39;intelligenza artificiale, e ogni risposta deve citare la cartella.</p>
+        <p class="nota">Le risposte del modello sono state registrate il 27/10/2026; qui le rivedi.</p>
+        <div class="raggi" aria-label="Raggi X">
+          <p style="--j:0"><b>Agente di pre-selezione</b> <span>regole in codice, poi recupero BM25 locale e una sola chiamata (gemini-2.5-flash-lite); AUC 0,77 / 0,77 su TREC 2022 inglese / italiano</span> <code>src/cn2f/prescreen/run.py</code></p><p style="--j:1"><b>Regole sulla cartella</b> <span>età, sesso, diagnosi, farmaci, esami con finestre di tempo</span> <code>src/cn2f/trials/rules.py</code></p>
+        </div>
+      </div>
+      <div class="documento d7">
+      
+        <ol class="esito-criteri">
+          
+          <li style="--j:0">
+            <span class="stato s-met"><span class="icona" aria-hidden="true">✓</span>Soddisfatto</span>
+            <span class="testo-crit"><span class="tipo-crit">Per entrare</span>Uomini e donne (inclusi tutti i gruppi di identità di genere) di età ≥18 anni</span>
+            <span class="chi">regola</span>
+            
+          </li>
+          
+          <li style="--j:1">
+            <span class="stato s-unknown"><span class="icona" aria-hidden="true">?</span>Da verificare</span>
+            <span class="testo-crit"><span class="tipo-crit">Per entrare</span>BMI ≥30 kg/m2 OPPURE BMI ≥27 kg/m2 con almeno una delle seguenti comorbilità correlate al peso (trattate o non trattate): ipertensione, dislipidemia, apnea ostruttiva del sonno, malattia cardiovascolare, insufficienza cardiaca, malattia renale cronica, malattia del fegato steatosica associata a disfunzione metabolica, osteoartrosi del ginocchio o incontinenza urinaria da sforzo</span>
+            <span class="chi">IA</span>
+            
+          </li>
+          
+          <li style="--j:2">
+            <span class="stato s-unknown"><span class="icona" aria-hidden="true">?</span>Da verificare</span>
+            <span class="testo-crit"><span class="tipo-crit">Per entrare</span>Peso corporeo stabile (variazione del peso corporeo ≤5%) per almeno 3 mesi prima della randomizzazione</span>
+            <span class="chi">IA</span>
+            
+          </li>
+          
+          <li style="--j:3">
+            <span class="stato s-unknown"><span class="icona" aria-hidden="true">?</span>Da verificare</span>
+            <span class="testo-crit"><span class="tipo-crit">Per entrare</span>Storia di almeno un tentativo autoriferito non riuscito di perdere peso nel corso della vita</span>
+            <span class="chi">IA</span>
+            
+          </li>
+          
+          <li style="--j:4">
+            <span class="stato s-unknown"><span class="icona" aria-hidden="true">?</span>Da verificare</span>
+            <span class="testo-crit"><span class="tipo-crit">Esclude se</span>Obesità causata principalmente da altri disturbi endocrini</span>
+            <span class="chi">IA</span>
+            
+          </li>
+          
+          <li style="--j:5">
+            <span class="stato s-met"><span class="icona" aria-hidden="true">✓</span>Assente</span>
+            <span class="testo-crit"><span class="tipo-crit">Esclude se</span>Storia di diabete mellito di tipo 1 o di tipo 2, HbA1c ≥6,5% (48 mmol/mol), e/o trattamento con farmaco/i ipoglicemizzante/i nei 3 mesi precedenti lo screening</span>
+            <span class="chi">IA</span>
+            <span class="citazione">«Emoglobina glicata (HbA1c): 6.08 %» · citazione trovata nella cartella</span>
+          </li>
+          
+          <li style="--j:6">
+            <span class="stato s-unknown"><span class="icona" aria-hidden="true">?</span>Da verificare</span>
+            <span class="testo-crit"><span class="tipo-crit">Esclude se</span>Malattia epatobiliare significativa e/o uno qualsiasi dei seguenti risultati allo screening:
+ALT ≥ 3,0 × ULN
+AST ≥ 3,0 × ULN
+TBL &gt; 1,5 × ULN (eccetto i casi di sindrome di Gilbert nota)</span>
+            <span class="chi">IA</span>
+            
+          </li>
+          
+          <li style="--j:7">
+            <span class="stato s-unknown"><span class="icona" aria-hidden="true">?</span>Da verificare</span>
+            <span class="testo-crit"><span class="tipo-crit">Esclude se</span>Ha ricevuto un trattamento con un agonista del recettore GLP-1 o con un farmaco contenente GLP-1, per qualsiasi indicazione, nei 3 mesi precedenti la randomizzazione.</span>
+            <span class="chi">IA</span>
+            
+          </li>
+          
+        </ol>
+      
+      </div>
+    </li>
+  
+    <li class="passo" id="passo-8" data-passo="8">
+      <div class="passo-testo">
+        <div class="passo-testa"><span class="icona-passo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg></span><p class="occhiello">Passo 8 di 10</p></div>
+        <h2>Una risposta senza prova viene respinta.</h2>
+        <p class="corpo">Con Giulia il programma ha ritrovato ogni citazione nella cartella. Ma succede: ecco un&#39;altra paziente inventata. La prima risposta non portava una prova valida, e il programma l&#39;ha respinta; il modello ha riprovato una volta, e la seconda risposta ha passato il controllo.</p>
+        <p class="nota">Risposte del modello registrate il 27/10/2026; il controllo è il codice di oggi.</p>
+        <div class="raggi" aria-label="Raggi X">
+          <p style="--j:0"><b>Verificatore in codice</b> <span>una citazione vale solo se il passaggio era offerto per quel criterio, non è rivolto all&#39;IA e contiene la citazione (≥ 2 parole, a parole intere); poi una sola correzione. Non controlla che la citazione dimostri la risposta: questo lo misura il giudice, contro i medici</span> <code>src/cn2f/prescreen/verify.py</code></p>
+        </div>
+      </div>
+      <div class="documento d8">
+      
+        
+        <div class="caso">
+          <p class="tenue">Paziente inventata, nata nel 2006</p>
+          <p class="crit-caso">Obesità indotta da altri disturbi endocrinologici (ad es. sindrome di Cushing) o forme monogeniche o sindromiche di obesità diagnosticate (ad es. deficit del recettore 4 della melanocortina o sindrome di Prader-Willi)</p>
+          <div class="risposta prima"><span class="etich">Prima risposta</span><span class="cit">«—»</span><span class="bollo no">Respinta · nessuna prova citata</span></div>
+          <div class="risposta seconda"><span class="etich">Seconda risposta</span><span class="cit">«—»</span><span class="esito-seconda"><span class="stato s-unknown"><span class="icona" aria-hidden="true">?</span>Da verificare</span> <span class="bollo ok">Accettata</span></span></div>
+        </div>
+        
+      
+      </div>
+    </li>
+  
+    <li class="passo" id="passo-9" data-passo="9">
+      <div class="passo-testo">
+        <div class="passo-testa"><span class="icona-passo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M3 21a6 6 0 0 1 12 0"/><path d="M16 11l2 2 4-4"/></svg></span><p class="occhiello">Passo 9 di 10</p></div>
+        <h2>Alla fine decide una persona.</h2>
+        <p class="corpo">«Da rivedere»: nessun criterio esclude Giulia, 6 vanno verificati da una persona. Su 15 persone, Giulia è al 3° posto. Nessuna delle sue lettere scrive il peso, eppure nel registro sintetico da cui è nata Giulia è obesa: sarebbe una candidata. Per questo il programma non la scarta e chiede a una persona di guardare.</p>
+        <p class="nota">Il coordinatore sceglie se proseguire. L&#39;idoneità la decide sempre lo sperimentatore. Lo sappiamo solo perché i dati sono inventati: in un ospedale vero nessuno lo saprebbe prima di chiedere.</p>
+        <div class="raggi" aria-label="Raggi X">
+          <p style="--j:0"><b>Decisione registrata</b> <span>conferma o scarto del coordinatore nell&#39;audit a catena di hash; mai «idoneo»: decide lo sperimentatore</span> <code>src/cn2f/prescreen/decisions.py</code></p><p style="--j:1"><b>Memoria del coordinatore</b> <span>regole tipizzate per studio decise da una persona e applicate dal codice; ciò che non viene da una persona resta in quarantena; ogni regola scade e si dimentica davvero; confrontata con la stessa regola data come testo a un modello (reports/memory.md)</span> <code>src/cn2f/prescreen/memory.py</code></p><p style="--j:2"><b>Audit</b> <span>nessun testo libero nel registro, solo hash e identificativi</span> <code>src/cn2f/trust/audit.py</code></p>
+        </div>
+      </div>
+      <div class="documento d9">
+      
+        <div class="decisione">
+          <span class="verdetto v-needs_review grande">Da rivedere</span>
+          <div class="scelte" aria-hidden="true"><span class="finto">Prosegui con lo screening</span><span class="finto">Scarta</span></div>
+          <p class="tenue"><small>Nella pagina dello studio il coordinatore sceglie davvero, e la scelta resta nel registro.</small></p>
+          <p><a href="/med-trial-match/studi/NCT07784725/pt-a3084951fc51/">Vedi la scheda completa</a> · <a href="/med-trial-match/studi/NCT07784725/pt-a3084951fc51/replay/">Guarda l&#39;esecuzione passo per passo</a></p>
+        </div>
+      
+      </div>
+    </li>
+  
+    <li class="passo" id="passo-10" data-passo="10">
+      <div class="passo-testo">
+        <div class="passo-testa"><span class="icona-passo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><p class="occhiello">Passo 10 di 10</p></div>
+        <h2>Cosa dimostra.</h2>
+        <p class="corpo">Lo stesso percorso è stato misurato su centinaia di casi, e ogni numero ha il suo intervallo nei report.</p>
+        
+        <div class="raggi" aria-label="Raggi X">
+          <p style="--j:0"><b>Misure</b> <span>intervalli bootstrap a grappoli, giudice LLM tarato sui medici, controllo di regressione in make eval</span> <code>src/cn2f/prescreen/report.py</code></p>
+        </div>
+      </div>
+      <div class="documento d10">
+      
+        <ul class="fatti"><li style="--j:0">Di 100 dati che l&#39;intelligenza artificiale estrae, 81 sono giusti; di 100 dati nei referti, ne trova 86.</li><li style="--j:1">Di 100 dati registrati da soli, circa 92 sono giusti.</li><li style="--j:2">Scegliendo a caso un paziente idoneo e uno no, quello idoneo finisce più in alto 77 volte su 100 (un pareggio conta mezzo), in inglese come in italiano.</li><li style="--j:3">Il punto debole: circa un paziente idoneo su 4 (25% in inglese, 22% in italiano) finisce «probabilmente escluso». Per questo decide una persona.</li><li style="--j:4">Istruzioni nascoste nel testo degli studi: nei 36 casi in cui il modello le ha viste, gli esiti spostati a «probabilmente idoneo» sono 0.</li><li style="--j:5">Tutte le chiamate ai modelli del progetto: circa 3,00 USD.</li></ul>
+        <div class="architettura" aria-label="Cosa è stato realizzato, tecnicamente">
+          
+          <p class="corsia-nome">DAL REFERTO AI DATI</p>
+          <div class="corsia c1">
+            <a class="blocco" href="#passo-1" data-blocco="referto" style="--b:0"><b>Referto</b><small>testo libero (IT)</small><code>src/cn2f/synth/</code></a><a class="blocco" href="#passo-2" data-blocco="pseudo" style="--b:1"><b>Pseudonimizzazione</b><small>Presidio + spaCy it</small><code>src/cn2f/pseudo/engine.py</code></a><a class="blocco" href="#passo-3" data-blocco="porta" style="--b:2"><b>Porta verso i modelli</b><small>guardia, iniezioni, spesa, audit</small><code>src/cn2f/trust/gateway.py</code></a><a class="blocco" href="#passo-3" data-blocco="estrazione" style="--b:3"><b>Estrazione</b><small>JSON + citazione</small><code>src/cn2f/extract/run.py</code></a><a class="blocco" href="#passo-4" data-blocco="affidabilita" style="--b:4"><b>Affidabilità</b><small>5 segnali, soglia</small><code>src/cn2f/score/model.py</code></a><a class="blocco" href="#passo-4" data-blocco="revisione" style="--b:5"><b>Revisione</b><small>il medico decide</small><code>src/cn2f/review/routing.py</code></a><a class="blocco" href="#passo-5" data-blocco="fhir" style="--b:6"><b>Archivio FHIR R4</b><small>HAPI, $validate</small><code>src/cn2f/fhir/client.py</code></a>
+          </div>
+          
+          <p class="corsia-nome">DAI DATI AGLI STUDI CLINICI</p>
+          <div class="corsia c2">
+            <a class="blocco" href="#passo-5" data-blocco="mcp" style="--b:7"><b>Server MCP</b><small>la cartella per agenti</small><code>src/cn2f/mcp_server/server.py</code></a><a class="blocco" href="#passo-6" data-blocco="studi" style="--b:8"><b>Studi veri</b><small>ClinicalTrials.gov</small><code>src/cn2f/trials/ctgov.py</code></a><a class="blocco" href="#passo-7" data-blocco="agente" style="--b:9"><b>Agente di pre-selezione</b><small>regole → 1 chiamata → verificatore → 1 correzione</small><code>src/cn2f/prescreen/run.py</code></a><a class="blocco" href="#passo-8" data-blocco="verificatore" style="--b:10"><b>Verificatore</b><small>citazioni controllate in codice</small><code>src/cn2f/prescreen/verify.py</code></a><a class="blocco" href="#passo-9" data-blocco="coordinatore" style="--b:11"><b>Coordinatore</b><small>conferma o scarta (audit)</small><code>src/cn2f/prescreen/decisions.py</code></a>
+          </div>
+          
+          <p class="corsia-nome">COME È MISURATO</p>
+          <div class="corsia c3">
+            <a class="blocco" href="#passo-10" data-blocco="misure" style="--b:14"><b>Misure</b><small>bootstrap, gate di regressione</small><code>src/cn2f/prescreen/evaluate.py</code></a><a class="blocco" href="#passo-10" data-blocco="sicurezza" style="--b:15"><b>Sicurezza</b><small>attacchi scritti a mano</small><code>src/cn2f/security/prescreen_bench.py</code></a><a class="blocco" href="#passo-10" data-blocco="conformita" style="--b:16"><b>Conformità</b><small>AI Act, MDR, GDPR con test</small><code>docs/compliance/README.md</code></a>
+          </div>
+          
+        </div>
+        <h3 class="inventario-tit">Cosa è stato realizzato, tecnicamente</h3>
+        <ul class="inventario">
+          <li style="--j:0"><a href="#passo-3">Estrazione strutturata da testo clinico italiano con LLM piccoli: output vincolato a JSON Schema, citazione testuale obbligatoria per ogni dato</a> <code>src/cn2f/extract/schema.py</code></li><li style="--j:1"><a href="#passo-2">Pseudonimizzazione prima di ogni chiamata esterna (Presidio + spaCy italiano, riconoscitori italiani come il codice fiscale); la mappa di re-identificazione resta in locale</a> <code>src/cn2f/pseudo/engine.py</code></li><li style="--j:2"><a href="#passo-3">Gateway unico verso i modelli (OpenRouter): guardia sui dati personali in uscita, rilevatore di prompt injection, tetto di spesa, cache su disco, audit a catena di hash</a> <code>src/cn2f/trust/gateway.py</code></li><li style="--j:3"><a href="#passo-4">Punteggio di affidabilità calibrato su segnali verificabili (regressione logistica su 5 segnali, soglia scelta col bootstrap) con coda di revisione umana</a> <code>src/cn2f/score/model.py</code></li><li style="--j:4"><a href="#passo-5">Mappatura su HL7 FHIR R4 (HAPI FHIR, $validate) e codifica terminologica; trasparenza IA secondo HL7 AI Transparency on FHIR (etichetta AIAST, fiducia, Provenance), validata sui profili HL7</a> <code>src/cn2f/fhir/client.py</code></li><li style="--j:5"><a href="#passo-5">Server MCP (SDK Python ufficiale 2.x) che espone la cartella FHIR agli agenti</a> <code>src/cn2f/mcp_server/server.py</code></li><li style="--j:6"><a href="#passo-7">Integrazione agentica per la pre-selezione negli studi clinici: criteri di ClinicalTrials.gov in regole tipizzate, recupero BM25 locale, una chiamata, verificatore delle citazioni in codice, una correzione</a> <code>src/cn2f/prescreen/run.py</code></li><li style="--j:7"><a href="#passo-9">Memoria del coordinatore: regole tipizzate per studio, quarantena per ciò che non viene da una persona, scadenza, oblio dimostrato sui byte, confronto con la regola data come testo a un modello</a> <code>src/cn2f/prescreen/memory.py</code></li><li style="--j:8"><a href="#passo-7">Un modello «System One» (TypeSafe Jev) come primo stadio veloce: decisioni tipizzate dallo stesso gateway, misurate su TREC 2022 contro l&#39;agente, con soglie scelte su argomenti tenuti da parte; nella demo ordina a parità di esito, non esclude nessuno</a> <code>src/cn2f/prescreen/jev_eval.py</code></li><li style="--j:9"><a href="#passo-7">Un collegio di tre modelli «System One» (Jev, Microsoft-Decision-1, Cloudflare Clef) come secondo parere su ogni criterio, contro le etichette dei medici, con prove di robustezza</a> <code>src/cn2f/prescreen/panel_eval.py</code></li><li style="--j:10"><a href="#passo-10">Valutazione su tre percorsi (TREC 2022 inglese e italiano, etichette di medici, catena completa) con intervalli bootstrap, giudice LLM tarato e controllo di regressione in make eval</a> <code>src/cn2f/prescreen/evaluate.py</code></li><li style="--j:11"><a href="#passo-10">Benchmark di sicurezza: prompt injection in referti, testo degli studi e parafrasi mai viste; fuga di identificativi ospedalieri</a> <code>src/cn2f/security/prescreen_bench.py</code></li><li style="--j:12"><a href="#passo-10">Dossier di conformità UE (AI Act, MDR, GDPR, ICH E6(R3)) con le prove citate verificate da test</a> <code>docs/compliance/README.md</code></li><li style="--j:13"><a href="#passo-10">Ingegneria: FastAPI + HTMX, sito bilingue a due facce, Docker Compose, rete Tailscale, copia statica per GitHub Pages, tutta la suite in make test; circa 3,00 USD di chiamate in tutto</a> <code>src/cn2f/web/app.py</code></li>
+        </ul>
+        <p class="autore">Progetto personale, scritto da zero.</p>
+        <p><a class="vai-prova" href="/med-trial-match/prova/">Prova tu →</a></p>
+      
+      </div>
+    </li>
+  
+  </ol><!-- /racconto -->
+
+  <nav class="racconto-comandi" aria-label="Avanzamento del racconto">
+    <button type="button" id="indietro" class="btn-dopo">← Indietro</button>
+    <button type="button" id="avanti" class="btn-prima">Avanti →</button>
+  </nav>
+
+  <footer class="racconto-piede">
+    <p>Progetto personale, scritto da zero.</p>
+    <p><a href="/med-trial-match/prova/">Prova tu</a> · <a href="/med-trial-match/studi/">Esplora i dati</a> · <a href="/med-trial-match/viaggio/">Il viaggio di un referto, in dettaglio</a></p>
+  </footer>
+</main>
+
+</body>
+</html>

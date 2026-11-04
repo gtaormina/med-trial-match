@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Referto di laboratorio · cn2f</title>
+<link rel="stylesheet" href="/med-trial-match/static/css/cn2f.css">
+
+<script src="/med-trial-match/static/vendor/htmx.min.js" defer></script>
+<script src="/med-trial-match/static/js/facce.js" defer></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Referto di laboratorio · cn2f">
+<meta property="og:description" content="Dal referto ai dati clinici e alla pre-selezione per gli studi clinici: dati inventati, ogni affermazione con la prova citata, misure con intervalli. Non è un dispositivo medico.">
+<meta property="og:image" content="https://gtaormina.github.io/med-trial-match/med-trial-match/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Dal referto ai dati clinici e alla pre-selezione per gli studi clinici: dati inventati, ogni affermazione con la prova citata, misure con intervalli. Non è un dispositivo medico.">
+<meta property="og:url" content="https://gtaormina.github.io/med-trial-match/med-trial-match/referti/lab-6bd6c56be8/">
+</head>
+<body class="" data-face="medico">
+<header class="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="/med-trial-match/">
+      <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+      <span class="marchio-testo"><span class="marchio-skin">Dal referto ai dati clinici</span><span class="marchio-xray">clinical-notes-to-fhir</span></span>
+    </a>
+    
+    <nav class="menu" aria-label="Sezioni">
+      <a href="/med-trial-match/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span>Racconto</span></a>
+      <a href="/med-trial-match/prova/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><span>Prova tu</span></a>
+      <a href="/med-trial-match/professionisti/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg><span>Professionisti</span></a>
+    </nav>
+    <a class="lingua" href="/med-trial-match/en/referti/lab-6bd6c56be8/" hreflang="en" title="Read it in English">EN</a>
+  </div>
+  <p class="avviso"><span>dati inventati · non è un dispositivo medico</span></p>
+</header>
+
+<div class="vista">
+  <form class="interruttore">
+    <button id="switch-faccia" type="submit" name="faccia" value="tecnico"
+            aria-pressed="false" aria-label="Passa dalla vista medico alla vista tecnica">
+      <span class="opz opz-medico">Medico</span><span class="opz opz-tecnico">Tecnico</span>
+    </button>
+  </form>
+</div>
+<main class="facce" data-face="medico">
+  <section class="layer skin"><div class="pagina">
+  <p><a href="/med-trial-match/referti/">← Referti</a></p>
+  <h1>Referto di laboratorio · 2024-01-01</h1>
+  <p class="tenue">Paziente <span class="mono">pt-7b6faebbe73b</span>. Il testo è già anonimizzato: i dati personali sono stati sostituiti prima di qualsiasi chiamata all'intelligenza artificiale. Passa sopra un dato per vedere la frase da cui viene.</p>
+  <div class="due-col">
+    <div class="foglio">Laboratorio Analisi – Referto
+
+Paziente: [PERSON_1]
+Codice Fiscale: [IT_FISCAL_CODE_1]
+Data di nascita: [DATE_OF_BIRTH_1]
+Indirizzo: [ADDRESS_1]
+Telefono: [PHONE_NUMBER_1]
+Medico curante: Dott.ssa [PERSON_2]
+
+Data prelievo: 01/01/2024
+
+Esame emocromocitometrico con formula leucocitaria:
+
+Il paziente si presenta per un controllo generale. Nega febbre o brividi. Nega sintomi urinari.
+
+Risultati:
+- <mark class="auto" id="ev-r14149af3ee7db4b6" data-item="r14149af3ee7db4b6" tabindex="0">Leucociti (conta automatizzata): 9,62 x 10^3/uL</mark>
+- <mark class="auto" id="ev-r367a562e7ef6aed0" data-item="r367a562e7ef6aed0" tabindex="0">Eritrociti (conta automatizzata): 4,2 x 10^6/uL</mark>
+- <mark class="auto" id="ev-ra1f31d4fd9d51d06" data-item="ra1f31d4fd9d51d06" tabindex="0">Emoglobina: 15,12 g/dL</mark>
+- <mark class="auto" id="ev-rc47a9af1bba423af" data-item="rc47a9af1bba423af" tabindex="0">Ematocrito (conta automatizzata): 44,2 %</mark>
+- <mark class="auto" id="ev-r7c239060e770eca3" data-item="r7c239060e770eca3" tabindex="0">MCV (volume corpuscolare medio): 84,98 fL</mark>
+- <mark class="auto" id="ev-ra2fdf2baff892844" data-item="ra2fdf2baff892844" tabindex="0">MCH (emoglobina corpuscolare media): 28,98 pg</mark>
+- <mark class="auto" id="ev-r5f3e21e237fa12ad" data-item="r5f3e21e237fa12ad" tabindex="0">MCHC (concentrazione emoglobinica corpuscolare media): 33,19 g/dL</mark>
+- <mark class="auto" id="ev-rb23598f51ec55614" data-item="rb23598f51ec55614" tabindex="0">RDW (ampiezza distribuzione eritrociti): 41,51 fL</mark>
+- <mark class="auto" id="ev-rb14e995a33fd5a31" data-item="rb14e995a33fd5a31" tabindex="0">Piastrine (conta automatizzata): 405,67 x 10^3/uL</mark>
+- <mark class="auto" id="ev-rb0f57dd2228c8d00" data-item="rb0f57dd2228c8d00" tabindex="0">PDW (ampiezza distribuzione piastrine): 13,24 fL</mark>
+- <mark class="auto" id="ev-r7d6b9529aaefd6b7" data-item="r7d6b9529aaefd6b7" tabindex="0">MPV (volume piastrinico medio): 11,99 fL</mark>
+
+Note: valori nei limiti di riferimento per l&#39;età del paziente.
+
+Firma del Medico: Dott.ssa [PERSON_2]</div>
+    <div>
+      
+      <div class="dato" data-item="r14149af3ee7db4b6" tabindex="0">
+        <span class="pill ok">Registrato</span>
+        <div><b>Leucociti (conta automatizzata)</b> <span class="tenue">· Esame / parametro</span></div>
+        <div class="valore">9,62 10*3/uL</div>
+        <small>2024-01-01 · affidabilità 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r367a562e7ef6aed0" tabindex="0">
+        <span class="pill ok">Registrato</span>
+        <div><b>Eritrociti (conta automatizzata)</b> <span class="tenue">· Esame / parametro</span></div>
+        <div class="valore">4,2 10*6/uL</div>
+        <small>2024-01-01 · affidabilità 95%</small>
+      </div>
+      
+      <div class="dato" data-item="ra1f31d4fd9d51d06" tabindex="0">
+        <span class="pill ok">Registrato</span>
+        <div><b>Emoglobina</b> <span class="tenue">· Esame / parametro</span></div>
+        <div class="valore">15,12 g/dL</div>
+        <small>2024-01-01 · affidabilità 95%</small>
+      </div>
+      
+      <div class="dato" data-item="rc47a9af1bba423af" tabindex="0">
+        <span class="pill ok">Registrato</span>
+        <div><b>Ematocrito (conta automatizzata)</b> <span class="tenue">· Esame / parametro</span></div>
+        <div class="valore">44,2 %</div>
+        <small>2024-01-01 · affidabilità 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r7c239060e770eca3" tabindex="0">
+        <span class="pill ok">Registrato</span>
+        <div><b>MCV (volume corpuscolare medio)</b> <span class="tenue">· Esame / parametro</span></div>
+        <div class="valore">84,98 fL</div>
+        <small>2024-01-01 · affidabilità 95%</small>
+      </div>
+      
+      <div class="dato" data-item="ra2fdf2baff892844" tabindex="0">
+        <span class="pill ok">Registrato</span>
+        <div><b>MCH (emoglobina corpuscolare media)</b> <span class="tenue">· Esame / parametro</span></div>
+        <div class="valore">28,98 pg</div>
+        <small>2024-01-01 · affidabilità 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r5f3e21e237fa12ad" tabindex="0">
+        <span class="pill ok">Registrato</span>
+        <div><b>MCHC (concentrazione emoglobinica corpuscolare media)</b> <span class="tenue">· Esame / parametro</span></div>
+        <div class="valore">33,19 g/dL</div>
+        <small>2024-01-01 · affidabilità 95%</small>
+      </div>
+      
+      <div class="dato" data-item="rb23598f51ec55614" tabindex="0">
+        <span class="pill ok">Registrato</span>
+        <div><b>RDW (ampiezza distribuzione eritrociti)</b> <span class="tenue">· Esame / parametro</span></div>
+        <div class="valore">41,51 fL</div>
+        <small>2024-01-01 · affidabilità 91%</small>
+      </div>
+      
+      <div class="dato" data-item="rb14e995a33fd5a31" tabindex="0">
+        <span class="pill ok">Registrato</span>
+        <div><b>Piastrine (conta automatizzata)</b> <span class="tenue">· Esame / parametro</span></div>
+        <div class="valore">405,67 10*3/uL</div>
+        <small>2024-01-01 · affidabilità 95%</small>
+      </div>
+      
+      <div class="dato" data-item="rb0f57dd2228c8d00" tabindex="0">
+        <span class="pill ok">Registrato</span>
+        <div><b>PDW (ampiezza distribuzione piastrine)</b> <span class="tenue">· Esame / parametro</span></div>
+        <div class="valore">13,24 fL</div>
+        <small>2024-01-01 · affidabilità 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r7d6b9529aaefd6b7" tabindex="0">
+        <span class="pill ok">Registrato</span>
+        <div><b>MPV (volume piastrinico medio)</b> <span class="tenue">· Esame / parametro</span></div>
+        <div class="valore">11,99 fL</div>
+        <small>2024-01-01 · affidabilità 95%</small>
+      </div>
+      
+    </div>
+  </div>
+</div></section>
+  <section class="layer xray" inert aria-hidden="true"><div class="pagina">
+  <h1>GET /referti/lab-6bd6c56be8</h1>
+  <div class="fasi"><span class="fase">pseudonymised text</span>→<span class="fase">anthropic/claude-haiku-5.5</span>→<span class="fase">FHIR R4 $validate</span>→<span class="fase">score ≥ threshold ?</span></div>
+  <div class="due-col" style="margin-top:14px">
+    <div class="pannello"><pre>Laboratorio Analisi – Referto
+
+Paziente: [PERSON_1]
+Codice Fiscale: [IT_FISCAL_CODE_1]
+Data di nascita: [DATE_OF_BIRTH_1]
+Indirizzo: [ADDRESS_1]
+Telefono: [PHONE_NUMBER_1]
+Medico curante: Dott.ssa [PERSON_2]
+
+Data prelievo: 01/01/2024
+
+Esame emocromocitometrico con formula leucocitaria:
+
+Il paziente si presenta per un controllo generale. Nega febbre o brividi. Nega sintomi urinari.
+
+Risultati:
+- <mark class="auto" id="ev-r14149af3ee7db4b6" data-item="r14149af3ee7db4b6" tabindex="0">Leucociti (conta automatizzata): 9,62 x 10^3/uL</mark>
+- <mark class="auto" id="ev-r367a562e7ef6aed0" data-item="r367a562e7ef6aed0" tabindex="0">Eritrociti (conta automatizzata): 4,2 x 10^6/uL</mark>
+- <mark class="auto" id="ev-ra1f31d4fd9d51d06" data-item="ra1f31d4fd9d51d06" tabindex="0">Emoglobina: 15,12 g/dL</mark>
+- <mark class="auto" id="ev-rc47a9af1bba423af" data-item="rc47a9af1bba423af" tabindex="0">Ematocrito (conta automatizzata): 44,2 %</mark>
+- <mark class="auto" id="ev-r7c239060e770eca3" data-item="r7c239060e770eca3" tabindex="0">MCV (volume corpuscolare medio): 84,98 fL</mark>
+- <mark class="auto" id="ev-ra2fdf2baff892844" data-item="ra2fdf2baff892844" tabindex="0">MCH (emoglobina corpuscolare media): 28,98 pg</mark>
+- <mark class="auto" id="ev-r5f3e21e237fa12ad" data-item="r5f3e21e237fa12ad" tabindex="0">MCHC (concentrazione emoglobinica corpuscolare media): 33,19 g/dL</mark>
+- <mark class="auto" id="ev-rb23598f51ec55614" data-item="rb23598f51ec55614" tabindex="0">RDW (ampiezza distribuzione eritrociti): 41,51 fL</mark>
+- <mark class="auto" id="ev-rb14e995a33fd5a31" data-item="rb14e995a33fd5a31" tabindex="0">Piastrine (conta automatizzata): 405,67 x 10^3/uL</mark>
+- <mark class="auto" id="ev-rb0f57dd2228c8d00" data-item="rb0f57dd2228c8d00" tabindex="0">PDW (ampiezza distribuzione piastrine): 13,24 fL</mark>
+- <mark class="auto" id="ev-r7d6b9529aaefd6b7" data-item="r7d6b9529aaefd6b7" tabindex="0">MPV (volume piastrinico medio): 11,99 fL</mark>
+
+Note: valori nei limiti di riferimento per l&#39;età del paziente.
+
+Firma del Medico: Dott.ssa [PERSON_2]</pre></div>
+    <div>
+    
+      <div class="pannello dato-x" data-item="r14149af3ee7db4b6" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r14149af3ee7db4b6</span></div>
+        <div>code <span class="s">6690-2</span> Leukocytes [#/volume] in Blood by Automated count <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r14149af3ee7db4b6</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;6690-2&#34;,
+        &#34;display&#34;: &#34;Leukocytes [#/volume] in Blood by Automated count&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Leukocytes [#/volume] in Blood by Automated count&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2024-01-01&#34;,
+  &#34;id&#34;: &#34;r14149af3ee7db4b6&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-7b6faebbe73b&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;10*3/uL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;10*3/uL&#34;,
+    &#34;value&#34;: 9.62
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r367a562e7ef6aed0" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r367a562e7ef6aed0</span></div>
+        <div>code <span class="s">789-8</span> Erythrocytes [#/volume] in Blood by Automated count <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r367a562e7ef6aed0</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;789-8&#34;,
+        &#34;display&#34;: &#34;Erythrocytes [#/volume] in Blood by Automated count&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Erythrocytes [#/volume] in Blood by Automated count&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2024-01-01&#34;,
+  &#34;id&#34;: &#34;r367a562e7ef6aed0&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-7b6faebbe73b&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;10*6/uL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;10*6/uL&#34;,
+    &#34;value&#34;: 4.2
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="ra1f31d4fd9d51d06" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">ra1f31d4fd9d51d06</span></div>
+        <div>code <span class="s">718-7</span> Hemoglobin [Mass/volume] in Blood <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/ra1f31d4fd9d51d06</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;718-7&#34;,
+        &#34;display&#34;: &#34;Hemoglobin [Mass/volume] in Blood&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Hemoglobin [Mass/volume] in Blood&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2024-01-01&#34;,
+  &#34;id&#34;: &#34;ra1f31d4fd9d51d06&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-7b6faebbe73b&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;g/dL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;g/dL&#34;,
+    &#34;value&#34;: 15.12
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rc47a9af1bba423af" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">rc47a9af1bba423af</span></div>
+        <div>code <span class="s">4544-3</span> Hematocrit [Volume Fraction] of Blood by Automated count <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/rc47a9af1bba423af</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;4544-3&#34;,
+        &#34;display&#34;: &#34;Hematocrit [Volume Fraction] of Blood by Automated count&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Hematocrit [Volume Fraction] of Blood by Automated count&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2024-01-01&#34;,
+  &#34;id&#34;: &#34;rc47a9af1bba423af&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-7b6faebbe73b&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;%&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;%&#34;,
+    &#34;value&#34;: 44.2
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r7c239060e770eca3" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r7c239060e770eca3</span></div>
+        <div>code <span class="s">787-2</span> MCV [Entitic mean volume] in Red Blood Cells by Automated count <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r7c239060e770eca3</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;787-2&#34;,
+        &#34;display&#34;: &#34;MCV [Entitic mean volume] in Red Blood Cells by Automated count&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Mean corpuscular volume&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2024-01-01&#34;,
+  &#34;id&#34;: &#34;r7c239060e770eca3&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-7b6faebbe73b&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;fL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;fL&#34;,
+    &#34;value&#34;: 84.98
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="ra2fdf2baff892844" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">ra2fdf2baff892844</span></div>
+        <div>code <span class="s">785-6</span> MCH [Entitic mass] by Automated count <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/ra2fdf2baff892844</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;785-6&#34;,
+        &#34;display&#34;: &#34;MCH [Entitic mass] by Automated count&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Mean corpuscular hemoglobin&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2024-01-01&#34;,
+  &#34;id&#34;: &#34;ra2fdf2baff892844&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-7b6faebbe73b&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;pg&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;pg&#34;,
+    &#34;value&#34;: 28.98
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r5f3e21e237fa12ad" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r5f3e21e237fa12ad</span></div>
+        <div>code <span class="s">786-4</span> MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r5f3e21e237fa12ad</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;786-4&#34;,
+        &#34;display&#34;: &#34;MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Mean corpuscular hemoglobin concentration&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2024-01-01&#34;,
+  &#34;id&#34;: &#34;r5f3e21e237fa12ad&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-7b6faebbe73b&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;g/dL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;g/dL&#34;,
+    &#34;value&#34;: 33.19
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rb23598f51ec55614" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">rb23598f51ec55614</span></div>
+        <div>code <span class="s">788-0</span> Erythrocyte [DistWidth] in Blood by Automated count <span class="tenue">(fuzzy 0.73)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.73</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:91%"></i></div>
+        <div>score <span class="n">0.91</span> → <span class="s">PUT /fhir/Observation/rb23598f51ec55614</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;788-0&#34;,
+        &#34;display&#34;: &#34;Erythrocyte [DistWidth] in Blood by Automated count&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Erythrocyte distribution width [Entitic volume] by Automated count&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2024-01-01&#34;,
+  &#34;id&#34;: &#34;rb23598f51ec55614&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-7b6faebbe73b&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;fL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;fL&#34;,
+    &#34;value&#34;: 41.51
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rb14e995a33fd5a31" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">rb14e995a33fd5a31</span></div>
+        <div>code <span class="s">777-3</span> Platelets [#/volume] in Blood by Automated count <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/rb14e995a33fd5a31</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;777-3&#34;,
+        &#34;display&#34;: &#34;Platelets [#/volume] in Blood by Automated count&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Platelets [#/volume] in Blood by Automated count&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2024-01-01&#34;,
+  &#34;id&#34;: &#34;rb14e995a33fd5a31&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-7b6faebbe73b&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;10*3/uL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;10*3/uL&#34;,
+    &#34;value&#34;: 405.67
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rb0f57dd2228c8d00" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">rb0f57dd2228c8d00</span></div>
+        <div>code <span class="s">32207-3</span> Platelet distribution width [Entitic volume] in Blood by Automated count <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/rb0f57dd2228c8d00</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;32207-3&#34;,
+        &#34;display&#34;: &#34;Platelet distribution width [Entitic volume] in Blood by Automated count&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Platelet distribution width [Entitic volume] in Blood by Automated count&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2024-01-01&#34;,
+  &#34;id&#34;: &#34;rb0f57dd2228c8d00&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-7b6faebbe73b&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;fL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;fL&#34;,
+    &#34;value&#34;: 13.24
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r7d6b9529aaefd6b7" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r7d6b9529aaefd6b7</span></div>
+        <div>code <span class="s">32623-1</span> Platelet [Entitic mean volume] in Blood by Automated count <span class="tenue">(fuzzy 0.99)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.99</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r7d6b9529aaefd6b7</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;32623-1&#34;,
+        &#34;display&#34;: &#34;Platelet [Entitic mean volume] in Blood by Automated count&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Platelet mean volume [Entitic volume] in Blood by Automated count&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2024-01-01&#34;,
+  &#34;id&#34;: &#34;r7d6b9529aaefd6b7&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-7b6faebbe73b&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;fL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;fL&#34;,
+    &#34;value&#34;: 11.99
+  }
+}</pre></details>
+      </div>
+    
+    </div>
+  </div>
+  <div class="come-fatto"><b class="k">Come è fatto</b><br><span class="tenue">extraction</span> · <code>src/cn2f/extract/</code> · <span class="s">tests/test_extract.py</span><br><span class="tenue">signals + score</span> · <code>src/cn2f/score/</code> · <span class="s">tests/test_score_review.py</span><br><span class="tenue">this page</span> · <code>src/cn2f/web/site/</code> · <span class="s">tests/test_site.py</span><br></div>
+</div></section>
+  <div class="raggio" aria-hidden="true"></div>
+</main>
+
+</body>
+</html>

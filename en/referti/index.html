@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notes · cn2f</title>
+<link rel="stylesheet" href="/med-trial-match/static/css/cn2f.css">
+
+<script src="/med-trial-match/static/vendor/htmx.min.js" defer></script>
+<script src="/med-trial-match/static/js/facce.js" defer></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Notes · cn2f">
+<meta property="og:description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:image" content="https://gtaormina.github.io/med-trial-match/med-trial-match/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:url" content="https://gtaormina.github.io/med-trial-match/med-trial-match/en/referti/">
+</head>
+<body class="" data-face="medico">
+<header class="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="/med-trial-match/en/">
+      <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+      <span class="marchio-testo"><span class="marchio-skin">From clinical notes to data</span><span class="marchio-xray">clinical-notes-to-fhir</span></span>
+    </a>
+    
+    <nav class="menu" aria-label="Sections">
+      <a href="/med-trial-match/en/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span>Story</span></a>
+      <a href="/med-trial-match/en/prova/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><span>Try it</span></a>
+      <a href="/med-trial-match/en/professionisti/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg><span>Professionals</span></a>
+    </nav>
+    <a class="lingua" href="/med-trial-match/referti/" hreflang="it" title="Leggi in italiano">IT</a>
+  </div>
+  <p class="avviso"><span>invented data · not a medical device</span></p>
+</header>
+
+<div class="vista">
+  <form class="interruttore">
+    <button id="switch-faccia" type="submit" name="faccia" value="tecnico"
+            aria-pressed="false" aria-label="Switch between the clinician view and the technical view">
+      <span class="opz opz-medico">Clinician</span><span class="opz opz-tecnico">Technical</span>
+    </button>
+  </form>
+</div>
+<main class="facce" data-face="medico">
+  <section class="layer skin"><div class="pagina">
+  <h1>Notes</h1>
+  <p class="tenue">51 notes of invented patients, written in Italian. For each: how many data were written on their own and how many wait for a clinician.</p>
+  <div class="tabella-scorre"><table class="elenco">
+    <thead><tr><th>Document</th><th>Date</th><th>Patient</th><th>Written</th><th>To review</th></tr></thead>
+    <tbody><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-9b6b143e0e/">Outpatient visit</a></td><td>2025-12-08</td><td class="mono">pt-356a22282489</td>
+      <td><span class="pill ok">5</span></td><td><span class="pill wait">1</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-da4b77b72a/">Outpatient visit</a></td><td>2025-12-02</td><td class="mono">pt-4f64a4594574</td>
+      <td><span class="pill ok">8</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-beafe3c7b0/">Lab report</a></td><td>2025-11-27</td><td class="mono">pt-14c8ce202411</td>
+      <td><span class="pill ok">15</span></td><td><span class="pill wait">1</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-032fe0e9fa/">Outpatient visit</a></td><td>2025-11-21</td><td class="mono">pt-c9aefa1e0061</td>
+      <td><span class="pill ok">6</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-2a10da707e/">Lab report</a></td><td>2025-10-28</td><td class="mono">pt-356a22282489</td>
+      <td><span class="pill ok">12</span></td><td>—</td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-1ded49ff17/">Lab report</a></td><td>2025-08-03</td><td class="mono">pt-c9358a257742</td>
+      <td><span class="pill ok">15</span></td><td><span class="pill wait">1</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-5c890e9332/">Outpatient visit</a></td><td>2025-07-25</td><td class="mono">pt-6ac6e029907f</td>
+      <td><span class="pill ok">4</span></td><td><span class="pill wait">7</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-4732eea304/">Outpatient visit</a></td><td>2025-07-10</td><td class="mono">pt-8467e0c48ef4</td>
+      <td><span class="pill ok">3</span></td><td><span class="pill wait">5</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-360d9f817b/">Lab report</a></td><td>2025-06-26</td><td class="mono">pt-8467e0c48ef4</td>
+      <td><span class="pill ok">9</span></td><td>—</td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-b933cebb6c/">Lab report</a></td><td>2025-05-28</td><td class="mono">pt-10aa4cc52052</td>
+      <td><span class="pill ok">14</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-658af02395/">Outpatient visit</a></td><td>2025-05-04</td><td class="mono">pt-c9358a257742</td>
+      <td><span class="pill ok">16</span></td><td><span class="pill wait">1</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-8a7c76e677/">Outpatient visit</a></td><td>2025-04-24</td><td class="mono">pt-2c08a0512d6b</td>
+      <td><span class="pill ok">3</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-e33170face/">Lab report</a></td><td>2025-03-19</td><td class="mono">pt-80de5da1308d</td>
+      <td><span class="pill ok">4</span></td><td>—</td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-d8edf8f08c/">Lab report</a></td><td>2025-03-07</td><td class="mono">pt-6ac6e029907f</td>
+      <td><span class="pill ok">15</span></td><td>—</td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-c8ea700243/">Outpatient visit</a></td><td>2025-02-19</td><td class="mono">pt-10aa4cc52052</td>
+      <td><span class="pill ok">3</span></td><td><span class="pill wait">3</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-d5d552ebd3/">Discharge letter</a></td><td>2025-01-31</td><td class="mono">pt-80de5da1308d</td>
+      <td><span class="pill ok">0</span></td><td><span class="pill wait">3</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-a2d09eb562/">Lab report</a></td><td>2025-01-20</td><td class="mono">pt-a3084951fc51</td>
+      <td><span class="pill ok">13</span></td><td><span class="pill wait">3</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-e0a51692c8/">Outpatient visit</a></td><td>2025-01-12</td><td class="mono">pt-90f4b1175eb8</td>
+      <td><span class="pill ok">14</span></td><td><span class="pill wait">1</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-72a0045039/">Outpatient visit</a></td><td>2025-01-06</td><td class="mono">pt-7b6faebbe73b</td>
+      <td><span class="pill ok">8</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-ad9d390570/">Lab report</a></td><td>2024-11-15</td><td class="mono">pt-c9aefa1e0061</td>
+      <td><span class="pill ok">16</span></td><td>—</td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-91317df939/">Discharge letter</a></td><td>2024-06-15</td><td class="mono">pt-2c08a0512d6b</td>
+      <td><span class="pill ok">4</span></td><td><span class="pill wait">1</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-568e8521d9/">Outpatient visit</a></td><td>2024-06-12</td><td class="mono">pt-12f7c1e3bd37</td>
+      <td><span class="pill ok">0</span></td><td><span class="pill wait">5</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-01c9da36e9/">Outpatient visit</a></td><td>2024-04-28</td><td class="mono">pt-14c8ce202411</td>
+      <td><span class="pill ok">6</span></td><td><span class="pill wait">3</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-af1b622e14/">Outpatient visit</a></td><td>2024-03-20</td><td class="mono">pt-f77f5a6590f5</td>
+      <td><span class="pill ok">4</span></td><td><span class="pill wait">1</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-6bd6c56be8/">Lab report</a></td><td>2024-01-01</td><td class="mono">pt-7b6faebbe73b</td>
+      <td><span class="pill ok">11</span></td><td>—</td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-5ddab63bf8/">Discharge letter</a></td><td>2023-10-21</td><td class="mono">pt-10aa4cc52052</td>
+      <td><span class="pill ok">2</span></td><td><span class="pill wait">3</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-9e51413354/">Lab report</a></td><td>2023-05-17</td><td class="mono">pt-12f7c1e3bd37</td>
+      <td><span class="pill ok">12</span></td><td>—</td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-cca520581e/">Lab report</a></td><td>2023-04-11</td><td class="mono">pt-4f64a4594574</td>
+      <td><span class="pill ok">5</span></td><td>—</td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-05e389c1ff/">Lab report</a></td><td>2023-03-30</td><td class="mono">pt-2c08a0512d6b</td>
+      <td><span class="pill ok">12</span></td><td>—</td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-b616eeba40/">Discharge letter</a></td><td>2023-03-07</td><td class="mono">pt-356a22282489</td>
+      <td><span class="pill ok">4</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-cb00fb22f4/">Discharge letter</a></td><td>2023-02-25</td><td class="mono">pt-a3084951fc51</td>
+      <td><span class="pill ok">11</span></td><td><span class="pill wait">4</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-6d5e1027d2/">Outpatient visit</a></td><td>2023-02-22</td><td class="mono">pt-a3084951fc51</td>
+      <td><span class="pill ok">2</span></td><td><span class="pill wait">1</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-c3cbd6ca41/">Outpatient visit</a></td><td>2023-01-28</td><td class="mono">pt-80de5da1308d</td>
+      <td><span class="pill ok">3</span></td><td><span class="pill wait">5</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-2ef30cc346/">Lab report</a></td><td>2021-12-26</td><td class="mono">pt-90f4b1175eb8</td>
+      <td><span class="pill ok">11</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-c94f29bc9c/">Lab report</a></td><td>2021-04-06</td><td class="mono">pt-f77f5a6590f5</td>
+      <td><span class="pill ok">11</span></td><td>—</td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-dbee5c6c00/">Discharge letter</a></td><td>2021-03-09</td><td class="mono">pt-4f64a4594574</td>
+      <td><span class="pill ok">15</span></td><td><span class="pill wait">6</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-5db4115148/">Discharge letter</a></td><td>2019-02-28</td><td class="mono">pt-f77f5a6590f5</td>
+      <td><span class="pill ok">3</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-598332f40e/">Discharge letter</a></td><td>2017-10-03</td><td class="mono">pt-8467e0c48ef4</td>
+      <td><span class="pill ok">4</span></td><td><span class="pill wait">1</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-55fa8d9b35/">Discharge letter</a></td><td>2016-11-17</td><td class="mono">pt-90f4b1175eb8</td>
+      <td><span class="pill ok">10</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-1ff9f6a107/">Discharge letter</a></td><td>2016-07-06</td><td class="mono">pt-cf784e8917ae</td>
+      <td><span class="pill ok">2</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-5f90e76981/">Outpatient visit</a></td><td>2016-06-02</td><td class="mono">pt-cf784e8917ae</td>
+      <td><span class="pill ok">3</span></td><td><span class="pill wait">1</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-2ef4275a6e/">Lab report</a></td><td>2016-05-19</td><td class="mono">pt-cf784e8917ae</td>
+      <td><span class="pill ok">15</span></td><td><span class="pill wait">3</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-427d9057d3/">Lab report</a></td><td>2011-03-03</td><td class="mono">pt-055db75e60ca</td>
+      <td><span class="pill ok">13</span></td><td><span class="pill wait">1</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-41c544b184/">Outpatient visit</a></td><td>2010-03-11</td><td class="mono">pt-055db75e60ca</td>
+      <td><span class="pill ok">3</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-d005455241/">Discharge letter</a></td><td>2010-02-07</td><td class="mono">pt-055db75e60ca</td>
+      <td><span class="pill ok">2</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-1844a5aff2/">Lab report</a></td><td>2008-02-02</td><td class="mono">pt-f4256ab09759</td>
+      <td><span class="pill ok">4</span></td><td>—</td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-450a7a2033/">Outpatient visit</a></td><td>2007-09-08</td><td class="mono">pt-f4256ab09759</td>
+      <td><span class="pill ok">11</span></td><td><span class="pill wait">2</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-883c31a8af/">Discharge letter</a></td><td>1993-05-10</td><td class="mono">pt-871cdb510675</td>
+      <td><span class="pill ok">11</span></td><td><span class="pill wait">5</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/lab-002b79e522/">Lab report</a></td><td>1993-01-28</td><td class="mono">pt-871cdb510675</td>
+      <td><span class="pill ok">14</span></td><td>—</td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/outpatient-d363c899e4/">Outpatient visit</a></td><td>1992-02-06</td><td class="mono">pt-871cdb510675</td>
+      <td><span class="pill ok">2</span></td><td><span class="pill wait">8</span></td>
+    </tr><tr>
+      <td><a href="/med-trial-match/en/referti/discharge-b726c3e194/">Discharge letter</a></td><td>1975-08-24</td><td class="mono">pt-f4256ab09759</td>
+      <td><span class="pill ok">1</span></td><td><span class="pill wait">2</span></td>
+    </tr></tbody>
+  </table></div>
+</div></section>
+  <section class="layer xray" inert aria-hidden="true"><div class="pagina">
+  <h1>GET /referti</h1>
+  <p class="tenue">split <span class="s">test</span> · primary model <span class="s">anthropic/claude-haiku-5.5</span> · 51 notes</p>
+  <div class="pannello"><table>
+    <tr><th>doc_id</th><th>type</th><th>patient</th><th>auto</th><th>review</th></tr>
+    <tr><td><a href="/med-trial-match/en/referti/outpatient-9b6b143e0e/">outpatient-9b6b143e0e</a></td><td>outpatient</td><td>pt-356a22282489</td><td class="s">5</td><td class="n">1</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-da4b77b72a/">outpatient-da4b77b72a</a></td><td>outpatient</td><td>pt-4f64a4594574</td><td class="s">8</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-beafe3c7b0/">lab-beafe3c7b0</a></td><td>lab</td><td>pt-14c8ce202411</td><td class="s">15</td><td class="n">1</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-032fe0e9fa/">outpatient-032fe0e9fa</a></td><td>outpatient</td><td>pt-c9aefa1e0061</td><td class="s">6</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-2a10da707e/">lab-2a10da707e</a></td><td>lab</td><td>pt-356a22282489</td><td class="s">12</td><td class="n">0</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-1ded49ff17/">lab-1ded49ff17</a></td><td>lab</td><td>pt-c9358a257742</td><td class="s">15</td><td class="n">1</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-5c890e9332/">outpatient-5c890e9332</a></td><td>outpatient</td><td>pt-6ac6e029907f</td><td class="s">4</td><td class="n">7</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-4732eea304/">outpatient-4732eea304</a></td><td>outpatient</td><td>pt-8467e0c48ef4</td><td class="s">3</td><td class="n">5</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-360d9f817b/">lab-360d9f817b</a></td><td>lab</td><td>pt-8467e0c48ef4</td><td class="s">9</td><td class="n">0</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-b933cebb6c/">lab-b933cebb6c</a></td><td>lab</td><td>pt-10aa4cc52052</td><td class="s">14</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-658af02395/">outpatient-658af02395</a></td><td>outpatient</td><td>pt-c9358a257742</td><td class="s">16</td><td class="n">1</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-8a7c76e677/">outpatient-8a7c76e677</a></td><td>outpatient</td><td>pt-2c08a0512d6b</td><td class="s">3</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-e33170face/">lab-e33170face</a></td><td>lab</td><td>pt-80de5da1308d</td><td class="s">4</td><td class="n">0</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-d8edf8f08c/">lab-d8edf8f08c</a></td><td>lab</td><td>pt-6ac6e029907f</td><td class="s">15</td><td class="n">0</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-c8ea700243/">outpatient-c8ea700243</a></td><td>outpatient</td><td>pt-10aa4cc52052</td><td class="s">3</td><td class="n">3</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-d5d552ebd3/">discharge-d5d552ebd3</a></td><td>discharge</td><td>pt-80de5da1308d</td><td class="s">0</td><td class="n">3</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-a2d09eb562/">lab-a2d09eb562</a></td><td>lab</td><td>pt-a3084951fc51</td><td class="s">13</td><td class="n">3</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-e0a51692c8/">outpatient-e0a51692c8</a></td><td>outpatient</td><td>pt-90f4b1175eb8</td><td class="s">14</td><td class="n">1</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-72a0045039/">outpatient-72a0045039</a></td><td>outpatient</td><td>pt-7b6faebbe73b</td><td class="s">8</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-ad9d390570/">lab-ad9d390570</a></td><td>lab</td><td>pt-c9aefa1e0061</td><td class="s">16</td><td class="n">0</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-91317df939/">discharge-91317df939</a></td><td>discharge</td><td>pt-2c08a0512d6b</td><td class="s">4</td><td class="n">1</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-568e8521d9/">outpatient-568e8521d9</a></td><td>outpatient</td><td>pt-12f7c1e3bd37</td><td class="s">0</td><td class="n">5</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-01c9da36e9/">outpatient-01c9da36e9</a></td><td>outpatient</td><td>pt-14c8ce202411</td><td class="s">6</td><td class="n">3</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-af1b622e14/">outpatient-af1b622e14</a></td><td>outpatient</td><td>pt-f77f5a6590f5</td><td class="s">4</td><td class="n">1</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-6bd6c56be8/">lab-6bd6c56be8</a></td><td>lab</td><td>pt-7b6faebbe73b</td><td class="s">11</td><td class="n">0</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-5ddab63bf8/">discharge-5ddab63bf8</a></td><td>discharge</td><td>pt-10aa4cc52052</td><td class="s">2</td><td class="n">3</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-9e51413354/">lab-9e51413354</a></td><td>lab</td><td>pt-12f7c1e3bd37</td><td class="s">12</td><td class="n">0</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-cca520581e/">lab-cca520581e</a></td><td>lab</td><td>pt-4f64a4594574</td><td class="s">5</td><td class="n">0</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-05e389c1ff/">lab-05e389c1ff</a></td><td>lab</td><td>pt-2c08a0512d6b</td><td class="s">12</td><td class="n">0</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-b616eeba40/">discharge-b616eeba40</a></td><td>discharge</td><td>pt-356a22282489</td><td class="s">4</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-cb00fb22f4/">discharge-cb00fb22f4</a></td><td>discharge</td><td>pt-a3084951fc51</td><td class="s">11</td><td class="n">4</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-6d5e1027d2/">outpatient-6d5e1027d2</a></td><td>outpatient</td><td>pt-a3084951fc51</td><td class="s">2</td><td class="n">1</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-c3cbd6ca41/">outpatient-c3cbd6ca41</a></td><td>outpatient</td><td>pt-80de5da1308d</td><td class="s">3</td><td class="n">5</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-2ef30cc346/">lab-2ef30cc346</a></td><td>lab</td><td>pt-90f4b1175eb8</td><td class="s">11</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-c94f29bc9c/">lab-c94f29bc9c</a></td><td>lab</td><td>pt-f77f5a6590f5</td><td class="s">11</td><td class="n">0</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-dbee5c6c00/">discharge-dbee5c6c00</a></td><td>discharge</td><td>pt-4f64a4594574</td><td class="s">15</td><td class="n">6</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-5db4115148/">discharge-5db4115148</a></td><td>discharge</td><td>pt-f77f5a6590f5</td><td class="s">3</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-598332f40e/">discharge-598332f40e</a></td><td>discharge</td><td>pt-8467e0c48ef4</td><td class="s">4</td><td class="n">1</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-55fa8d9b35/">discharge-55fa8d9b35</a></td><td>discharge</td><td>pt-90f4b1175eb8</td><td class="s">10</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-1ff9f6a107/">discharge-1ff9f6a107</a></td><td>discharge</td><td>pt-cf784e8917ae</td><td class="s">2</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-5f90e76981/">outpatient-5f90e76981</a></td><td>outpatient</td><td>pt-cf784e8917ae</td><td class="s">3</td><td class="n">1</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-2ef4275a6e/">lab-2ef4275a6e</a></td><td>lab</td><td>pt-cf784e8917ae</td><td class="s">15</td><td class="n">3</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-427d9057d3/">lab-427d9057d3</a></td><td>lab</td><td>pt-055db75e60ca</td><td class="s">13</td><td class="n">1</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-41c544b184/">outpatient-41c544b184</a></td><td>outpatient</td><td>pt-055db75e60ca</td><td class="s">3</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-d005455241/">discharge-d005455241</a></td><td>discharge</td><td>pt-055db75e60ca</td><td class="s">2</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-1844a5aff2/">lab-1844a5aff2</a></td><td>lab</td><td>pt-f4256ab09759</td><td class="s">4</td><td class="n">0</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-450a7a2033/">outpatient-450a7a2033</a></td><td>outpatient</td><td>pt-f4256ab09759</td><td class="s">11</td><td class="n">2</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-883c31a8af/">discharge-883c31a8af</a></td><td>discharge</td><td>pt-871cdb510675</td><td class="s">11</td><td class="n">5</td></tr><tr><td><a href="/med-trial-match/en/referti/lab-002b79e522/">lab-002b79e522</a></td><td>lab</td><td>pt-871cdb510675</td><td class="s">14</td><td class="n">0</td></tr><tr><td><a href="/med-trial-match/en/referti/outpatient-d363c899e4/">outpatient-d363c899e4</a></td><td>outpatient</td><td>pt-871cdb510675</td><td class="s">2</td><td class="n">8</td></tr><tr><td><a href="/med-trial-match/en/referti/discharge-b726c3e194/">discharge-b726c3e194</a></td><td>discharge</td><td>pt-f4256ab09759</td><td class="s">1</td><td class="n">2</td></tr>
+  </table></div>
+  <div class="come-fatto"><b class="k">Come è fatto</b><br><span class="tenue">data</span> · <code>src/cn2f/web/site/data.py</code> · <span class="s">tests/test_site.py</span><br><span class="tenue">routing</span> · <code>src/cn2f/review/routing.py</code> · <span class="s">tests/test_score_review.py</span><br></div>
+</div></section>
+  <div class="raggio" aria-hidden="true"></div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outpatient visit · cn2f</title>
+<link rel="stylesheet" href="/med-trial-match/static/css/cn2f.css">
+
+<script src="/med-trial-match/static/vendor/htmx.min.js" defer></script>
+<script src="/med-trial-match/static/js/facce.js" defer></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Outpatient visit · cn2f">
+<meta property="og:description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:image" content="https://gtaormina.github.io/med-trial-match/med-trial-match/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:url" content="https://gtaormina.github.io/med-trial-match/med-trial-match/en/referti/outpatient-e0a51692c8/">
+</head>
+<body class="" data-face="medico">
+<header class="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="/med-trial-match/en/">
+      <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+      <span class="marchio-testo"><span class="marchio-skin">From clinical notes to data</span><span class="marchio-xray">clinical-notes-to-fhir</span></span>
+    </a>
+    
+    <nav class="menu" aria-label="Sections">
+      <a href="/med-trial-match/en/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span>Story</span></a>
+      <a href="/med-trial-match/en/prova/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><span>Try it</span></a>
+      <a href="/med-trial-match/en/professionisti/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg><span>Professionals</span></a>
+    </nav>
+    <a class="lingua" href="/med-trial-match/referti/outpatient-e0a51692c8/" hreflang="it" title="Leggi in italiano">IT</a>
+  </div>
+  <p class="avviso"><span>invented data · not a medical device</span></p>
+</header>
+
+<div class="vista">
+  <form class="interruttore">
+    <button id="switch-faccia" type="submit" name="faccia" value="tecnico"
+            aria-pressed="false" aria-label="Switch between the clinician view and the technical view">
+      <span class="opz opz-medico">Clinician</span><span class="opz opz-tecnico">Technical</span>
+    </button>
+  </form>
+</div>
+<main class="facce" data-face="medico">
+  <section class="layer skin"><div class="pagina">
+  <p><a href="/med-trial-match/en/referti/">← Notes</a></p>
+  <h1>Outpatient visit · 2025-01-12</h1>
+  <p class="tenue">Patient <span class="mono">pt-90f4b1175eb8</span>. The text is already pseudonymised: the personal data were replaced before any call to the AI. Hover over a datum to see the sentence it comes from.</p>
+  <div class="due-col">
+    <div class="foglio"><mark class="auto" id="ev-rfffa53c1e0700155" data-item="rfffa53c1e0700155" tabindex="0">Ambulatorio di Medicina Generale</mark>
+Dott. Dott.ssa [PERSON_1]
+
+Paziente: [PERSON_2]
+Data di nascita: [DATE_OF_BIRTH_1]
+Codice Fiscale: [IT_FISCAL_CODE_1]
+Indirizzo: [ADDRESS_1]
+Telefono: [PHONE_NUMBER_1]
+
+Data visita: 12/01/2025
+
+Motivo della visita: Visita generale di controllo.
+
+Anamnesi: <mark class="auto" id="ev-r762529a45a235d9d" data-item="r762529a45a235d9d" tabindex="0">La paziente, di 30 anni, riferisce dolore cronico in trattamento con oppioidi.</mark> <mark class="auto" id="ev-r06fc4e0167f515b7" data-item="r06fc4e0167f515b7" tabindex="0">Riferisce asma bronchiale in terapia con broncodilatatore e cortisonico inalatorio.</mark> Pregressa polmonite risolta da anni (distrattore).
+
+Esame obiettivo: <mark class="auto" id="ev-r9d276a593adbf35f" data-item="r9d276a593adbf35f" tabindex="0">Pressione arteriosa 129/83 mmHg.</mark> <mark class="auto" id="ev-r157bfe1e767b0ec6" data-item="r157bfe1e767b0ec6" tabindex="0">Peso 63,4 kg</mark>, <mark class="auto" id="ev-r25ea5bb112775b2e" data-item="r25ea5bb112775b2e" tabindex="0">altezza 153,2 cm</mark>, <mark class="auto" id="ev-r6b5b596b6bf6ad34" data-item="r6b5b596b6bf6ad34" tabindex="0">BMI 27,03 kg/m²</mark>. <mark class="auto" id="ev-r51be19d2174779f8" data-item="r51be19d2174779f8" tabindex="0">Dolore riferito 1/10 alla scala numerica verbale.</mark>
+
+Terapie in corso:
+- <mark class="rev" id="ev-r151aa632e728fec1" data-item="r151aa632e728fec1" tabindex="0">Ventolin (albuterol 0,09 mg/act) MDI, 2 puff al bisogno</mark>
+- <mark class="auto" id="ev-rb3eb273bc0eb78d0" data-item="rb3eb273bc0eb78d0" tabindex="0">Flovent (fluticasone 0,044 mg/act) MDI, 2 puff due volte al dì</mark>
+- <mark class="auto" id="ev-r924d61e578a1c656" data-item="r924d61e578a1c656" tabindex="0">Oxycontin (ossicodone cloridrato 10 mg compresse a rilascio prolungato) 1 cpr ogni 12 ore</mark>
+- <mark class="auto" id="ev-r17e2301412a0bec9" data-item="r17e2301412a0bec9" tabindex="0">Cerotto transdermico di fentanil 0,025 mg/h ogni 72 ore</mark>
+- <mark class="auto" id="ev-rc74f00cca467268f" data-item="rc74f00cca467268f" tabindex="0">Tramadolo cloridrato 50 mg compresse, 1 cpr al bisogno</mark>
+- <mark class="auto" id="ev-r43c16441950e9764" data-item="r43c16441950e9764" tabindex="0">Idrocodone bitartrato 10 mg capsule a rilascio prolungato, 1 capsula ogni 12 ore</mark>
+
+Conclusioni: Paziente in terapia analgesica e per asma. Si consiglia monitoraggio pressorio regolare e controllo del peso. Prossimo controllo tra 3 mesi.
+
+Distrattori: pregressa polmonite risolta da anni.</div>
+    <div>
+      
+      <div class="dato" data-item="rfffa53c1e0700155" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Outpatient visit</b> <span class="tenue">· Encounter</span></div>
+        
+        <small>2025-01-12 · reliability 85%</small>
+      </div>
+      
+      <div class="dato" data-item="r762529a45a235d9d" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Dolore cronico</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>2025-01-12 · reliability 91%</small>
+      </div>
+      
+      <div class="dato" data-item="r06fc4e0167f515b7" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Asma bronchiale</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>2025-01-12 · reliability 91%</small>
+      </div>
+      
+      <div class="dato" data-item="r9d276a593adbf35f" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Pressione arteriosa sistolica</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">129 mm[Hg]</div>
+        <small>2025-01-12 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r422d30fa89669b30" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Pressione arteriosa diastolica</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">83 mm[Hg]</div>
+        <small>2025-01-12 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r157bfe1e767b0ec6" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Peso</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">63.4 kg</div>
+        <small>2025-01-12 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r25ea5bb112775b2e" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Altezza</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">153.2 cm</div>
+        <small>2025-01-12 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r6b5b596b6bf6ad34" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>BMI</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">27.03 kg/m2</div>
+        <small>2025-01-12 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r51be19d2174779f8" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Dolore riferito alla scala numerica verbale</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">1 {score}</div>
+        <small>2025-01-12 · reliability 95%</small>
+      </div>
+      
+      <div class="dato rev" data-item="r151aa632e728fec1" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Ventolin (albuterol 0,09 mg/act) MDI</b> <span class="tenue">· Medication</span></div>
+        
+        <small>2025-01-12 · reliability 77%</small>
+      </div>
+      
+      <div class="dato" data-item="rb3eb273bc0eb78d0" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Flovent (fluticasone 0,044 mg/act) MDI</b> <span class="tenue">· Medication</span></div>
+        
+        <small>2025-01-12 · reliability 88%</small>
+      </div>
+      
+      <div class="dato" data-item="r924d61e578a1c656" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Oxycontin (ossicodone cloridrato 10 mg compresse a rilascio prolungato)</b> <span class="tenue">· Medication</span></div>
+        
+        <small>2025-01-12 · reliability 85%</small>
+      </div>
+      
+      <div class="dato" data-item="r17e2301412a0bec9" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Cerotto transdermico di fentanil 0,025 mg/h</b> <span class="tenue">· Medication</span></div>
+        
+        <small>2025-01-12 · reliability 90%</small>
+      </div>
+      
+      <div class="dato" data-item="rc74f00cca467268f" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Tramadolo cloridrato 50 mg compresse</b> <span class="tenue">· Medication</span></div>
+        
+        <small>2025-01-12 · reliability 91%</small>
+      </div>
+      
+      <div class="dato" data-item="r43c16441950e9764" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Idrocodone bitartrato 10 mg capsule a rilascio prolungato</b> <span class="tenue">· Medication</span></div>
+        
+        <small>2025-01-12 · reliability 89%</small>
+      </div>
+      
+    </div>
+  </div>
+</div></section>
+  <section class="layer xray" inert aria-hidden="true"><div class="pagina">
+  <h1>GET /referti/outpatient-e0a51692c8</h1>
+  <div class="fasi"><span class="fase">pseudonymised text</span>→<span class="fase">anthropic/claude-haiku-5.5</span>→<span class="fase">FHIR R4 $validate</span>→<span class="fase">score ≥ threshold ?</span></div>
+  <div class="due-col" style="margin-top:14px">
+    <div class="pannello"><pre><mark class="auto" id="ev-rfffa53c1e0700155" data-item="rfffa53c1e0700155" tabindex="0">Ambulatorio di Medicina Generale</mark>
+Dott. Dott.ssa [PERSON_1]
+
+Paziente: [PERSON_2]
+Data di nascita: [DATE_OF_BIRTH_1]
+Codice Fiscale: [IT_FISCAL_CODE_1]
+Indirizzo: [ADDRESS_1]
+Telefono: [PHONE_NUMBER_1]
+
+Data visita: 12/01/2025
+
+Motivo della visita: Visita generale di controllo.
+
+Anamnesi: <mark class="auto" id="ev-r762529a45a235d9d" data-item="r762529a45a235d9d" tabindex="0">La paziente, di 30 anni, riferisce dolore cronico in trattamento con oppioidi.</mark> <mark class="auto" id="ev-r06fc4e0167f515b7" data-item="r06fc4e0167f515b7" tabindex="0">Riferisce asma bronchiale in terapia con broncodilatatore e cortisonico inalatorio.</mark> Pregressa polmonite risolta da anni (distrattore).
+
+Esame obiettivo: <mark class="auto" id="ev-r9d276a593adbf35f" data-item="r9d276a593adbf35f" tabindex="0">Pressione arteriosa 129/83 mmHg.</mark> <mark class="auto" id="ev-r157bfe1e767b0ec6" data-item="r157bfe1e767b0ec6" tabindex="0">Peso 63,4 kg</mark>, <mark class="auto" id="ev-r25ea5bb112775b2e" data-item="r25ea5bb112775b2e" tabindex="0">altezza 153,2 cm</mark>, <mark class="auto" id="ev-r6b5b596b6bf6ad34" data-item="r6b5b596b6bf6ad34" tabindex="0">BMI 27,03 kg/m²</mark>. <mark class="auto" id="ev-r51be19d2174779f8" data-item="r51be19d2174779f8" tabindex="0">Dolore riferito 1/10 alla scala numerica verbale.</mark>
+
+Terapie in corso:
+- <mark class="rev" id="ev-r151aa632e728fec1" data-item="r151aa632e728fec1" tabindex="0">Ventolin (albuterol 0,09 mg/act) MDI, 2 puff al bisogno</mark>
+- <mark class="auto" id="ev-rb3eb273bc0eb78d0" data-item="rb3eb273bc0eb78d0" tabindex="0">Flovent (fluticasone 0,044 mg/act) MDI, 2 puff due volte al dì</mark>
+- <mark class="auto" id="ev-r924d61e578a1c656" data-item="r924d61e578a1c656" tabindex="0">Oxycontin (ossicodone cloridrato 10 mg compresse a rilascio prolungato) 1 cpr ogni 12 ore</mark>
+- <mark class="auto" id="ev-r17e2301412a0bec9" data-item="r17e2301412a0bec9" tabindex="0">Cerotto transdermico di fentanil 0,025 mg/h ogni 72 ore</mark>
+- <mark class="auto" id="ev-rc74f00cca467268f" data-item="rc74f00cca467268f" tabindex="0">Tramadolo cloridrato 50 mg compresse, 1 cpr al bisogno</mark>
+- <mark class="auto" id="ev-r43c16441950e9764" data-item="r43c16441950e9764" tabindex="0">Idrocodone bitartrato 10 mg capsule a rilascio prolungato, 1 capsula ogni 12 ore</mark>
+
+Conclusioni: Paziente in terapia analgesica e per asma. Si consiglia monitoraggio pressorio regolare e controllo del peso. Prossimo controllo tra 3 mesi.
+
+Distrattori: pregressa polmonite risolta da anni.</pre></div>
+    <div>
+    
+      <div class="pannello dato-x" data-item="rfffa53c1e0700155" style="margin-bottom:10px">
+        <div><span class="k">Encounter</span> <span class="tenue">rfffa53c1e0700155</span></div>
+        <div>code <span class="s">371883000</span> Outpatient procedure (procedure) <span class="tenue">(fuzzy 0.72)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.72</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:85%"></i></div>
+        <div>score <span class="n">0.85</span> → <span class="s">PUT /fhir/Encounter/rfffa53c1e0700155</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;class&#34;: {
+    &#34;code&#34;: &#34;AMB&#34;,
+    &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/v3-ActCode&#34;
+  },
+  &#34;id&#34;: &#34;rfffa53c1e0700155&#34;,
+  &#34;period&#34;: {
+    &#34;end&#34;: &#34;2025-01-12&#34;,
+    &#34;start&#34;: &#34;2025-01-12&#34;
+  },
+  &#34;resourceType&#34;: &#34;Encounter&#34;,
+  &#34;status&#34;: &#34;finished&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  },
+  &#34;type&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;371883000&#34;,
+          &#34;display&#34;: &#34;Outpatient procedure (procedure)&#34;,
+          &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+        }
+      ],
+      &#34;text&#34;: &#34;Outpatient encounter&#34;
+    }
+  ]
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r762529a45a235d9d" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">r762529a45a235d9d</span></div>
+        <div>code <span class="s">82423001</span> Chronic pain (finding) <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:91%"></i></div>
+        <div>score <span class="n">0.91</span> → <span class="s">PUT /fhir/Condition/r762529a45a235d9d</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;82423001&#34;,
+        &#34;display&#34;: &#34;Chronic pain (finding)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Chronic pain&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;id&#34;: &#34;r762529a45a235d9d&#34;,
+  &#34;onsetDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r06fc4e0167f515b7" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">r06fc4e0167f515b7</span></div>
+        <div>code <span class="s">195967001</span> Asthma (disorder) <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:91%"></i></div>
+        <div>score <span class="n">0.91</span> → <span class="s">PUT /fhir/Condition/r06fc4e0167f515b7</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;195967001&#34;,
+        &#34;display&#34;: &#34;Asthma (disorder)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Asthma&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;id&#34;: &#34;r06fc4e0167f515b7&#34;,
+  &#34;onsetDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r9d276a593adbf35f" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r9d276a593adbf35f</span></div>
+        <div>code <span class="s">8480-6</span> Systolic Blood Pressure <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r9d276a593adbf35f</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;8480-6&#34;,
+        &#34;display&#34;: &#34;Systolic Blood Pressure&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Systolic blood pressure&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;id&#34;: &#34;r9d276a593adbf35f&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mm[Hg]&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mm[Hg]&#34;,
+    &#34;value&#34;: 129.0
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r422d30fa89669b30" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r422d30fa89669b30</span></div>
+        <div>code <span class="s">8462-4</span> Diastolic Blood Pressure <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r422d30fa89669b30</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;8462-4&#34;,
+        &#34;display&#34;: &#34;Diastolic Blood Pressure&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Diastolic blood pressure&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;id&#34;: &#34;r422d30fa89669b30&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mm[Hg]&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mm[Hg]&#34;,
+    &#34;value&#34;: 83.0
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r157bfe1e767b0ec6" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r157bfe1e767b0ec6</span></div>
+        <div>code <span class="s">29463-7</span> Body Weight <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r157bfe1e767b0ec6</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;29463-7&#34;,
+        &#34;display&#34;: &#34;Body Weight&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Body weight&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;id&#34;: &#34;r157bfe1e767b0ec6&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;kg&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;kg&#34;,
+    &#34;value&#34;: 63.4
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r25ea5bb112775b2e" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r25ea5bb112775b2e</span></div>
+        <div>code <span class="s">8302-2</span> Body Height <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r25ea5bb112775b2e</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;8302-2&#34;,
+        &#34;display&#34;: &#34;Body Height&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Body height&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;id&#34;: &#34;r25ea5bb112775b2e&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;cm&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;cm&#34;,
+    &#34;value&#34;: 153.2
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r6b5b596b6bf6ad34" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r6b5b596b6bf6ad34</span></div>
+        <div>code <span class="s">39156-5</span> Body mass index (BMI) [Ratio] <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r6b5b596b6bf6ad34</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;39156-5&#34;,
+        &#34;display&#34;: &#34;Body mass index (BMI) [Ratio]&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Body mass index&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;id&#34;: &#34;r6b5b596b6bf6ad34&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;kg/m2&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;kg/m2&#34;,
+    &#34;value&#34;: 27.03
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r51be19d2174779f8" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r51be19d2174779f8</span></div>
+        <div>code <span class="s">72514-3</span> Pain severity - 0-10 verbal numeric rating [Score] - Reported <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r51be19d2174779f8</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;72514-3&#34;,
+        &#34;display&#34;: &#34;Pain severity - 0-10 verbal numeric rating [Score] - Reported&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Pain severity - 0-10 verbal numeric rating [Score] - Reported&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;id&#34;: &#34;r51be19d2174779f8&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;{score}&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;{score}&#34;,
+    &#34;value&#34;: 1.0
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r151aa632e728fec1" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">r151aa632e728fec1</span></div>
+        <div>code <span class="s">745752</span> NDA021457 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [ProAir] <span class="tenue">(fuzzy 0.78)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.78</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>0.50</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:77%"></i></div>
+        <div>score <span class="n">0.77</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;2 puff al bisogno&#34;
+    }
+  ],
+  &#34;effectiveDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;id&#34;: &#34;r151aa632e728fec1&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;745752&#34;,
+        &#34;display&#34;: &#34;NDA021457 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [ProAir]&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rb3eb273bc0eb78d0" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">rb3eb273bc0eb78d0</span></div>
+        <div>code <span class="s">895996</span> 120 ACTUAT fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler [Flovent] <span class="tenue">(fuzzy 0.85)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.85</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:88%"></i></div>
+        <div>score <span class="n">0.88</span> → <span class="s">PUT /fhir/MedicationStatement/rb3eb273bc0eb78d0</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;2 puff due volte al dì&#34;
+    }
+  ],
+  &#34;effectiveDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;id&#34;: &#34;rb3eb273bc0eb78d0&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;895996&#34;,
+        &#34;display&#34;: &#34;120 ACTUAT fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler [Flovent]&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Fluticasone Propionate 0.044 MG/ACTUAT Metered Dose Inhaler&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r924d61e578a1c656" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">r924d61e578a1c656</span></div>
+        <div>code <span class="s">1049625</span> Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet] <span class="tenue">(fuzzy 0.72)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.72</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:85%"></i></div>
+        <div>score <span class="n">0.85</span> → <span class="s">PUT /fhir/MedicationStatement/r924d61e578a1c656</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;1 cpr ogni 12 ore&#34;
+    }
+  ],
+  &#34;effectiveDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;id&#34;: &#34;r924d61e578a1c656&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;1049625&#34;,
+        &#34;display&#34;: &#34;Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r17e2301412a0bec9" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">r17e2301412a0bec9</span></div>
+        <div>code <span class="s">245134</span> 72 HR Fentanyl 0.025 MG/HR Transdermal System <span class="tenue">(fuzzy 0.93)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.93</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:90%"></i></div>
+        <div>score <span class="n">0.90</span> → <span class="s">PUT /fhir/MedicationStatement/r17e2301412a0bec9</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;ogni 72 ore&#34;
+    }
+  ],
+  &#34;effectiveDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;id&#34;: &#34;r17e2301412a0bec9&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;245134&#34;,
+        &#34;display&#34;: &#34;72 HR Fentanyl 0.025 MG/HR Transdermal System&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Fentanyl 0.025 MG/HR Transdermal System&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rc74f00cca467268f" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">rc74f00cca467268f</span></div>
+        <div>code <span class="s">835603</span> tramadol hydrochloride 50 MG Oral Tablet <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:91%"></i></div>
+        <div>score <span class="n">0.91</span> → <span class="s">PUT /fhir/MedicationStatement/rc74f00cca467268f</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;1 cpr al bisogno&#34;
+    }
+  ],
+  &#34;effectiveDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;id&#34;: &#34;rc74f00cca467268f&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;835603&#34;,
+        &#34;display&#34;: &#34;tramadol hydrochloride 50 MG Oral Tablet&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Tramadol Hydrochloride 50 MG Oral Tablet&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r43c16441950e9764" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">r43c16441950e9764</span></div>
+        <div>code <span class="s">1860491</span> 12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule <span class="tenue">(fuzzy 0.90)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.90</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:89%"></i></div>
+        <div>score <span class="n">0.89</span> → <span class="s">PUT /fhir/MedicationStatement/r43c16441950e9764</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rfffa53c1e0700155&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;1 capsula ogni 12 ore&#34;
+    }
+  ],
+  &#34;effectiveDateTime&#34;: &#34;2025-01-12&#34;,
+  &#34;id&#34;: &#34;r43c16441950e9764&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;1860491&#34;,
+        &#34;display&#34;: &#34;12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-90f4b1175eb8&#34;
+  }
+}</pre></details>
+      </div>
+    
+    </div>
+  </div>
+  <div class="come-fatto"><b class="k">Come è fatto</b><br><span class="tenue">extraction</span> · <code>src/cn2f/extract/</code> · <span class="s">tests/test_extract.py</span><br><span class="tenue">signals + score</span> · <code>src/cn2f/score/</code> · <span class="s">tests/test_score_review.py</span><br><span class="tenue">this page</span> · <code>src/cn2f/web/site/</code> · <span class="s">tests/test_site.py</span><br></div>
+</div></section>
+  <div class="raggio" aria-hidden="true"></div>
+</main>
+
+</body>
+</html>

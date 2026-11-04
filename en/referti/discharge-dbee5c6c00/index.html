@@ -1,0 +1,1034 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discharge letter · cn2f</title>
+<link rel="stylesheet" href="/med-trial-match/static/css/cn2f.css">
+
+<script src="/med-trial-match/static/vendor/htmx.min.js" defer></script>
+<script src="/med-trial-match/static/js/facce.js" defer></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Discharge letter · cn2f">
+<meta property="og:description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:image" content="https://gtaormina.github.io/med-trial-match/med-trial-match/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:url" content="https://gtaormina.github.io/med-trial-match/med-trial-match/en/referti/discharge-dbee5c6c00/">
+</head>
+<body class="" data-face="medico">
+<header class="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="/med-trial-match/en/">
+      <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+      <span class="marchio-testo"><span class="marchio-skin">From clinical notes to data</span><span class="marchio-xray">clinical-notes-to-fhir</span></span>
+    </a>
+    
+    <nav class="menu" aria-label="Sections">
+      <a href="/med-trial-match/en/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span>Story</span></a>
+      <a href="/med-trial-match/en/prova/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><span>Try it</span></a>
+      <a href="/med-trial-match/en/professionisti/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg><span>Professionals</span></a>
+    </nav>
+    <a class="lingua" href="/med-trial-match/referti/discharge-dbee5c6c00/" hreflang="it" title="Leggi in italiano">IT</a>
+  </div>
+  <p class="avviso"><span>invented data · not a medical device</span></p>
+</header>
+
+<div class="vista">
+  <form class="interruttore">
+    <button id="switch-faccia" type="submit" name="faccia" value="tecnico"
+            aria-pressed="false" aria-label="Switch between the clinician view and the technical view">
+      <span class="opz opz-medico">Clinician</span><span class="opz opz-tecnico">Technical</span>
+    </button>
+  </form>
+</div>
+<main class="facce" data-face="medico">
+  <section class="layer skin"><div class="pagina">
+  <p><a href="/med-trial-match/en/referti/">← Notes</a></p>
+  <h1>Discharge letter · 2021-03-09</h1>
+  <p class="tenue">Patient <span class="mono">pt-4f64a4594574</span>. The text is already pseudonymised: the personal data were replaced before any call to the AI. Hover over a datum to see the sentence it comes from.</p>
+  <div class="due-col">
+    <div class="foglio">Lettera di dimissione ospedaliera
+
+Paziente: [PERSON_1], sesso femminile, 61 anni, nata il [DATE_OF_BIRTH_1], CF [IT_FISCAL_CODE_1], residente in [ADDRESS_1], telefono [PHONE_NUMBER_1].
+
+Ricovero: <mark class="rev" id="ev-rc996eb8bc64e54d6" data-item="rc996eb8bc64e54d6" tabindex="0">La paziente è stata ricoverata in data 09/03/2021 per isolamento</mark> (procedura di isolamento) in regime di urgenza. <mark class="auto" id="ev-r41758461ab4e5fa9" data-item="r41758461ab4e5fa9" tabindex="0">All&#39;ingresso presentava febbre elevata (temperatura corporea 41.38°C)</mark>, tachipnea (<mark class="auto" id="ev-r006aa6518babdb81" data-item="r006aa6518babdb81" tabindex="0">frequenza respiratoria 35.01 atti/min</mark>), tachicardia (<mark class="auto" id="ev-r21937621e10197ed" data-item="r21937621e10197ed" tabindex="0">frequenza cardiaca 121.13 bpm</mark>) e <mark class="auto" id="ev-rc941c475f9960fa6" data-item="rc941c475f9960fa6" tabindex="0">ipossiemia severa (saturazione arteriosa di ossigeno 80.14%)</mark>. <mark class="auto" id="ev-r297b82994dfb00c4" data-item="r297b82994dfb00c4" tabindex="0">La pressione arteriosa era 114/86 mmHg.</mark> <mark class="auto" id="ev-ra3b909ed196122fc" data-item="ra3b909ed196122fc" tabindex="0">Peso corporeo 71.9 kg.</mark>
+
+Anamnesi: La paziente negava dispnea e negava tosse. Non riferiva altri sintomi significativi.
+
+Esame obiettivo: All&#39;ingresso, paziente in buone condizioni generali, vigile, orientata. Obiettività toracica: murmure vescicolare ridotto bilateralmente. Non edemi declivi.
+
+Esami: <mark class="rev" id="ev-r51c1dae246b32242" data-item="r51c1dae246b32242" tabindex="0">Gli esami ematici mostravano leucopenia (leucociti 3.15 x 10^3/uL).</mark> <mark class="auto" id="ev-r7efce8ba3fb67fcd" data-item="r7efce8ba3fb67fcd" tabindex="0">La radiografia del torace (eseguita il 09/03/2021) documentava una polmonite.</mark> Il 18/03/2021, durante il decorso, la paziente ha sviluppato dispnea acuta e dolore toracico; <mark class="auto" id="ev-r8122b5f3d73971ce" data-item="r8122b5f3d73971ce" tabindex="0">l&#39;angio-TC ha evidenziato una embolia polmonare acuta</mark>.
+
+Terapia: In data 09/03/2021 <mark class="rev" id="ev-rd0b46cef06801350" data-item="rd0b46cef06801350" tabindex="0">è stata iniziata terapia con Enoxaparina sodica 40 mg (0.4 mL di soluzione 100 mg/mL) per via sottocutanea una volta al giorno</mark>, e <mark class="auto" id="ev-r9c47be29c5f53319" data-item="r9c47be29c5f53319" tabindex="0">paracetamolo 500 mg per via orale al bisogno per la febbre</mark>. Inoltre, <mark class="rev" id="ev-rd3609a908a437964" data-item="rd3609a908a437964" tabindex="0">è stata avviata ossigenoterapia con maschera facciale</mark> e <mark class="rev" id="ev-r814cb759b04288a1" data-item="r814cb759b04288a1" tabindex="0">posizionamento in posizione prona per migliorare l&#39;ossigenazione</mark>. A seguito della diagnosi di embolia polmonare il 18/03/2021, <mark class="auto" id="ev-r629f977964c99a45" data-item="r629f977964c99a45" tabindex="0">la terapia anticoagulante è stata modificata con Enoxaparina sodica 150 mg (1 mL di soluzione 150 mg/mL) due volte al giorno</mark>.
+
+Decorso: La paziente ha progressivamente migliorato la saturazione di ossigeno, con risoluzione della febbre e della tachipnea. Non ha presentato complicanze emorragiche. Le condizioni cliniche sono in miglioramento.
+
+Conclusione: La paziente viene dimessa in data odierna con diagnosi di polmonite, ipossiemia e embolia polmonare acuta. Terapia domiciliare: proseguire anticoagulazione con Enoxaparina secondo schema ospedaliero. Follow-up presso ambulatorio.
+
+Il medico curante: Dott. [PERSON_2]</div>
+    <div>
+      
+      <div class="dato rev" data-item="rc996eb8bc64e54d6" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Hospital stay</b> <span class="tenue">· Encounter</span></div>
+        
+        <small>2021-03-09 · reliability 80%</small>
+      </div>
+      
+      <div class="dato" data-item="r7efce8ba3fb67fcd" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Polmonite</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>2021-03-09 · reliability 97%</small>
+      </div>
+      
+      <div class="dato" data-item="rc941c475f9960fa6" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Ipossiemia severa</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>2021-03-09 · reliability 91%</small>
+      </div>
+      
+      <div class="dato" data-item="r41758461ab4e5fa9" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Febbre elevata</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>2021-03-09 · reliability 84%</small>
+      </div>
+      
+      <div class="dato rev" data-item="r51c1dae246b32242" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Leucopenia</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>2021-03-09 · reliability 38%</small>
+      </div>
+      
+      <div class="dato" data-item="r8122b5f3d73971ce" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Embolia polmonare acuta</b> <span class="tenue">· Diagnosis</span></div>
+        
+        <small>2021-03-18 · reliability 91%</small>
+      </div>
+      
+      <div class="dato" data-item="re26d57e14613dd86" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Temperatura corporea</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">41.38 Cel</div>
+        <small>2021-03-09 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r006aa6518babdb81" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Frequenza respiratoria</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">35.01 /min</div>
+        <small>2021-03-09 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r21937621e10197ed" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Frequenza cardiaca</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">121.13 /min</div>
+        <small>2021-03-09 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="rc4a6dd984284561c" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Saturazione arteriosa di ossigeno</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">80.14 %</div>
+        <small>2021-03-09 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r297b82994dfb00c4" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Systolic blood pressure</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">114 mm[Hg]</div>
+        <small>2021-03-09 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="rcfa8ebe6cf8d07df" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Pressione arteriosa diastolica</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">86 mm[Hg]</div>
+        <small>2021-03-09 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="ra3b909ed196122fc" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Peso corporeo</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">71.9 kg</div>
+        <small>2021-03-09 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r9f2755be8fb6872e" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Leucociti</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">3.15 10*3/uL</div>
+        <small>2021-03-09 · reliability 95%</small>
+      </div>
+      
+      <div class="dato rev" data-item="rd0b46cef06801350" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Enoxaparina sodica 40 mg</b> <span class="tenue">· Medication</span></div>
+        
+        <small>2021-03-09 · reliability 79%</small>
+      </div>
+      
+      <div class="dato" data-item="r9c47be29c5f53319" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Paracetamolo 500 mg</b> <span class="tenue">· Medication</span></div>
+        
+        <small>2021-03-09 · reliability 91%</small>
+      </div>
+      
+      <div class="dato" data-item="r629f977964c99a45" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Enoxaparina sodica 150 mg</b> <span class="tenue">· Medication</span></div>
+        
+        <small>2021-03-18 · reliability 88%</small>
+      </div>
+      
+      <div class="dato rev" data-item="rd9847505c5eb3667" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Isolamento</b> <span class="tenue">· Procedure</span></div>
+        
+        <small>2021-03-09 · reliability 54%</small>
+      </div>
+      
+      <div class="dato" data-item="r35e2ea6419697024" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Radiografia del torace</b> <span class="tenue">· Procedure</span></div>
+        
+        <small>2021-03-09 · reliability 95%</small>
+      </div>
+      
+      <div class="dato rev" data-item="rd3609a908a437964" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Ossigenoterapia con maschera facciale</b> <span class="tenue">· Procedure</span></div>
+        
+        <small>2021-03-09 · reliability 38%</small>
+      </div>
+      
+      <div class="dato rev" data-item="r814cb759b04288a1" tabindex="0">
+        <span class="pill wait">To review</span>
+        <div><b>Posizionamento in posizione prona</b> <span class="tenue">· Procedure</span></div>
+        
+        <small>2021-03-09 · reliability 76%</small>
+      </div>
+      
+    </div>
+  </div>
+</div></section>
+  <section class="layer xray" inert aria-hidden="true"><div class="pagina">
+  <h1>GET /referti/discharge-dbee5c6c00</h1>
+  <div class="fasi"><span class="fase">pseudonymised text</span>→<span class="fase">anthropic/claude-haiku-5.5</span>→<span class="fase">FHIR R4 $validate</span>→<span class="fase">score ≥ threshold ?</span></div>
+  <div class="due-col" style="margin-top:14px">
+    <div class="pannello"><pre>Lettera di dimissione ospedaliera
+
+Paziente: [PERSON_1], sesso femminile, 61 anni, nata il [DATE_OF_BIRTH_1], CF [IT_FISCAL_CODE_1], residente in [ADDRESS_1], telefono [PHONE_NUMBER_1].
+
+Ricovero: <mark class="rev" id="ev-rc996eb8bc64e54d6" data-item="rc996eb8bc64e54d6" tabindex="0">La paziente è stata ricoverata in data 09/03/2021 per isolamento</mark> (procedura di isolamento) in regime di urgenza. <mark class="auto" id="ev-r41758461ab4e5fa9" data-item="r41758461ab4e5fa9" tabindex="0">All&#39;ingresso presentava febbre elevata (temperatura corporea 41.38°C)</mark>, tachipnea (<mark class="auto" id="ev-r006aa6518babdb81" data-item="r006aa6518babdb81" tabindex="0">frequenza respiratoria 35.01 atti/min</mark>), tachicardia (<mark class="auto" id="ev-r21937621e10197ed" data-item="r21937621e10197ed" tabindex="0">frequenza cardiaca 121.13 bpm</mark>) e <mark class="auto" id="ev-rc941c475f9960fa6" data-item="rc941c475f9960fa6" tabindex="0">ipossiemia severa (saturazione arteriosa di ossigeno 80.14%)</mark>. <mark class="auto" id="ev-r297b82994dfb00c4" data-item="r297b82994dfb00c4" tabindex="0">La pressione arteriosa era 114/86 mmHg.</mark> <mark class="auto" id="ev-ra3b909ed196122fc" data-item="ra3b909ed196122fc" tabindex="0">Peso corporeo 71.9 kg.</mark>
+
+Anamnesi: La paziente negava dispnea e negava tosse. Non riferiva altri sintomi significativi.
+
+Esame obiettivo: All&#39;ingresso, paziente in buone condizioni generali, vigile, orientata. Obiettività toracica: murmure vescicolare ridotto bilateralmente. Non edemi declivi.
+
+Esami: <mark class="rev" id="ev-r51c1dae246b32242" data-item="r51c1dae246b32242" tabindex="0">Gli esami ematici mostravano leucopenia (leucociti 3.15 x 10^3/uL).</mark> <mark class="auto" id="ev-r7efce8ba3fb67fcd" data-item="r7efce8ba3fb67fcd" tabindex="0">La radiografia del torace (eseguita il 09/03/2021) documentava una polmonite.</mark> Il 18/03/2021, durante il decorso, la paziente ha sviluppato dispnea acuta e dolore toracico; <mark class="auto" id="ev-r8122b5f3d73971ce" data-item="r8122b5f3d73971ce" tabindex="0">l&#39;angio-TC ha evidenziato una embolia polmonare acuta</mark>.
+
+Terapia: In data 09/03/2021 <mark class="rev" id="ev-rd0b46cef06801350" data-item="rd0b46cef06801350" tabindex="0">è stata iniziata terapia con Enoxaparina sodica 40 mg (0.4 mL di soluzione 100 mg/mL) per via sottocutanea una volta al giorno</mark>, e <mark class="auto" id="ev-r9c47be29c5f53319" data-item="r9c47be29c5f53319" tabindex="0">paracetamolo 500 mg per via orale al bisogno per la febbre</mark>. Inoltre, <mark class="rev" id="ev-rd3609a908a437964" data-item="rd3609a908a437964" tabindex="0">è stata avviata ossigenoterapia con maschera facciale</mark> e <mark class="rev" id="ev-r814cb759b04288a1" data-item="r814cb759b04288a1" tabindex="0">posizionamento in posizione prona per migliorare l&#39;ossigenazione</mark>. A seguito della diagnosi di embolia polmonare il 18/03/2021, <mark class="auto" id="ev-r629f977964c99a45" data-item="r629f977964c99a45" tabindex="0">la terapia anticoagulante è stata modificata con Enoxaparina sodica 150 mg (1 mL di soluzione 150 mg/mL) due volte al giorno</mark>.
+
+Decorso: La paziente ha progressivamente migliorato la saturazione di ossigeno, con risoluzione della febbre e della tachipnea. Non ha presentato complicanze emorragiche. Le condizioni cliniche sono in miglioramento.
+
+Conclusione: La paziente viene dimessa in data odierna con diagnosi di polmonite, ipossiemia e embolia polmonare acuta. Terapia domiciliare: proseguire anticoagulazione con Enoxaparina secondo schema ospedaliero. Follow-up presso ambulatorio.
+
+Il medico curante: Dott. [PERSON_2]</pre></div>
+    <div>
+    
+      <div class="pannello dato-x" data-item="rc996eb8bc64e54d6" style="margin-bottom:10px">
+        <div><span class="k">Encounter</span> <span class="tenue">rc996eb8bc64e54d6</span></div>
+        <div>code <span class="s">∅</span> Inpatient encounter <span class="tenue">(none)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:80%"></i></div>
+        <div>score <span class="n">0.80</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;class&#34;: {
+    &#34;code&#34;: &#34;IMP&#34;,
+    &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/v3-ActCode&#34;
+  },
+  &#34;id&#34;: &#34;rc996eb8bc64e54d6&#34;,
+  &#34;period&#34;: {
+    &#34;start&#34;: &#34;2021-03-09&#34;
+  },
+  &#34;resourceType&#34;: &#34;Encounter&#34;,
+  &#34;status&#34;: &#34;finished&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;type&#34;: [
+    {
+      &#34;text&#34;: &#34;Inpatient encounter&#34;
+    }
+  ]
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r7efce8ba3fb67fcd" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">r7efce8ba3fb67fcd</span></div>
+        <div>code <span class="s">233604007</span> Pneumonia (disorder) <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:97%"></i></div>
+        <div>score <span class="n">0.97</span> → <span class="s">PUT /fhir/Condition/r7efce8ba3fb67fcd</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;233604007&#34;,
+        &#34;display&#34;: &#34;Pneumonia (disorder)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Pneumonia&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;r7efce8ba3fb67fcd&#34;,
+  &#34;onsetDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rc941c475f9960fa6" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">rc941c475f9960fa6</span></div>
+        <div>code <span class="s">389087006</span> Hypoxemia (disorder) <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:91%"></i></div>
+        <div>score <span class="n">0.91</span> → <span class="s">PUT /fhir/Condition/rc941c475f9960fa6</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;389087006&#34;,
+        &#34;display&#34;: &#34;Hypoxemia (disorder)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Hypoxemia&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;rc941c475f9960fa6&#34;,
+  &#34;onsetDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r41758461ab4e5fa9" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">r41758461ab4e5fa9</span></div>
+        <div>code <span class="s">386661006</span> Fever (finding) <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>0.50</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:84%"></i></div>
+        <div>score <span class="n">0.84</span> → <span class="s">PUT /fhir/Condition/r41758461ab4e5fa9</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;386661006&#34;,
+        &#34;display&#34;: &#34;Fever (finding)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Fever&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;r41758461ab4e5fa9&#34;,
+  &#34;onsetDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r51c1dae246b32242" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">r51c1dae246b32242</span></div>
+        <div>code <span class="s">∅</span> Leukopenia <span class="tenue">(none)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>0.50</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:38%"></i></div>
+        <div>score <span class="n">0.38</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;text&#34;: &#34;Leukopenia&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;r51c1dae246b32242&#34;,
+  &#34;onsetDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r8122b5f3d73971ce" style="margin-bottom:10px">
+        <div><span class="k">Condition</span> <span class="tenue">r8122b5f3d73971ce</span></div>
+        <div>code <span class="s">706870000</span> Acute pulmonary embolism (disorder) <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:91%"></i></div>
+        <div>score <span class="n">0.91</span> → <span class="s">PUT /fhir/Condition/r8122b5f3d73971ce</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;category&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;encounter-diagnosis&#34;,
+          &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-category&#34;
+        }
+      ]
+    }
+  ],
+  &#34;clinicalStatus&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;active&#34;,
+        &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/condition-clinical&#34;
+      }
+    ]
+  },
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;706870000&#34;,
+        &#34;display&#34;: &#34;Acute pulmonary embolism (disorder)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Acute pulmonary embolism&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;r8122b5f3d73971ce&#34;,
+  &#34;onsetDateTime&#34;: &#34;2021-03-18&#34;,
+  &#34;resourceType&#34;: &#34;Condition&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="re26d57e14613dd86" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">re26d57e14613dd86</span></div>
+        <div>code <span class="s">8310-5</span> Body temperature <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/re26d57e14613dd86</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;8310-5&#34;,
+        &#34;display&#34;: &#34;Body temperature&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Body temperature&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;re26d57e14613dd86&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;Cel&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;Cel&#34;,
+    &#34;value&#34;: 41.38
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r006aa6518babdb81" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r006aa6518babdb81</span></div>
+        <div>code <span class="s">9279-1</span> Respiratory rate <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r006aa6518babdb81</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;9279-1&#34;,
+        &#34;display&#34;: &#34;Respiratory rate&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Respiratory rate&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;r006aa6518babdb81&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;/min&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;/min&#34;,
+    &#34;value&#34;: 35.01
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r21937621e10197ed" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r21937621e10197ed</span></div>
+        <div>code <span class="s">8867-4</span> Heart rate <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r21937621e10197ed</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;8867-4&#34;,
+        &#34;display&#34;: &#34;Heart rate&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Heart rate&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;r21937621e10197ed&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;/min&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;/min&#34;,
+    &#34;value&#34;: 121.13
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rc4a6dd984284561c" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">rc4a6dd984284561c</span></div>
+        <div>code <span class="s">2708-6</span> Oxygen saturation in Arterial blood <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/rc4a6dd984284561c</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;2708-6&#34;,
+        &#34;display&#34;: &#34;Oxygen saturation in Arterial blood&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Oxygen saturation in Arterial blood&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;rc4a6dd984284561c&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;%&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;%&#34;,
+    &#34;value&#34;: 80.14
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r297b82994dfb00c4" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r297b82994dfb00c4</span></div>
+        <div>code <span class="s">8480-6</span> Systolic Blood Pressure <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r297b82994dfb00c4</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;8480-6&#34;,
+        &#34;display&#34;: &#34;Systolic Blood Pressure&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Systolic blood pressure&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;r297b82994dfb00c4&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mm[Hg]&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mm[Hg]&#34;,
+    &#34;value&#34;: 114.0
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rcfa8ebe6cf8d07df" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">rcfa8ebe6cf8d07df</span></div>
+        <div>code <span class="s">8462-4</span> Diastolic Blood Pressure <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/rcfa8ebe6cf8d07df</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;8462-4&#34;,
+        &#34;display&#34;: &#34;Diastolic Blood Pressure&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Diastolic blood pressure&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;rcfa8ebe6cf8d07df&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mm[Hg]&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mm[Hg]&#34;,
+    &#34;value&#34;: 86.0
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="ra3b909ed196122fc" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">ra3b909ed196122fc</span></div>
+        <div>code <span class="s">29463-7</span> Body Weight <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/ra3b909ed196122fc</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;29463-7&#34;,
+        &#34;display&#34;: &#34;Body Weight&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Body weight&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;ra3b909ed196122fc&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;kg&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;kg&#34;,
+    &#34;value&#34;: 71.9
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r9f2755be8fb6872e" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r9f2755be8fb6872e</span></div>
+        <div>code <span class="s">6690-2</span> Leukocytes [#/volume] in Blood by Automated count <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r9f2755be8fb6872e</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;6690-2&#34;,
+        &#34;display&#34;: &#34;Leukocytes [#/volume] in Blood by Automated count&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Leukocytes [#/volume] in Blood by Automated count&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;r9f2755be8fb6872e&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;10*3/uL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;10*3/uL&#34;,
+    &#34;value&#34;: 3.15
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rd0b46cef06801350" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">rd0b46cef06801350</span></div>
+        <div>code <span class="s">854235</span> 0.4 ML Enoxaparin sodium 100 MG/ML Prefilled Syringe <span class="tenue">(fuzzy 0.53)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.53</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:79%"></i></div>
+        <div>score <span class="n">0.79</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;40 mg sottocutanea una volta al giorno&#34;
+    }
+  ],
+  &#34;effectiveDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;id&#34;: &#34;rd0b46cef06801350&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;854235&#34;,
+        &#34;display&#34;: &#34;0.4 ML Enoxaparin sodium 100 MG/ML Prefilled Syringe&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Enoxaparin Sodium 40 MG/0.4ML Injectable Solution&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r9c47be29c5f53319" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">r9c47be29c5f53319</span></div>
+        <div>code <span class="s">198440</span> Acetaminophen 500 MG Oral Tablet <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:91%"></i></div>
+        <div>score <span class="n">0.91</span> → <span class="s">PUT /fhir/MedicationStatement/r9c47be29c5f53319</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;500 mg orale al bisogno&#34;
+    }
+  ],
+  &#34;effectiveDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;id&#34;: &#34;r9c47be29c5f53319&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;198440&#34;,
+        &#34;display&#34;: &#34;Acetaminophen 500 MG Oral Tablet&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Acetaminophen 500 MG Oral Tablet&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r629f977964c99a45" style="margin-bottom:10px">
+        <div><span class="k">MedicationStatement</span> <span class="tenue">r629f977964c99a45</span></div>
+        <div>code <span class="s">854252</span> 1 ML Enoxaparin sodium 150 MG/ML Prefilled Syringe <span class="tenue">(fuzzy 0.86)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.86</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:88%"></i></div>
+        <div>score <span class="n">0.88</span> → <span class="s">PUT /fhir/MedicationStatement/r629f977964c99a45</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;context&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;dosage&#34;: [
+    {
+      &#34;text&#34;: &#34;150 mg due volte al giorno&#34;
+    }
+  ],
+  &#34;effectiveDateTime&#34;: &#34;2021-03-18&#34;,
+  &#34;id&#34;: &#34;r629f977964c99a45&#34;,
+  &#34;medicationCodeableConcept&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;854252&#34;,
+        &#34;display&#34;: &#34;1 ML Enoxaparin sodium 150 MG/ML Prefilled Syringe&#34;,
+        &#34;system&#34;: &#34;http://www.nlm.nih.gov/research/umls/rxnorm&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Enoxaparin Sodium 150 MG/ML Injectable Solution&#34;
+  },
+  &#34;resourceType&#34;: &#34;MedicationStatement&#34;,
+  &#34;status&#34;: &#34;active&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rd9847505c5eb3667" style="margin-bottom:10px">
+        <div><span class="k">Procedure</span> <span class="tenue">rd9847505c5eb3667</span></div>
+        <div>code <span class="s">∅</span> Isolation procedure <span class="tenue">(none)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:54%"></i></div>
+        <div>score <span class="n">0.54</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;text&#34;: &#34;Isolation procedure&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;rd9847505c5eb3667&#34;,
+  &#34;performedDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;resourceType&#34;: &#34;Procedure&#34;,
+  &#34;status&#34;: &#34;completed&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r35e2ea6419697024" style="margin-bottom:10px">
+        <div><span class="k">Procedure</span> <span class="tenue">r35e2ea6419697024</span></div>
+        <div>code <span class="s">399208008</span> Plain X-ray of chest (procedure) <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>0.50</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Procedure/r35e2ea6419697024</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;399208008&#34;,
+        &#34;display&#34;: &#34;Plain X-ray of chest (procedure)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Chest X-ray&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;r35e2ea6419697024&#34;,
+  &#34;performedDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;resourceType&#34;: &#34;Procedure&#34;,
+  &#34;status&#34;: &#34;completed&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rd3609a908a437964" style="margin-bottom:10px">
+        <div><span class="k">Procedure</span> <span class="tenue">rd3609a908a437964</span></div>
+        <div>code <span class="s">∅</span> Oxygen therapy <span class="tenue">(none)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>0.50</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:38%"></i></div>
+        <div>score <span class="n">0.38</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;text&#34;: &#34;Oxygen therapy&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;rd3609a908a437964&#34;,
+  &#34;performedDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;resourceType&#34;: &#34;Procedure&#34;,
+  &#34;status&#34;: &#34;completed&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r814cb759b04288a1" style="margin-bottom:10px">
+        <div><span class="k">Procedure</span> <span class="tenue">r814cb759b04288a1</span></div>
+        <div>code <span class="s">431182000</span> Placing subject in prone position (procedure) <span class="tenue">(fuzzy 0.76)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.76</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>0.50</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra basso"><i style="width:76%"></i></div>
+        <div>score <span class="n">0.76</span> → <span class="n">review queue</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;431182000&#34;,
+        &#34;display&#34;: &#34;Placing subject in prone position (procedure)&#34;,
+        &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Prone position&#34;
+  },
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/rc996eb8bc64e54d6&#34;
+  },
+  &#34;id&#34;: &#34;r814cb759b04288a1&#34;,
+  &#34;performedDateTime&#34;: &#34;2021-03-09&#34;,
+  &#34;resourceType&#34;: &#34;Procedure&#34;,
+  &#34;status&#34;: &#34;completed&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  }
+}</pre></details>
+      </div>
+    
+    </div>
+  </div>
+  <div class="come-fatto"><b class="k">Come è fatto</b><br><span class="tenue">extraction</span> · <code>src/cn2f/extract/</code> · <span class="s">tests/test_extract.py</span><br><span class="tenue">signals + score</span> · <code>src/cn2f/score/</code> · <span class="s">tests/test_score_review.py</span><br><span class="tenue">this page</span> · <code>src/cn2f/web/site/</code> · <span class="s">tests/test_site.py</span><br></div>
+</div></section>
+  <div class="raggio" aria-hidden="true"></div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab report · cn2f</title>
+<link rel="stylesheet" href="/med-trial-match/static/css/cn2f.css">
+
+<script src="/med-trial-match/static/vendor/htmx.min.js" defer></script>
+<script src="/med-trial-match/static/js/facce.js" defer></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lab report · cn2f">
+<meta property="og:description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:image" content="https://gtaormina.github.io/med-trial-match/med-trial-match/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="From clinical notes to structured data and clinical-trial pre-screening: invented data, every claim with its evidence quoted, measures with intervals. Not a medical device.">
+<meta property="og:url" content="https://gtaormina.github.io/med-trial-match/med-trial-match/en/referti/lab-cca520581e/">
+</head>
+<body class="" data-face="medico">
+<header class="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="/med-trial-match/en/">
+      <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+      <span class="marchio-testo"><span class="marchio-skin">From clinical notes to data</span><span class="marchio-xray">clinical-notes-to-fhir</span></span>
+    </a>
+    
+    <nav class="menu" aria-label="Sections">
+      <a href="/med-trial-match/en/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span>Story</span></a>
+      <a href="/med-trial-match/en/prova/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><span>Try it</span></a>
+      <a href="/med-trial-match/en/professionisti/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg><span>Professionals</span></a>
+    </nav>
+    <a class="lingua" href="/med-trial-match/referti/lab-cca520581e/" hreflang="it" title="Leggi in italiano">IT</a>
+  </div>
+  <p class="avviso"><span>invented data · not a medical device</span></p>
+</header>
+
+<div class="vista">
+  <form class="interruttore">
+    <button id="switch-faccia" type="submit" name="faccia" value="tecnico"
+            aria-pressed="false" aria-label="Switch between the clinician view and the technical view">
+      <span class="opz opz-medico">Clinician</span><span class="opz opz-tecnico">Technical</span>
+    </button>
+  </form>
+</div>
+<main class="facce" data-face="medico">
+  <section class="layer skin"><div class="pagina">
+  <p><a href="/med-trial-match/en/referti/">← Notes</a></p>
+  <h1>Lab report · 2023-04-11</h1>
+  <p class="tenue">Patient <span class="mono">pt-4f64a4594574</span>. The text is already pseudonymised: the personal data were replaced before any call to the AI. Hover over a datum to see the sentence it comes from.</p>
+  <div class="due-col">
+    <div class="foglio">Laboratorio Analisi Chimico-Cliniche
+
+Paziente: [PERSON_1]
+Data di nascita: [DATE_OF_BIRTH_1]
+Codice Fiscale: [IT_FISCAL_CODE_1]
+Indirizzo: [ADDRESS_1]
+Telefono: [PHONE_NUMBER_1]
+Medico curante: Dott. [PERSON_2]
+
+Data prelievo: 11/04/2023
+
+<mark class="auto" id="ev-r15fb2b97a930bea6" data-item="r15fb2b97a930bea6" tabindex="0">In occasione della visita generale del 11/04/2023</mark> sono stati eseguiti i seguenti esami ematochimici:
+
+- <mark class="auto" id="ev-racd16e0a8ee6b8a3" data-item="racd16e0a8ee6b8a3" tabindex="0">Colesterolo totale: 157,79 mg/dL</mark>
+- <mark class="auto" id="ev-r836bcb247f7d7c3b" data-item="r836bcb247f7d7c3b" tabindex="0">Trigliceridi: 126,82 mg/dL</mark>
+- <mark class="auto" id="ev-r77a761c5242f0bc6" data-item="r77a761c5242f0bc6" tabindex="0">Colesterolo LDL (dosaggio diretto): 74,82 mg/dL</mark>
+- <mark class="auto" id="ev-rb9a3e0080915e6ce" data-item="rb9a3e0080915e6ce" tabindex="0">Colesterolo HDL: 57,6 mg/dL</mark>
+
+Commento: il profilo lipidico risulta complessivamente nei limiti di norma, con LDL e HDL a livelli favorevoli.
+
+Si segnala che è stato programmato, ma non ancora eseguito, un esame della funzionalità epatica (AST, ALT) da effettuarsi appena possibile.
+
+Il referto è firmato digitalmente dal Dott. [PERSON_2].</div>
+    <div>
+      
+      <div class="dato" data-item="r15fb2b97a930bea6" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Outpatient visit</b> <span class="tenue">· Encounter</span></div>
+        
+        <small>2023-04-11 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="racd16e0a8ee6b8a3" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Colesterolo totale</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">157.79 mg/dL</div>
+        <small>2023-04-11 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r836bcb247f7d7c3b" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Trigliceridi</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">126.82 mg/dL</div>
+        <small>2023-04-11 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="r77a761c5242f0bc6" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Colesterolo LDL (dosaggio diretto)</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">74.82 mg/dL</div>
+        <small>2023-04-11 · reliability 95%</small>
+      </div>
+      
+      <div class="dato" data-item="rb9a3e0080915e6ce" tabindex="0">
+        <span class="pill ok">Written</span>
+        <div><b>Colesterolo HDL</b> <span class="tenue">· Test / measurement</span></div>
+        <div class="valore">57.6 mg/dL</div>
+        <small>2023-04-11 · reliability 95%</small>
+      </div>
+      
+    </div>
+  </div>
+</div></section>
+  <section class="layer xray" inert aria-hidden="true"><div class="pagina">
+  <h1>GET /referti/lab-cca520581e</h1>
+  <div class="fasi"><span class="fase">pseudonymised text</span>→<span class="fase">anthropic/claude-haiku-5.5</span>→<span class="fase">FHIR R4 $validate</span>→<span class="fase">score ≥ threshold ?</span></div>
+  <div class="due-col" style="margin-top:14px">
+    <div class="pannello"><pre>Laboratorio Analisi Chimico-Cliniche
+
+Paziente: [PERSON_1]
+Data di nascita: [DATE_OF_BIRTH_1]
+Codice Fiscale: [IT_FISCAL_CODE_1]
+Indirizzo: [ADDRESS_1]
+Telefono: [PHONE_NUMBER_1]
+Medico curante: Dott. [PERSON_2]
+
+Data prelievo: 11/04/2023
+
+<mark class="auto" id="ev-r15fb2b97a930bea6" data-item="r15fb2b97a930bea6" tabindex="0">In occasione della visita generale del 11/04/2023</mark> sono stati eseguiti i seguenti esami ematochimici:
+
+- <mark class="auto" id="ev-racd16e0a8ee6b8a3" data-item="racd16e0a8ee6b8a3" tabindex="0">Colesterolo totale: 157,79 mg/dL</mark>
+- <mark class="auto" id="ev-r836bcb247f7d7c3b" data-item="r836bcb247f7d7c3b" tabindex="0">Trigliceridi: 126,82 mg/dL</mark>
+- <mark class="auto" id="ev-r77a761c5242f0bc6" data-item="r77a761c5242f0bc6" tabindex="0">Colesterolo LDL (dosaggio diretto): 74,82 mg/dL</mark>
+- <mark class="auto" id="ev-rb9a3e0080915e6ce" data-item="rb9a3e0080915e6ce" tabindex="0">Colesterolo HDL: 57,6 mg/dL</mark>
+
+Commento: il profilo lipidico risulta complessivamente nei limiti di norma, con LDL e HDL a livelli favorevoli.
+
+Si segnala che è stato programmato, ma non ancora eseguito, un esame della funzionalità epatica (AST, ALT) da effettuarsi appena possibile.
+
+Il referto è firmato digitalmente dal Dott. [PERSON_2].</pre></div>
+    <div>
+    
+      <div class="pannello dato-x" data-item="r15fb2b97a930bea6" style="margin-bottom:10px">
+        <div><span class="k">Encounter</span> <span class="tenue">r15fb2b97a930bea6</span></div>
+        <div>code <span class="s">371883000</span> Outpatient procedure (procedure) <span class="tenue">(fuzzy 0.72)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>1.00</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>0.72</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Encounter/r15fb2b97a930bea6</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;class&#34;: {
+    &#34;code&#34;: &#34;AMB&#34;,
+    &#34;system&#34;: &#34;http://terminology.hl7.org/CodeSystem/v3-ActCode&#34;
+  },
+  &#34;id&#34;: &#34;r15fb2b97a930bea6&#34;,
+  &#34;period&#34;: {
+    &#34;end&#34;: &#34;2023-04-11&#34;,
+    &#34;start&#34;: &#34;2023-04-11&#34;
+  },
+  &#34;resourceType&#34;: &#34;Encounter&#34;,
+  &#34;status&#34;: &#34;finished&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;type&#34;: [
+    {
+      &#34;coding&#34;: [
+        {
+          &#34;code&#34;: &#34;371883000&#34;,
+          &#34;display&#34;: &#34;Outpatient procedure (procedure)&#34;,
+          &#34;system&#34;: &#34;http://snomed.info/sct&#34;
+        }
+      ],
+      &#34;text&#34;: &#34;Outpatient encounter&#34;
+    }
+  ]
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="racd16e0a8ee6b8a3" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">racd16e0a8ee6b8a3</span></div>
+        <div>code <span class="s">2093-3</span> Cholesterol [Mass/volume] in Serum or Plasma <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/racd16e0a8ee6b8a3</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;2093-3&#34;,
+        &#34;display&#34;: &#34;Cholesterol [Mass/volume] in Serum or Plasma&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Cholesterol [Mass/volume] in Serum or Plasma&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2023-04-11&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r15fb2b97a930bea6&#34;
+  },
+  &#34;id&#34;: &#34;racd16e0a8ee6b8a3&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mg/dL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mg/dL&#34;,
+    &#34;value&#34;: 157.79
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r836bcb247f7d7c3b" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r836bcb247f7d7c3b</span></div>
+        <div>code <span class="s">2571-8</span> Triglyceride [Mass/volume] in Serum or Plasma <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r836bcb247f7d7c3b</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;2571-8&#34;,
+        &#34;display&#34;: &#34;Triglyceride [Mass/volume] in Serum or Plasma&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Triglyceride [Mass/volume] in Serum or Plasma&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2023-04-11&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r15fb2b97a930bea6&#34;
+  },
+  &#34;id&#34;: &#34;r836bcb247f7d7c3b&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mg/dL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mg/dL&#34;,
+    &#34;value&#34;: 126.82
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="r77a761c5242f0bc6" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">r77a761c5242f0bc6</span></div>
+        <div>code <span class="s">18262-6</span> Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay <span class="tenue">(fuzzy 1.00)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/r77a761c5242f0bc6</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;18262-6&#34;,
+        &#34;display&#34;: &#34;Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2023-04-11&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r15fb2b97a930bea6&#34;
+  },
+  &#34;id&#34;: &#34;r77a761c5242f0bc6&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mg/dL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mg/dL&#34;,
+    &#34;value&#34;: 74.82
+  }
+}</pre></details>
+      </div>
+    
+      <div class="pannello dato-x" data-item="rb9a3e0080915e6ce" style="margin-bottom:10px">
+        <div><span class="k">Observation</span> <span class="tenue">rb9a3e0080915e6ce</span></div>
+        <div>code <span class="s">2085-9</span> Cholesterol in HDL [Mass/volume] in Serum or Plasma <span class="tenue">(exact)</span></div>
+        <table class="segnali"><tr><td>evidence</td><td>1.00</td><td class="tenue">× -0.02</td></tr><tr><td>fields</td><td>0.50</td><td class="tenue">× +1.23</td></tr><tr><td>valid</td><td>1.00</td><td class="tenue">× -0.00</td></tr><tr><td>coding</td><td>1.00</td><td class="tenue">× +2.18</td></tr><tr><td>agreement</td><td>1.00</td><td class="tenue">× +1.31</td></tr></table>
+        <div class="barra"><i style="width:95%"></i></div>
+        <div>score <span class="n">0.95</span> → <span class="s">PUT /fhir/Observation/rb9a3e0080915e6ce</span></div>
+        <div>$validate <span class="s">ok</span></div>
+        <details><summary>FHIR JSON</summary><pre>{
+  &#34;code&#34;: {
+    &#34;coding&#34;: [
+      {
+        &#34;code&#34;: &#34;2085-9&#34;,
+        &#34;display&#34;: &#34;Cholesterol in HDL [Mass/volume] in Serum or Plasma&#34;,
+        &#34;system&#34;: &#34;http://loinc.org&#34;
+      }
+    ],
+    &#34;text&#34;: &#34;Cholesterol in HDL [Mass/volume] in Serum or Plasma&#34;
+  },
+  &#34;effectiveDateTime&#34;: &#34;2023-04-11&#34;,
+  &#34;encounter&#34;: {
+    &#34;reference&#34;: &#34;Encounter/r15fb2b97a930bea6&#34;
+  },
+  &#34;id&#34;: &#34;rb9a3e0080915e6ce&#34;,
+  &#34;resourceType&#34;: &#34;Observation&#34;,
+  &#34;status&#34;: &#34;final&#34;,
+  &#34;subject&#34;: {
+    &#34;reference&#34;: &#34;Patient/pt-4f64a4594574&#34;
+  },
+  &#34;valueQuantity&#34;: {
+    &#34;code&#34;: &#34;mg/dL&#34;,
+    &#34;system&#34;: &#34;http://unitsofmeasure.org&#34;,
+    &#34;unit&#34;: &#34;mg/dL&#34;,
+    &#34;value&#34;: 57.6
+  }
+}</pre></details>
+      </div>
+    
+    </div>
+  </div>
+  <div class="come-fatto"><b class="k">Come è fatto</b><br><span class="tenue">extraction</span> · <code>src/cn2f/extract/</code> · <span class="s">tests/test_extract.py</span><br><span class="tenue">signals + score</span> · <code>src/cn2f/score/</code> · <span class="s">tests/test_score_review.py</span><br><span class="tenue">this page</span> · <code>src/cn2f/web/site/</code> · <span class="s">tests/test_site.py</span><br></div>
+</div></section>
+  <div class="raggio" aria-hidden="true"></div>
+</main>
+
+</body>
+</html>

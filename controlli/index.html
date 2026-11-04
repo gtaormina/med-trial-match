@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Controlli mancanti · cn2f</title>
+<link rel="stylesheet" href="/med-trial-match/static/css/cn2f.css">
+
+<script src="/med-trial-match/static/vendor/htmx.min.js" defer></script>
+<script src="/med-trial-match/static/js/facce.js" defer></script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Controlli mancanti · cn2f">
+<meta property="og:description" content="Dal referto ai dati clinici e alla pre-selezione per gli studi clinici: dati inventati, ogni affermazione con la prova citata, misure con intervalli. Non è un dispositivo medico.">
+<meta property="og:image" content="https://gtaormina.github.io/med-trial-match/med-trial-match/static/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Dal referto ai dati clinici e alla pre-selezione per gli studi clinici: dati inventati, ogni affermazione con la prova citata, misure con intervalli. Non è un dispositivo medico.">
+<meta property="og:url" content="https://gtaormina.github.io/med-trial-match/med-trial-match/controlli/">
+</head>
+<body class="" data-face="medico">
+<header class="testata">
+  <div class="testata-riga">
+    <a class="marchio" href="/med-trial-match/">
+      <span class="logo" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span>
+      <span class="marchio-testo"><span class="marchio-skin">Dal referto ai dati clinici</span><span class="marchio-xray">clinical-notes-to-fhir</span></span>
+    </a>
+    
+    <nav class="menu" aria-label="Sezioni">
+      <a href="/med-trial-match/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg><span>Racconto</span></a>
+      <a href="/med-trial-match/prova/"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><span>Prova tu</span></a>
+      <a href="/med-trial-match/professionisti/" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg><span>Professionisti</span></a>
+    </nav>
+    <a class="lingua" href="/med-trial-match/en/controlli/" hreflang="en" title="Read it in English">EN</a>
+  </div>
+  <p class="avviso"><span>dati inventati · non è un dispositivo medico</span></p>
+</header>
+
+<div class="vista">
+  <form class="interruttore">
+    <button id="switch-faccia" type="submit" name="faccia" value="tecnico"
+            aria-pressed="false" aria-label="Passa dalla vista medico alla vista tecnica">
+      <span class="opz opz-medico">Medico</span><span class="opz opz-tecnico">Tecnico</span>
+    </button>
+  </form>
+</div>
+<main class="facce" data-face="medico">
+  <section class="layer skin"><div class="pagina">
+  <h1>Controlli mancanti</h1>
+  
+  <p>Un <b>agente di intelligenza artificiale</b> ha letto la cartella di ogni paziente inventato usando solo strumenti di lettura, e propone i controlli che mancano secondo cinque regole di esempio (non linee guida). Ogni proposta cita i dati su cui si basa; un <b>verificatore scritto in codice</b> ricontrolla ogni affermazione prima che arrivi qui. Decide il medico.</p>
+  
+  <div class="due-col">
+    <div class="scheda"><h2>Quanto è affidabile</h2>
+      <p>Su 50 pazienti ha trovato 13 controlli mancanti su 14, con 0 falsi allarmi. Il verificatore ha bloccato 8 affermazioni non dimostrate su 247.</p></div>
+    <div class="scheda"><h2>Cosa insegna</h2>
+      <p>Se l'agente vede solo i dati estratti da tre referti per paziente, ne trova 2 su 14: i referti raccontano gli ultimi episodi, non l'elenco dei problemi cronici. Un agente vale quanto i dati che vede.</p></div>
+    
+  </div>
+  <h2 style="margin-top:20px">Proposte dell'agente (13)</h2>
+  <p class="tenue">Su tutti i pazienti valutati: l'agente non è stato messo a punto su nessuno di loro. La cartella è consultabile solo per i pazienti dei referti dimostrativi.</p>
+  
+    <div class="scheda" style="margin-bottom:12px"><h3><span class="mono">pt-4cd70aacb718</span> <span class="tenue">· valutato al 2026-01-01</span></h3>
+      <div class="dato proposta rev" id="gap-pt-4cd70aacb718-R3">
+  <div><b>Anemia</b> senza emoglobina negli ultimi 180 giorni</div>
+  <small>ultimo esame: 2021-05-09 · condizione dal 2000-05-07</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div>
+    </div>
+  
+    <div class="scheda" style="margin-bottom:12px"><h3><span class="mono">pt-d70308fb43f6</span> <span class="tenue">· valutato al 2026-01-01</span></h3>
+      <div class="dato proposta rev" id="gap-pt-d70308fb43f6-R4">
+  <div><b>Obesità</b> senza peso o indice di massa corporea negli ultimi 365 giorni</div>
+  <small>ultimo esame: 2024-10-13 · condizione dal 2005-12-04</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div>
+    </div>
+  
+    <div class="scheda" style="margin-bottom:12px"><h3><span class="mono">pt-7c26f18014b2</span> <span class="tenue">· valutato al 2026-01-01</span></h3>
+      <div class="dato proposta rev" id="gap-pt-7c26f18014b2-R3">
+  <div><b>Anemia</b> senza emoglobina negli ultimi 180 giorni</div>
+  <small>ultimo esame: 2023-10-14 · condizione dal 2023-10-07</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div>
+    </div>
+  
+    <div class="scheda" style="margin-bottom:12px"><h3><span class="mono">pt-42efe067c48c</span> <span class="tenue">· valutato al 2026-01-01</span></h3>
+      <div class="dato proposta rev" id="gap-pt-42efe067c48c-R3">
+  <div><b>Anemia</b> senza emoglobina negli ultimi 180 giorni</div>
+  <small>ultimo esame: 2025-05-12 · condizione dal 2024-05-06</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div>
+    </div>
+  
+    <div class="scheda" style="margin-bottom:12px"><h3><a class="mono" href="/med-trial-match/pazienti/pt-8467e0c48ef4/">pt-8467e0c48ef4</a> <span class="tenue">· valutato al 2026-01-01</span></h3>
+      <div class="dato proposta rev" id="gap-pt-8467e0c48ef4-R3">
+  <div><b>Anemia</b> senza emoglobina negli ultimi 180 giorni</div>
+  <small>ultimo esame: 2023-06-23 · condizione dal 2023-06-15</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div>
+    </div>
+  
+    <div class="scheda" style="margin-bottom:12px"><h3><span class="mono">pt-cf9aafc0ad1b</span> <span class="tenue">· valutato al 2026-01-01</span></h3>
+      <div class="dato proposta rev" id="gap-pt-cf9aafc0ad1b-R3">
+  <div><b>Anemia</b> senza emoglobina negli ultimi 180 giorni</div>
+  <small>ultimo esame: 2025-06-26 · condizione dal 1977-03-03</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div>
+    </div>
+  
+    <div class="scheda" style="margin-bottom:12px"><h3><span class="mono">pt-f84946051414</span> <span class="tenue">· valutato al 2026-01-01</span></h3>
+      <div class="dato proposta rev" id="gap-pt-f84946051414-R3">
+  <div><b>Anemia</b> senza emoglobina negli ultimi 180 giorni</div>
+  <small>ultimo esame: 2023-11-04 · condizione dal 1983-08-20</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div>
+    </div>
+  
+    <div class="scheda" style="margin-bottom:12px"><h3><span class="mono">pt-7c381412d09e</span> <span class="tenue">· valutato al 2026-01-01</span></h3>
+      <div class="dato proposta rev" id="gap-pt-7c381412d09e-R2">
+  <div><b>Prediabete o diabete</b> senza emoglobina glicata (HbA1c) negli ultimi 365 giorni</div>
+  <small>ultimo esame: 2023-08-12 · condizione dal 2008-07-26</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div><div class="dato proposta rev" id="gap-pt-7c381412d09e-R3">
+  <div><b>Anemia</b> senza emoglobina negli ultimi 180 giorni</div>
+  <small>ultimo esame: 2023-08-19 · condizione dal 2023-08-12</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div><div class="dato proposta rev" id="gap-pt-7c381412d09e-R4">
+  <div><b>Obesità</b> senza peso o indice di massa corporea negli ultimi 365 giorni</div>
+  <small>ultimo esame: 2023-08-12 · condizione dal 2011-07-30</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div>
+    </div>
+  
+    <div class="scheda" style="margin-bottom:12px"><h3><span class="mono">pt-854b074f7d34</span> <span class="tenue">· valutato al 2026-01-01</span></h3>
+      <div class="dato proposta rev" id="gap-pt-854b074f7d34-R3">
+  <div><b>Anemia</b> senza emoglobina negli ultimi 180 giorni</div>
+  <small>ultimo esame: 2021-11-16 · condizione dal 2004-10-12</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div>
+    </div>
+  
+    <div class="scheda" style="margin-bottom:12px"><h3><span class="mono">pt-6a593dd20e25</span> <span class="tenue">· valutato al 2026-01-01</span></h3>
+      <div class="dato proposta rev" id="gap-pt-6a593dd20e25-R3">
+  <div><b>Anemia</b> senza emoglobina negli ultimi 180 giorni</div>
+  <small>ultimo esame: 2021-10-01 · condizione dal 1994-04-29</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div>
+    </div>
+  
+    <div class="scheda" style="margin-bottom:12px"><h3><a class="mono" href="/med-trial-match/pazienti/pt-6ac6e029907f/">pt-6ac6e029907f</a> <span class="tenue">· valutato al 2026-01-01</span></h3>
+      <div class="dato proposta rev" id="gap-pt-6ac6e029907f-R3">
+  <div><b>Anemia</b> senza emoglobina negli ultimi 180 giorni</div>
+  <small>ultimo esame: 2021-02-12 · condizione dal 2016-01-15</small>
+  
+  <p class="nota-statica">Le decisioni richiedono la demo in locale: <code>make demo</code>.</p>
+</div>
+    </div>
+  
+  <h2 style="margin-top:20px">Affermazioni bloccate dal verificatore (8)</h2>
+  <p class="tenue">Non arrivano al medico: sono mostrate qui per trasparenza.</p>
+  
+    <div class="dato rev"><b>pt-98d89e2f75c1</b> · regola R4 · l'agente diceva «ok» — <span class="pill no">bloccata</span> ha citato un dato che non esiste<br><small class="tenue">prove citate: 922fb35e-148d-9e82-162864005-placeholder</small></div>
+    
+  
+    <div class="dato rev"><b>pt-d70308fb43f6</b> · regola R3 · l'agente diceva «not_applicable» — <span class="pill no">bloccata</span> ha citato un dato che non esiste<br><small class="tenue">prove citate: 6fbddf55-7096-b883-f3c8-cbd2-2d259dd1272c</small></div>
+    
+  
+    <div class="dato rev"><b>pt-42efe067c48c</b> · regola R1 · l'agente diceva «gap» — <span class="pill no">bloccata</span> la condizione citata non è quella della regola o non è attiva<br><small class="tenue">prove citate: 982750f4-569b-5949-0f7a-7faed32c2ca1, 982750f4-569b-5949-1f18-6d8af8125881</small></div>
+    
+  
+    <div class="dato rev"><b>pt-f84946051414</b> · regola R1 · l'agente diceva «gap» — <span class="pill no">bloccata</span> contraddetto da un esame presente nella finestra<br><small class="tenue">prove citate: bb526ae3-e675-70a8-403c-8d85cd3c7fc3, bb526ae3-e675-70a8-e2d0-1fb48af5fde8</small></div>
+    
+  
+    <div class="dato rev"><b>pt-f84946051414</b> · regola R2 · l'agente diceva «ok» — <span class="pill no">bloccata</span> la condizione citata non è quella della regola o non è attiva<br><small class="tenue">prove citate: bb526ae3-e675-70a8-45d2-8fbc35bf10f9, bb526ae3-e675-70a8-12b6-fe339399263f</small></div>
+    
+  
+    <div class="dato rev"><b>pt-854b074f7d34</b> · regola R2 · l'agente diceva «ok» — <span class="pill no">bloccata</span> la condizione citata non è quella della regola o non è attiva<br><small class="tenue">prove citate: 6aed9210-c500-4375-8624-81747d6b97e9, 6aed9210-c500-4375-554f-aaaeb9e26f18</small></div>
+    
+  
+    <div class="dato rev"><b>pt-6a593dd20e25</b> · regola R2 · l'agente diceva «ok» — <span class="pill no">bloccata</span> ha citato un dato che non esiste<br><small class="tenue">prove citate: bff9d9d5-a113-c39824ba6c13, bff9d9d5-ee3d-d852-ee54-92115b436936</small></div>
+    
+  
+    <div class="dato rev"><b>pt-2c743cb1d161</b> · regola R2 · l'agente diceva «ok» — <span class="pill no">bloccata</span> ha citato un dato che non esiste<br><small class="tenue">prove citate: 3c9556d7-638e-fc90-714628002-placeholder</small></div>
+    
+  
+  
+</div></section>
+  <section class="layer xray" inert aria-hidden="true"><div class="pagina">
+  <h1>care-gap agent · MCP tools · verifier</h1>
+  
+  <div class="fasi"><span class="fase">LLM (function calling)</span>→<span class="fase">MCP list_conditions / list_observations (read-only)</span>→<span class="fase">submit_findings</span>→<span class="fase">verify_findings (code)</span>→<span class="fase">physician approves</span></div>
+  <h2>evaluation (reports/care-gaps.md)</h2>
+  <div class="pannello"><table><tr><th>scenario</th><th>model</th><th>patients</th><th>agreement with engine</th><th>gaps P / R vs truth</th><th>rejected claims</th><th>submitted</th><th>USD/patient</th></tr>
+  <tr><td class="k">ehr</td><td>anthropic/claude-haiku-5.5</td><td>50</td><td>95.6%</td>
+    <td class="s">1.00 / 0.93</td>
+    <td class="n">8/247</td><td>50/50</td><td>0.0021</td></tr><tr><td class="k">ehr</td><td>google/gemini-2.5-flash-lite</td><td>15</td><td>25.3%</td>
+    <td class="s">– / 0.00</td>
+    <td class="n">21/40</td><td>8/15</td><td>0.0013</td></tr><tr><td class="k">extracted</td><td>anthropic/claude-haiku-5.5</td><td>50</td><td>98.4%</td>
+    <td class="s">0.50 / 0.14</td>
+    <td class="n">4/250</td><td>50/50</td><td>0.0005</td></tr></table>
+  <p class="tenue">agreement with engine = same data, deterministic rules; truth = full Synthea record, evaluation date 2026-01-01</p></div>
+  <h2>traces (test patients)</h2>
+  <div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-98d89e2f75c1</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 18161/1518 tok · 0.0026 USD</span>
+    <pre>1 list_conditions(patient_id=pt-98d89e2f75c1)
+2 list_observations(loinc_code=8480-6, patient_id=pt-98d89e2f75c1, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-98d89e2f75c1, until=2026-01-01)
+2 list_observations(loinc_code=39156-5, patient_id=pt-98d89e2f75c1, until=2026-01-01)
+3 submit_findings()
+</pre>
+    <div class="n">verifier: R4 ok rejected — unknown resource cited: 922fb35e-148d-9e82-162864005-placeholder</div>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-a3084951fc51</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 14069/1156 tok · 0.0020 USD</span>
+    <pre>1 list_conditions(patient_id=pt-a3084951fc51)
+2 list_observations(loinc_code=29463-7, patient_id=pt-a3084951fc51, until=2026-01-01)
+2 list_observations(loinc_code=4548-4, patient_id=pt-a3084951fc51, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-2c08a0512d6b</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 8578/584 tok · 0.0011 USD</span>
+    <pre>1 list_conditions(patient_id=pt-2c08a0512d6b)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-68f9f37b3675</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 5195/561 tok · 0.0008 USD</span>
+    <pre>1 list_conditions(patient_id=pt-68f9f37b3675)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-4cd70aacb718</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 22625/1851 tok · 0.0032 USD</span>
+    <pre>1 list_conditions(patient_id=pt-4cd70aacb718)
+2 list_observations(loinc_code=8480-6, patient_id=pt-4cd70aacb718, until=2026-01-01)
+2 list_observations(loinc_code=4548-4, patient_id=pt-4cd70aacb718, until=2026-01-01)
+2 list_observations(loinc_code=718-7, patient_id=pt-4cd70aacb718, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-4cd70aacb718, until=2026-01-01)
+2 list_observations(loinc_code=39156-5, patient_id=pt-4cd70aacb718, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-d70308fb43f6</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 13913/1352 tok · 0.0021 USD</span>
+    <pre>1 list_conditions(patient_id=pt-d70308fb43f6)
+2 list_observations(loinc_code=29463-7, patient_id=pt-d70308fb43f6, until=2026-01-01)
+2 list_observations(loinc_code=39156-5, patient_id=pt-d70308fb43f6, until=2026-01-01)
+3 submit_findings()
+</pre>
+    <div class="n">verifier: R3 not_applicable rejected — unknown resource cited: 6fbddf55-7096-b883-f3c8-cbd2-2d259dd1272c</div>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-9b8cc8010c93</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 26777/1771 tok · 0.0036 USD</span>
+    <pre>1 list_conditions(patient_id=pt-9b8cc8010c93)
+2 list_observations(loinc_code=8480-6, patient_id=pt-9b8cc8010c93, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-9b8cc8010c93, until=2026-01-01)
+2 list_observations(loinc_code=33914-3, patient_id=pt-9b8cc8010c93, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-f9c3334959bd</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 6957/698 tok · 0.0010 USD</span>
+    <pre>1 list_conditions(patient_id=pt-f9c3334959bd)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-74141fcb172c</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 7129/481 tok · 0.0010 USD</span>
+    <pre>1 list_conditions(patient_id=pt-74141fcb172c)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-7c26f18014b2</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 20767/1326 tok · 0.0027 USD</span>
+    <pre>1 list_conditions(patient_id=pt-7c26f18014b2)
+2 list_observations(loinc_code=4548-4, patient_id=pt-7c26f18014b2, until=2026-01-01)
+2 list_observations(loinc_code=718-7, patient_id=pt-7c26f18014b2, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-7c26f18014b2, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-42efe067c48c</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 20158/1906 tok · 0.0030 USD</span>
+    <pre>1 list_conditions(patient_id=pt-42efe067c48c)
+2 list_observations(loinc_code=8480-6, patient_id=pt-42efe067c48c, until=2026-01-01)
+2 list_observations(loinc_code=4548-4, patient_id=pt-42efe067c48c, until=2026-01-01)
+2 list_observations(loinc_code=718-7, patient_id=pt-42efe067c48c, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-42efe067c48c, until=2026-01-01)
+3 submit_findings()
+</pre>
+    <div class="n">verifier: R1 gap rejected — no cited condition of this rule active at the evaluation date</div>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-1c92dae7d6db</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 6130/701 tok · 0.0010 USD</span>
+    <pre>1 list_conditions(patient_id=pt-1c92dae7d6db)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-8467e0c48ef4</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 20214/1572 tok · 0.0028 USD</span>
+    <pre>1 list_conditions(patient_id=pt-8467e0c48ef4)
+2 list_observations(loinc_code=4548-4, patient_id=pt-8467e0c48ef4, until=2026-01-01)
+2 list_observations(loinc_code=718-7, patient_id=pt-8467e0c48ef4, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-8467e0c48ef4, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-0d45c16719ac</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 7663/523 tok · 0.0010 USD</span>
+    <pre>1 list_conditions(patient_id=pt-0d45c16719ac)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-751afb4340f2</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 6416/501 tok · 0.0009 USD</span>
+    <pre>1 list_conditions(patient_id=pt-751afb4340f2)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-7b6faebbe73b</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 10263/622 tok · 0.0013 USD</span>
+    <pre>1 list_conditions(patient_id=pt-7b6faebbe73b)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-a24ff7358acd</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 7085/687 tok · 0.0011 USD</span>
+    <pre>1 list_conditions(patient_id=pt-a24ff7358acd)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-12f7c1e3bd37</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 6637/666 tok · 0.0010 USD</span>
+    <pre>1 list_conditions(patient_id=pt-12f7c1e3bd37)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-cf9aafc0ad1b</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 27557/1588 tok · 0.0035 USD</span>
+    <pre>1 list_conditions(patient_id=pt-cf9aafc0ad1b)
+2 list_observations(loinc_code=4548-4, patient_id=pt-cf9aafc0ad1b, until=2026-01-01)
+2 list_observations(loinc_code=718-7, patient_id=pt-cf9aafc0ad1b, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-cf9aafc0ad1b, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-14c8ce202411</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 14447/1288 tok · 0.0021 USD</span>
+    <pre>1 list_conditions(patient_id=pt-14c8ce202411)
+2 list_observations(loinc_code=4548-4, patient_id=pt-14c8ce202411, until=2026-01-01)
+2 list_observations(loinc_code=718-7, patient_id=pt-14c8ce202411, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-14c8ce202411, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-db086e5e38f9</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 3864/488 tok · 0.0006 USD</span>
+    <pre>1 list_conditions(patient_id=pt-db086e5e38f9)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-f0d11a9faf9b</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 7355/468 tok · 0.0010 USD</span>
+    <pre>1 list_conditions(patient_id=pt-f0d11a9faf9b)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-4021aac23f45</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 23384/1352 tok · 0.0030 USD</span>
+    <pre>1 list_conditions(patient_id=pt-4021aac23f45)
+2 list_observations(loinc_code=4548-4, patient_id=pt-4021aac23f45, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-4021aac23f45, until=2026-01-01)
+2 list_observations(loinc_code=39156-5, patient_id=pt-4021aac23f45, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-f84946051414</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 24888/1791 tok · 0.0034 USD</span>
+    <pre>1 list_conditions(patient_id=pt-f84946051414)
+2 list_observations(loinc_code=8480-6, patient_id=pt-f84946051414, until=2026-01-01)
+2 list_observations(loinc_code=4548-4, patient_id=pt-f84946051414, until=2026-01-01)
+2 list_observations(loinc_code=718-7, patient_id=pt-f84946051414, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-f84946051414, until=2026-01-01)
+3 submit_findings()
+</pre>
+    <div class="n">verifier: R1 gap rejected — contradicted by an observation in the window</div><div class="n">verifier: R2 ok rejected — no cited condition of this rule active at the evaluation date</div>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-43f4cc50cb91</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 6125/609 tok · 0.0009 USD</span>
+    <pre>1 list_conditions(patient_id=pt-43f4cc50cb91)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-7c381412d09e</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 14124/1416 tok · 0.0021 USD</span>
+    <pre>1 list_conditions(patient_id=pt-7c381412d09e)
+2 list_observations(loinc_code=4548-4, patient_id=pt-7c381412d09e, until=2026-01-01)
+2 list_observations(loinc_code=718-7, patient_id=pt-7c381412d09e, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-7c381412d09e, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-1524649d505c</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 14914/1283 tok · 0.0021 USD</span>
+    <pre>1 list_conditions(patient_id=pt-1524649d505c)
+2 list_observations(loinc_code=29463-7, patient_id=pt-1524649d505c, until=2026-01-01)
+2 list_observations(loinc_code=39156-5, patient_id=pt-1524649d505c, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-4ba0efc035b5</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 5249/547 tok · 0.0008 USD</span>
+    <pre>1 list_conditions(patient_id=pt-4ba0efc035b5)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-4f64a4594574</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 24503/1021 tok · 0.0030 USD</span>
+    <pre>1 list_conditions(patient_id=pt-4f64a4594574)
+2 list_observations(loinc_code=29463-7, patient_id=pt-4f64a4594574, until=2026-01-01)
+2 list_observations(loinc_code=39156-5, patient_id=pt-4f64a4594574, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-10aa4cc52052</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 7363/651 tok · 0.0011 USD</span>
+    <pre>1 list_conditions(patient_id=pt-10aa4cc52052)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-854b074f7d34</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 19530/1078 tok · 0.0025 USD</span>
+    <pre>1 list_conditions(patient_id=pt-854b074f7d34)
+2 list_observations(loinc_code=4548-4, patient_id=pt-854b074f7d34, until=2026-01-01)
+2 list_observations(loinc_code=718-7, patient_id=pt-854b074f7d34, until=2026-01-01)
+3 submit_findings()
+</pre>
+    <div class="n">verifier: R2 ok rejected — no cited condition of this rule active at the evaluation date</div>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-5bf0af21bfa7</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 6403/527 tok · 0.0009 USD</span>
+    <pre>1 list_conditions(patient_id=pt-5bf0af21bfa7)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-32d397af8fac</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 7129/614 tok · 0.0010 USD</span>
+    <pre>1 list_conditions(patient_id=pt-32d397af8fac)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-195482f813df</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 5015/502 tok · 0.0008 USD</span>
+    <pre>1 list_conditions(patient_id=pt-195482f813df)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-c9358a257742</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 53230/2462 tok · 0.0066 USD</span>
+    <pre>1 list_conditions(patient_id=pt-c9358a257742)
+2 list_observations(loinc_code=8480-6, patient_id=pt-c9358a257742, until=2026-01-01)
+2 list_observations(loinc_code=4548-4, patient_id=pt-c9358a257742, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-c9358a257742, until=2026-01-01)
+2 list_observations(loinc_code=33914-3, patient_id=pt-c9358a257742, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-c8816279bf2b</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 16018/1084 tok · 0.0021 USD</span>
+    <pre>1 list_conditions(patient_id=pt-c8816279bf2b)
+2 list_observations(loinc_code=8480-6, patient_id=pt-c8816279bf2b, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-681ab559f00e</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 7173/633 tok · 0.0010 USD</span>
+    <pre>1 list_conditions(patient_id=pt-681ab559f00e)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-bffaf15779c6</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 11616/728 tok · 0.0015 USD</span>
+    <pre>1 list_conditions(patient_id=pt-bffaf15779c6)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-c9aefa1e0061</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 24476/1184 tok · 0.0030 USD</span>
+    <pre>1 list_conditions(patient_id=pt-c9aefa1e0061)
+2 list_observations(loinc_code=29463-7, patient_id=pt-c9aefa1e0061, until=2026-01-01)
+2 list_observations(loinc_code=39156-5, patient_id=pt-c9aefa1e0061, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-6a593dd20e25</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 24884/1773 tok · 0.0034 USD</span>
+    <pre>1 list_conditions(patient_id=pt-6a593dd20e25)
+2 list_observations(loinc_code=4548-4, patient_id=pt-6a593dd20e25, until=2026-01-01)
+2 list_observations(loinc_code=718-7, patient_id=pt-6a593dd20e25, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-6a593dd20e25, until=2026-01-01)
+2 list_observations(loinc_code=39156-5, patient_id=pt-6a593dd20e25, until=2026-01-01)
+3 submit_findings()
+</pre>
+    <div class="n">verifier: R2 ok rejected — unknown resource cited: bff9d9d5-a113-c39824ba6c13</div>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-90f4b1175eb8</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 9487/636 tok · 0.0013 USD</span>
+    <pre>1 list_conditions(patient_id=pt-90f4b1175eb8)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-b671e466c0a4</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 5030/629 tok · 0.0008 USD</span>
+    <pre>1 list_conditions(patient_id=pt-b671e466c0a4)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-d609bc475c66</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 4008/623 tok · 0.0007 USD</span>
+    <pre>1 list_conditions(patient_id=pt-d609bc475c66)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-da434451461a</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 157565/1949 tok · 0.0167 USD</span>
+    <pre>1 list_conditions(patient_id=pt-da434451461a)
+2 list_observations(loinc_code=8480-6, patient_id=pt-da434451461a, until=2026-01-01)
+2 list_observations(loinc_code=4548-4, patient_id=pt-da434451461a, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-da434451461a, until=2026-01-01)
+2 list_observations(loinc_code=33914-3, patient_id=pt-da434451461a, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-80de5da1308d</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 22992/1143 tok · 0.0029 USD</span>
+    <pre>1 list_conditions(patient_id=pt-80de5da1308d)
+2 list_observations(loinc_code=29463-7, patient_id=pt-80de5da1308d, until=2026-01-01)
+2 list_observations(loinc_code=39156-5, patient_id=pt-80de5da1308d, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-6ac6e029907f</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 19092/1482 tok · 0.0027 USD</span>
+    <pre>1 list_conditions(patient_id=pt-6ac6e029907f)
+2 list_observations(loinc_code=8480-6, patient_id=pt-6ac6e029907f, until=2026-01-01)
+2 list_observations(loinc_code=4548-4, patient_id=pt-6ac6e029907f, until=2026-01-01)
+2 list_observations(loinc_code=718-7, patient_id=pt-6ac6e029907f, until=2026-01-01)
+3 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-2c743cb1d161</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 3 steps · 22442/1533 tok · 0.0030 USD</span>
+    <pre>1 list_conditions(patient_id=pt-2c743cb1d161)
+2 list_observations(loinc_code=8480-6, patient_id=pt-2c743cb1d161, until=2026-01-01)
+2 list_observations(loinc_code=4548-4, patient_id=pt-2c743cb1d161, until=2026-01-01)
+2 list_observations(loinc_code=718-7, patient_id=pt-2c743cb1d161, until=2026-01-01)
+2 list_observations(loinc_code=29463-7, patient_id=pt-2c743cb1d161, until=2026-01-01)
+3 submit_findings()
+</pre>
+    <div class="n">verifier: R2 ok rejected — unknown resource cited: 3c9556d7-638e-fc90-714628002-placeholder</div>
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-356a22282489</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 7250/611 tok · 0.0010 USD</span>
+    <pre>1 list_conditions(patient_id=pt-356a22282489)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-b67b943181a0</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 6471/610 tok · 0.0010 USD</span>
+    <pre>1 list_conditions(patient_id=pt-b67b943181a0)
+2 submit_findings()
+</pre>
+    
+  </div><div class="pannello" style="margin-bottom:10px">
+    <span class="k">pt-f77f5a6590f5</span> <span class="tenue">· anthropic/claude-haiku-5.5 · 2 steps · 6602/569 tok · 0.0009 USD</span>
+    <pre>1 list_conditions(patient_id=pt-f77f5a6590f5)
+2 submit_findings()
+</pre>
+    
+  </div>
+  
+  <div class="come-fatto"><b class="k">Come è fatto</b><br><span class="tenue">rules + verifier</span> · <code>src/cn2f/agent/care_gaps.py</code> · <span class="s">tests/test_care_gaps.py</span><br><span class="tenue">agent loop</span> · <code>src/cn2f/agent/runner.py</code> · <span class="s">tests/test_agent.py</span><br><span class="tenue">MCP tools</span> · <code>src/cn2f/mcp_server/server.py</code> · <span class="s">tests/test_mcp.py</span><br><span class="tenue">this page</span> · <code>src/cn2f/web/site/</code> · <span class="s">tests/test_site.py</span><br></div>
+</div></section>
+  <div class="raggio" aria-hidden="true"></div>
+</main>
+
+</body>
+</html>
